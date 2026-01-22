@@ -19,9 +19,9 @@ FOUND_LEGACY=0
 echo "Checking for legacy terms..."
 
 for term in "${LEGACY_TERMS[@]}"; do
-    if rg --quiet "$term" .; then
+    if rg --quiet --glob='!tools/check_legacy_terms.sh' "$term" .; then
         echo "ERROR: Found legacy term: $term"
-        rg --color=always -n "$term" .
+        rg --color=always -n --glob='!tools/check_legacy_terms.sh' "$term" .
         FOUND_LEGACY=1
     fi
 done
