@@ -30,7 +30,7 @@ This ADR does not lock the HDD capacity or vendor/model.
 
 - Keeps the OS drive small and fast (NVMe) while delivering large, cost-effective bulk storage on HDDs.
 - Linux software RAID is observable, scriptable, and portable across motherboards.
-- RAID 0 matches the “capacity-first” goal for the base Desk unit, with backups handled at a higher layer.
+- RAID 0 matches the "capacity-first" goal for the base Tinderbox unit, with backups handled at a higher layer.
 
 ## Consequences
 

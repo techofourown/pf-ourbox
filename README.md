@@ -6,8 +6,8 @@ This repository contains the complete product family for OurBox: hardware design
 
 OurBox hardware is organized by model:
 
-- **[Matchbox](hw/matchbox/)** — Small-form-factor model (formerly known as the first OurBox hardware)
-- **[Tinderbox](hw/tinderbox/)** — Larger desktop-class model (formerly known as the second OurBox hardware)
+- **[Matchbox](hw/matchbox/)** — Small-form-factor model
+- **[Tinderbox](hw/tinderbox/)** — Larger desktop-class model
 
 See [hw/README.md](hw/README.md) for details on the hardware family.
 

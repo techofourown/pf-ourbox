@@ -17,7 +17,7 @@ We have not chosen a case yet. This RFC exists to capture requirements, candidat
 The case drives:
 - thermals and acoustics,
 - serviceability and assembly time,
-- physical footprint (Desk form factor),
+- physical footprint (Tinderbox form factor),
 - drive mounting and vibration isolation,
 - and (optionally) GPU clearance for a future Forge trim.
 
@@ -53,7 +53,7 @@ The case drives:
 ## Open Questions
 
 1. Do we want one case that supports both base and future GPU trims?
-2. What is the target external volume for “Desk” vs “Tower” in our naming scheme?
+2. What is the target external volume for "Tinderbox" vs "Tower" in our naming scheme?
 3. Are we optimizing for aesthetics (consumer) or simplicity (manufacturing)?
 
 ## Next Steps
