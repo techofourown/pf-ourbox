@@ -1,28 +1,28 @@
-# Documentation
+# OurBox Matchbox Documentation
 
-This repository uses the Tech of Our Own documentation structure with lightweight RFCs and ADRs.
+This directory contains documentation for the OurBox Matchbox hardware model.
 
-## Structure
+## Directory Structure
 
-```
-docs/
-├── rfcs/          # Pre-decisional exploration and proposals
-├── decisions/     # Architecture Decision Records (ADRs)
-└── specs/         # Formal specs (BOM, system assumptions, interfaces)
-```
+- **[decisions/](decisions/)** — Architecture Decision Records (ADRs) documenting finalized design choices
+- **[rfcs/](rfcs/)** — Request for Comments: design proposals and explorations
+- **[specs/](specs/)** — System requirements, BOMs, and technical specifications
 
-## When to use what
+## Model Information
 
-- **RFCs (`rfcs/`)** — explore ideas or proposals before deciding; capture options, trade-offs, and open questions.
-- **ADRs (`decisions/`)** — record a decision that was made, with context, rationale, consequences, and links to any originating RFC.
-- **Specs (`specs/`)** — formal or semi-formal specifications such as BOM, interfaces, and operational assumptions.
+- **Model:** OurBox Matchbox
+- **Model ID:** `TOO-OBX-MBX-01`
+- **Form Factor:** Small-form-factor appliance
+- **Primary Motherboard:** Raspberry Pi 5 (16 GB)
 
-## Flow
+## Key Decisions
 
-```
-Problem or Idea
-    ↓
-RFC (exploration) → Discussion → Decision
-    ↓                              ↓
-Implementation               ADR (record)
-```
+See the [decisions/](decisions/) directory for complete ADRs. Key decisions include:
+
+- ADR-0001: Raspberry Pi 5 (16 GB) as primary motherboard
+- ADR-0002: Sheet metal enclosure approach
+- ADR-0003: Dual NVMe storage via Seeed PCIe 2.0 HAT
+
+## Active Explorations
+
+See the [rfcs/](rfcs/) directory for ongoing design discussions.

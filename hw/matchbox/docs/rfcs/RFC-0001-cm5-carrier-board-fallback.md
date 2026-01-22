@@ -1,4 +1,4 @@
-# RFC-0001: CM5 + Pi-Compatible Carrier Board as a Fallback Path for OurBox Mini
+# RFC-0001: CM5 + Pi-Compatible Carrier Board as a Fallback Path for OurBox Matchbox
 
 **Status:** Draft  
 **Created:** 2026-01-16  
@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC proposes a **fallback hardware path** for OurBox Mini (TOO-OBX-MINI-01):
+This RFC proposes a **fallback hardware path** for OurBox Matchbox (TOO-OBX-MBX-01):
 
 > If the standard **Raspberry Pi 5 (16 GB)** board becomes unavailable, constrained, or otherwise unsuitable, we can substitute it with a **Compute Module 5 (CM5)** installed on a **Pi-mechanically-compatible carrier board**.
 
@@ -42,7 +42,7 @@ But we still want a credible Plan B:
 
 ### 2) Maintain enclosure + accessory compatibility
 
-OurBox Mini is intended to integrate with:
+OurBox Matchbox is intended to integrate with:
 
 - NVMe/PCIe add-ons,
 - standoffs and brackets,
@@ -158,5 +158,5 @@ A CM5 + carrier substitute is acceptable if:
 ## References
 
 - [ADR-0001: Related decision](../decisions/ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
-- [System Requirements — OurBox Mini](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Mini](../specs/bom.md)
+- [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom.md)

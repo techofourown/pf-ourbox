@@ -1,11 +1,11 @@
-# ADR-0002: Use a Sheet Metal Enclosure for OurBox Mini
+# ADR-0002: Use a Sheet Metal Enclosure for OurBox Matchbox
 
 ## Status
 Accepted
 
 ## Context
 
-OurBox Mini (TOO-OBX-MINI-01) is intended to be a small, always-on, self-hosted appliance that can be assembled and serviced with basic tools, and iterated quickly as the hardware and software mature.
+OurBox Matchbox (TOO-OBX-MBX-01) is intended to be a small, always-on, self-hosted appliance that can be assembled and serviced with basic tools, and iterated quickly as the hardware and software mature.
 
 In the early product phases, we expect:
 
@@ -18,11 +18,11 @@ Because mechanical iteration is unavoidable early on, enclosure manufacturing mu
 - lead time,
 - and per-revision risk.
 
-This ADR records the decision to use **sheet metal** as the primary enclosure approach for OurBox Mini.
+This ADR records the decision to use **sheet metal** as the primary enclosure approach for OurBox Matchbox.
 
 ## Decision
 
-We will use a **sheet metal enclosure** (laser cut + formed/bent sheet metal) as the primary enclosure manufacturing method for OurBox Mini.
+We will use a **sheet metal enclosure** (laser cut + formed/bent sheet metal) as the primary enclosure manufacturing method for OurBox Matchbox.
 
 Where appropriate, we may combine sheet metal with **simple secondary parts** (e.g., laser-cut acrylic/polycarbonate panels, gaskets, standoffs, PEM hardware) to achieve:
 - clean external surfaces,
@@ -104,7 +104,7 @@ This fits the "kit" model and the right-to-repair spirit: the enclosure shouldn'
 - Requires confidence in final dimensions early
 
 **Why not now**
-OurBox Mini is not yet at the stage where the enclosure geometry is stable enough to justify mold tooling.
+OurBox Matchbox is not yet at the stage where the enclosure geometry is stable enough to justify mold tooling.
 
 ### B) 3D-printed plastic (FDM/SLA)
 
@@ -221,7 +221,7 @@ A good future option once geometry stabilizes, but sheet metal is better for rap
 
 ## References
 
-- [System Requirements — OurBox Mini](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Mini](../specs/bom.md)
+- [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
 - [ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard](./ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [RFC-0001: CM5 + Carrier Board as a Fallback Path](../rfcs/RFC-0001-cm5-carrier-board-fallback.md)

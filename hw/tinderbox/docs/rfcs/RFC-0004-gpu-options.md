@@ -1,4 +1,4 @@
-# RFC-0004: GPU Options for OurBox Desk
+# RFC-0004: GPU Options for OurBox Tinderbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC explores whether (and how) OurBox Desk should support an optional discrete GPU configuration (a future Forge trim), and what constraints that would impose on the motherboard, power supply, and case.
+This RFC explores whether (and how) OurBox Tinderbox should support an optional discrete GPU configuration (a future Forge trim), and what constraints that would impose on the motherboard, power supply, and case.
 
 ## Why
 

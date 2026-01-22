@@ -1,8 +1,8 @@
-# Bill of Materials — OurBox Desk (TOO-OBX-DESK-01)
+# Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX-01)
 
-This BOM is the **baseline** for `CFG-BASE-01` (OurBox Desk base configuration). Some items are intentionally TBD until the relevant RFCs are resolved.
+This BOM is the **baseline** for `CFG-TBX-BASE-01` (OurBox Tinderbox base configuration). Some items are intentionally TBD until the relevant RFCs are resolved.
 
-## Base Configuration — `CFG-BASE-01`
+## Base Configuration — `CFG-TBX-BASE-01`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|

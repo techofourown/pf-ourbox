@@ -1,4 +1,4 @@
-# RFC-0006: Case / Enclosure Selection for OurBox Desk
+# RFC-0006: Case / Enclosure Selection for OurBox Tinderbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC explores enclosure options for the OurBox Desk form factor.
+This RFC explores enclosure options for the OurBox Tinderbox form factor.
 
 We have not chosen a case yet. This RFC exists to capture requirements, candidate enclosures, and the trade-offs that matter for a quiet always-on appliance.
 
@@ -60,7 +60,7 @@ The case drives:
 
 - Pick 3–5 candidate cases and compare dimensions, drive mounting, and airflow.
 - Prototype-fit the motherboard + two HDDs + cabling.
-- If we choose a case, write an ADR: “ADR-XXXX: Select <Case> for OurBox Desk”.
+- If we choose a case, write an ADR: “ADR-XXXX: Select <Case> for OurBox Tinderbox”.
 
 ## References
 

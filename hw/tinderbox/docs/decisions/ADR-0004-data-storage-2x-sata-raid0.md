@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-OurBox Desk needs a high-capacity user-data volume without making the OS drive huge or expensive.
+OurBox Tinderbox needs a high-capacity user-data volume without making the OS drive huge or expensive.
 
 The design intent is:
 - OS + system state on a dedicated NVMe SSD,
@@ -20,7 +20,7 @@ Because this is a Linux-first product, we prefer a RAID implementation that does
 
 ## Decision
 
-The base configuration (`CFG-BASE-01`) will include:
+The base configuration (`CFG-TBX-BASE-01`) will include:
 - **2× SATA HDDs** for user data, and
 - the supported user-data volume will be configured as **RAID 0 using Linux software RAID**.
 

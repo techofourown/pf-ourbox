@@ -1,11 +1,11 @@
-# ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard for OurBox Mini
+# ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard for OurBox Matchbox
 
 ## Status
 Accepted
 
 ## Context
 
-OurBox Mini (TOO-OBX-MINI-01) is intended to be a small, always-on, self-hosted appliance that enables privacy-respecting applications (e.g., tasks, photos, messaging, "portal" UX) without relying on app stores, proprietary relay services, or ad-tech business models.
+OurBox Matchbox (TOO-OBX-MBX-01) is intended to be a small, always-on, self-hosted appliance that enables privacy-respecting applications (e.g., tasks, photos, messaging, "portal" UX) without relying on app stores, proprietary relay services, or ad-tech business models.
 
 We have two plausible compute approaches:
 
@@ -23,7 +23,7 @@ An RFC is being written to capture a contingency path using **CM5 + a Pi-mechani
 
 ## Decision
 
-We will make the **Raspberry Pi 5 (16 GB) standard board** the **primary motherboard** for the initial OurBox Mini flagship hardware.
+We will make the **Raspberry Pi 5 (16 GB) standard board** the **primary motherboard** for the initial OurBox Matchbox flagship hardware.
 
 - The enclosure, standoffs, and assembly workflow will assume the **Raspberry Pi 5 mounting pattern** as the baseline.
 - Storage expansion (including dual NVMe) will be achieved through Pi-compatible accessories (e.g., HATs / PCIe flex assemblies), consistent with the current system requirements and BOM.
@@ -90,6 +90,6 @@ We can adopt that complexity later when we have a clearer product-market fit and
 
 ## References
 
-- [System Requirements — OurBox Mini](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Mini](../specs/bom.md)
-- [RFC-0001: CM5 + Carrier Board Fallback for OurBox Mini](../rfcs/RFC-0001-cm5-carrier-board-fallback.md)
+- [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [RFC-0001: CM5 + Carrier Board Fallback for OurBox Matchbox](../rfcs/RFC-0001-cm5-carrier-board-fallback.md)

@@ -5,7 +5,7 @@ Accepted
 
 ## Context
 
-OurBox Mini (TOO-OBX-MINI-01) uses a Raspberry Pi 5 (16 GB) as the primary motherboard (ADR-0001).
+OurBox Matchbox (TOO-OBX-MBX-01) uses a Raspberry Pi 5 (16 GB) as the primary motherboard (ADR-0001).
 
 We need a storage expansion approach that:
 - Supports **two NVMe SSDs** (e.g., OS / system + user data separation, or future flexibility).
@@ -17,7 +17,7 @@ This ADR records the chosen dual-NVMe "place where the drives go" for the flagsh
 
 ## Decision
 
-We will use the following dual-NVMe HAT as the standard storage expansion board for the flagship OurBox Mini build:
+We will use the following dual-NVMe HAT as the standard storage expansion board for the flagship OurBox Matchbox build:
 
 - **Manufacturer:** Seeed Studio
 - **Part:** PCIe2.0 to Dual M.2 HAT for Raspberry Pi 5
@@ -34,7 +34,7 @@ The enclosure and assembly workflow will assume:
 This HAT provides a practical, off-the-shelf dual-NVMe storage solution compatible with the Raspberry Pi 5 PCIe interface.
 
 ### 2) PCIe Gen2 x1 is the right trade-off for v1
-We do not need PCIe Gen3+ performance for the initial OurBox Mini workloads. Choosing the PCIe 2.0 class solution reduces complexity and cost while preserving the core benefit (dual NVMe).
+We do not need PCIe Gen3+ performance for the initial OurBox Matchbox workloads. Choosing the PCIe 2.0 class solution reduces complexity and cost while preserving the core benefit (dual NVMe).
 
 ### 3) Mechanical friendliness for our enclosure + stack
 A back-mounted design keeps the top side of the Pi less cluttered and helps with airflow and clearance planning inside a compact enclosure.
@@ -58,5 +58,5 @@ A back-mounted design keeps the top side of the Pi less cluttered and helps with
 ## References
 - [ADR-0001: Use Raspberry Pi 5 (16 GB) as Primary Motherboard](./ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [ADR-0002: Use a Sheet Metal Enclosure](./ADR-0002-sheet-metal-enclosure.md)
-- [Bill of Materials — OurBox Mini](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
 - Seeed product page: https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html

@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC explores capacity and model options for the **two SATA HDDs** used for the OurBox Desk user-data volume (ADR-0004).
+This RFC explores capacity and model options for the **two SATA HDDs** used for the OurBox Tinderbox user-data volume (ADR-0004).
 
 ## Why
 

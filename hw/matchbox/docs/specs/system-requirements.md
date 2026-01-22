@@ -1,4 +1,4 @@
-# System Requirements — OurBox Mini (TOO-OBX-MINI-01)
+# System Requirements — OurBox Matchbox (TOO-OBX-MBX-01)
 
 ## Operating system
 

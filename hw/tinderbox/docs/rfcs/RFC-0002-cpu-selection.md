@@ -1,4 +1,4 @@
-# RFC-0002: CPU Selection for OurBox Desk
+# RFC-0002: CPU Selection for OurBox Tinderbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC explores CPU options and selection criteria for OurBox Desk (TOO-OBX-DESK-01), without committing to a specific CPU SKU yet.
+This RFC explores CPU options and selection criteria for OurBox Tinderbox (TOO-OBX-TBX-01), without committing to a specific CPU SKU yet.
 
 ## Why
 

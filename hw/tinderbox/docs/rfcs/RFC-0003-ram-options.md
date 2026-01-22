@@ -8,7 +8,7 @@
 
 ## What
 
-This RFC explores which **DDR4 RAM** SKU(s) to validate for the OurBox Desk base configuration, and whether the base 32 GB should be 1×32 GB or 2×16 GB.
+This RFC explores which **DDR4 RAM** SKU(s) to validate for the OurBox Tinderbox base configuration, and whether the base 32 GB should be 1×32 GB or 2×16 GB.
 
 ## Why
 

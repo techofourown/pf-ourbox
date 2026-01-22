@@ -1,4 +1,4 @@
-# ADR-0002: Ship OurBox Desk Base Configuration Without a Discrete GPU
+# ADR-0002: Ship OurBox Tinderbox Base Configuration Without a Discrete GPU
 
 ## Status
 Accepted
@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-OurBox Desk is intended to be a home/office friendly appliance optimized for “service capacity” (many always-on pods) rather than peak performance.
+OurBox Tinderbox is intended to be a home/office friendly appliance optimized for “service capacity” (many always-on pods) rather than peak performance.
 
 A discrete GPU introduces major complexity and cost:
 - higher power supply requirements,
@@ -20,7 +20,7 @@ We still want to keep a path open for GPU-enabled trims (e.g., an “Forge” co
 
 ## Decision
 
-The **base configuration** (`CFG-BASE-01`) of OurBox Desk will ship with **no discrete GPU** installed.
+The **base configuration** (`CFG-TBX-BASE-01`) of OurBox Tinderbox will ship with **no discrete GPU** installed.
 
 - The motherboard must still provide a PCIe x16 physical slot so a future configuration can add a GPU.
 - Any GPU-enabled configuration will be introduced via an RFC followed by a dedicated ADR and a separate configuration identifier (e.g., `CFG-FORGE-01`).
@@ -47,4 +47,4 @@ The **base configuration** (`CFG-BASE-01`) of OurBox Desk will ship with **no di
 ## References
 - [System Requirements](../specs/system-requirements.md)
 - [Bill of Materials](../specs/bom.md)
-- [RFC-0004: GPU Options for OurBox Desk](../rfcs/RFC-0004-gpu-options.md)
+- [RFC-0004: GPU Options for OurBox Tinderbox](../rfcs/RFC-0004-gpu-options.md)

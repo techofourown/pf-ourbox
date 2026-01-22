@@ -1,4 +1,4 @@
-# Bill of Materials — OurBox Mini (TOO-OBX-MINI-01)
+# Bill of Materials — OurBox Matchbox (TOO-OBX-MBX-01)
 
 ## Primary (Flagship) Build — Raspberry Pi 5 Board
 

@@ -1,4 +1,4 @@
-# ADR-0001: Use MSI PRO B760M-P DDR4 as the Primary Motherboard for OurBox Desk
+# ADR-0001: Use MSI PRO B760M-P DDR4 as the Primary Motherboard for OurBox Tinderbox
 
 ## Status
 Accepted
@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-OurBox Desk (TOO-OBX-DESK-01) is a desktop-class, always-on personal server intended to run many services concurrently (k3s pods) for a single user.
+OurBox Tinderbox (TOO-OBX-TBX-01) is a desktop-class, always-on personal server intended to run many services concurrently (k3s pods) for a single user.
 
 The base configuration requires:
 - a mainstream x86_64 platform compatible with Linux,
@@ -23,7 +23,7 @@ An RFC is maintained to track alternative motherboards as supply, pricing, and a
 
 ## Decision
 
-We will use the following motherboard as the **primary motherboard** for the OurBox Desk base configuration (`CFG-BASE-01`):
+We will use the following motherboard as the **primary motherboard** for the OurBox Tinderbox base configuration (`CFG-TBX-BASE-01`):
 
 - **Manufacturer:** MSI
 - **Model:** **PRO B760M-P DDR4**
@@ -62,4 +62,4 @@ Micro-ATX tends to be cheaper than Mini-ITX and provides more physical room for 
 ## References
 - [Bill of Materials](../specs/bom.md)
 - [System Requirements](../specs/system-requirements.md)
-- [RFC-0001: Alternative Motherboards for OurBox Desk](../rfcs/RFC-0001-alternative-motherboards.md)
+- [RFC-0001: Alternative Motherboards for OurBox Tinderbox](../rfcs/RFC-0001-alternative-motherboards.md)

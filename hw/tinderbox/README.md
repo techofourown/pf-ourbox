@@ -1,12 +1,12 @@
-# hw-ourbox-desk-32
+# OurBox Tinderbox
 
-Hardware design + documentation repo for the **OurBox Desk** base configuration.
+Hardware design and documentation for **OurBox Tinderbox**, the larger model in the OurBox hardware family.
 
-- **Marketing name:** OurBox Desk
-- **Model identifier:** `TOO-OBX-DESK-01`
-- **Base configuration identifier:** `CFG-BASE-01`
+- **Marketing name:** OurBox Tinderbox
+- **Model identifier:** `TOO-OBX-TBX-01`
+- **Base configuration identifier:** `CFG-TBX-BASE-01`
 
-OurBox Desk is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a “wide” set of services (k3s pods) with low latency for a single user.
+OurBox Tinderbox is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a "wide" set of services (k3s pods) with low latency for a single user.
 
 ## What’s in here
 
@@ -30,4 +30,4 @@ See the ADRs under `docs/decisions/` for rationale and consequences.
 
 ## Status
 
-This repository is the starting point (“beginning”) of the OurBox Desk hardware track. Expect lots of TBDs while we explore CPUs, RAM SKUs, SATA drive capacity, and enclosure options.
+This is the starting point ("beginning") of the OurBox Tinderbox hardware track. Expect lots of TBDs while we explore CPUs, RAM SKUs, SATA drive capacity, and enclosure options.
