@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: tinderbox-rfc-0003-ram-options
+parent: model:tinderbox
+fields:
+  status: Draft
+  created: '2026-01-19'
+  updated: '2026-01-19'
+---
 # RFC-0003: RAM SKU and Layout Options
 
 **Status:** Draft  

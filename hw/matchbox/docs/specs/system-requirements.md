@@ -1,3 +1,10 @@
+---
+typeId: system_requirements
+recordId: matchbox-system-requirements
+parent: model:matchbox
+fields:
+  modelIdentifier: TOO-OBX-MBX-01
+---
 # System Requirements — OurBox Matchbox (TOO-OBX-MBX-01)
 
 ## Operating system

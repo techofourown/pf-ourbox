@@ -1,0 +1,17 @@
+{
+  "name": "pf-ourbox",
+  "private": true,
+  "version": "0.0.0",
+  "description": "OurBox Product Family Monorepo validated as a GraphMD dataset in CI.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate:dataset": "node tools/validate-dataset.cjs",
+    "test": "npm run validate:dataset"
+  },
+  "devDependencies": {
+    "@graphmd/dataset": "0.x"
+  }
+}

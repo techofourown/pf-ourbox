@@ -1,3 +1,10 @@
+---
+typeId: docs_guide
+recordId: matchbox-docs-readme
+parent: model:matchbox
+fields:
+  scope: matchbox
+---
 # OurBox Matchbox Documentation
 
 This directory contains documentation for the OurBox Matchbox hardware model.

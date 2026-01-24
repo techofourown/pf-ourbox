@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: tinderbox-rfc-0006-case-selection
+parent: model:tinderbox
+fields:
+  status: Draft
+  created: '2026-01-19'
+  updated: '2026-01-19'
+---
 # RFC-0006: Case / Enclosure Selection for OurBox Tinderbox
 
 **Status:** Draft  

@@ -1,3 +1,10 @@
+---
+typeId: system_requirements
+recordId: tinderbox-system-requirements
+parent: model:tinderbox
+fields:
+  modelIdentifier: TOO-OBX-TBX-01
+---
 # System Requirements — OurBox Tinderbox (TOO-OBX-TBX-01)
 
 OurBox Tinderbox is a desktop-class, always-on personal server intended to host many services (k3s pods) for a single user with low perceived latency.
