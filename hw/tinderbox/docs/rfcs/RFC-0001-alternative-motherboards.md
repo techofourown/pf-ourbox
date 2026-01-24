@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: tinderbox-rfc-0001-alternative-motherboards
+parent: model:tinderbox
+fields:
+  status: Draft
+  created: '2026-01-19'
+  updated: '2026-01-19'
+---
 # RFC-0001: Alternative Motherboards for OurBox Tinderbox
 
 **Status:** Draft  

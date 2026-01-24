@@ -1,3 +1,10 @@
+---
+typeId: product_family
+recordId: ourbox
+fields:
+  name: OurBox
+  notes: "Product family monorepo (hardware + software + images)."
+---
 # OurBox Product Family Monorepo
 
 This repository contains the complete product family for OurBox: hardware designs, software, and system images.
@@ -6,8 +13,8 @@ This repository contains the complete product family for OurBox: hardware design
 
 OurBox hardware is organized by model:
 
-- **[Matchbox](hw/matchbox/)** — Small-form-factor model
-- **[Tinderbox](hw/tinderbox/)** — Larger desktop-class model
+- **[Matchbox](hw/matchbox/)** — Small-form-factor model ([[model:matchbox]])
+- **[Tinderbox](hw/tinderbox/)** — Larger desktop-class model ([[model:tinderbox]])
 
 See [hw/README.md](hw/README.md) for details on the hardware family.
 

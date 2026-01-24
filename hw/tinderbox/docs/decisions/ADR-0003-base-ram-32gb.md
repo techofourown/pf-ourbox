@@ -1,3 +1,11 @@
+---
+typeId: adr
+recordId: tinderbox-adr-0003-base-ram-32gb
+parent: model:tinderbox
+fields:
+  status: Accepted
+  date: '2026-01-19'
+---
 # ADR-0003: Set OurBox Tinderbox Base Configuration RAM to 32 GB
 
 ## Status

@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: tinderbox-rfc-0005-sata-hdd-capacity
+parent: model:tinderbox
+fields:
+  status: Draft
+  created: '2026-01-19'
+  updated: '2026-01-19'
+---
 # RFC-0005: SATA HDD Capacity and Model Options
 
 **Status:** Draft  

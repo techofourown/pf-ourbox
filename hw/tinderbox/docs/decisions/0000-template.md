@@ -1,3 +1,10 @@
+---
+typeId: adr
+recordId: tinderbox-adr-0000-template
+parent: model:tinderbox
+fields:
+  status: Template
+---
 # ADR-XXXX: [Title in Active Voice]
 
 ## Status

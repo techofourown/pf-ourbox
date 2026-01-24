@@ -1,3 +1,10 @@
+---
+typeId: adr
+recordId: matchbox-adr-0001-primary-motherboard-raspberry-pi-5-16gb
+parent: model:matchbox
+fields:
+  status: Accepted
+---
 # ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard for OurBox Matchbox
 
 ## Status
@@ -19,7 +26,7 @@ Both can support the headless, appliance-style experience we want. The primary d
 
 We also want to keep the enclosure and mounting strategy stable even if we later switch compute approaches. That implies a "mechanical contract" around board mounting holes / standoffs and board-to-HAT stacking assumptions.
 
-An RFC is being written to capture a contingency path using **CM5 + a Pi-mechanically-compatible carrier board** if we encounter supply-chain constraints or need module-specific features. See: **RFC-0001**.
+An RFC is being written to capture a contingency path using **CM5 + a Pi-mechanically-compatible carrier board** if we encounter supply-chain constraints or need module-specific features. See: [[rfc:matchbox-rfc-0001-cm5-carrier-board-fallback]].
 
 ## Decision
 
