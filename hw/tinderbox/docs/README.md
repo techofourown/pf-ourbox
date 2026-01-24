@@ -1,3 +1,10 @@
+---
+typeId: docs_guide
+recordId: tinderbox-docs-readme
+parent: model:tinderbox
+fields:
+  scope: tinderbox
+---
 # OurBox Tinderbox Documentation
 
 This directory contains documentation for the OurBox Tinderbox hardware model.

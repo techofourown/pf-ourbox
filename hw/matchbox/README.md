@@ -1,3 +1,12 @@
+---
+typeId: model
+recordId: matchbox
+parent: product_family:ourbox
+fields:
+  marketingName: OurBox Matchbox
+  modelIdentifier: TOO-OBX-MBX-01
+  baseConfigurationIdentifier: CFG-MBX-BASE-01
+---
 # OurBox Matchbox
 
 Hardware design and documentation for **OurBox Matchbox**, the small-form-factor model in the OurBox hardware family.
@@ -7,6 +16,8 @@ Hardware design and documentation for **OurBox Matchbox**, the small-form-factor
 - **Base configuration identifier:** `CFG-MBX-BASE-01`
 
 OurBox Matchbox is a small, always-on, self-hosted appliance that enables privacy-respecting applications (tasks, photos, messaging, portal UX) without relying on app stores, proprietary relay services, or ad-tech business models.
+
+Key records: [[system_requirements:matchbox-system-requirements]], [[bom:matchbox-bom]]
 
 ## What's in here
 

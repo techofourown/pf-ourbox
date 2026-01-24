@@ -1,3 +1,10 @@
+---
+typeId: docs_guide
+recordId: hw-readme
+parent: product_family:ourbox
+fields:
+  scope: hardware
+---
 # OurBox Hardware
 
 This directory contains hardware designs and documentation for the OurBox product family.
