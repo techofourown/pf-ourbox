@@ -1,3 +1,11 @@
+---
+typeId: adr
+recordId: tinderbox-adr-0001-primary-motherboard-msi-pro-b760m-p-ddr4
+parent: model:tinderbox
+fields:
+  status: Accepted
+  date: '2026-01-19'
+---
 # ADR-0001: Use MSI PRO B760M-P DDR4 as the Primary Motherboard for OurBox Tinderbox
 
 ## Status

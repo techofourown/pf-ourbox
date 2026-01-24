@@ -1,3 +1,11 @@
+---
+typeId: bom
+recordId: matchbox-bom
+parent: model:matchbox
+fields:
+  modelIdentifier: TOO-OBX-MBX-01
+  configurationIdentifier: CFG-MBX-BASE-01
+---
 # Bill of Materials — OurBox Matchbox (TOO-OBX-MBX-01)
 
 ## Primary (Flagship) Build — Raspberry Pi 5 Board

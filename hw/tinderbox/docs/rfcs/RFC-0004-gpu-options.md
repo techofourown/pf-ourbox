@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: tinderbox-rfc-0004-gpu-options
+parent: model:tinderbox
+fields:
+  status: Draft
+  created: '2026-01-19'
+  updated: '2026-01-19'
+---
 # RFC-0004: GPU Options for OurBox Tinderbox
 
 **Status:** Draft  
