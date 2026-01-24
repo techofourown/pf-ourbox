@@ -1,3 +1,12 @@
+---
+typeId: rfc
+recordId: matchbox-rfc-0001-cm5-carrier-board-fallback
+parent: model:matchbox
+fields:
+  status: Draft
+  created: '2026-01-16'
+  updated: '2026-01-16'
+---
 # RFC-0001: CM5 + Pi-Compatible Carrier Board as a Fallback Path for OurBox Matchbox
 
 **Status:** Draft  
@@ -160,3 +169,9 @@ A CM5 + carrier substitute is acceptable if:
 - [ADR-0001: Related decision](../decisions/ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
 - [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+
+## Wikilinks
+
+- [[adr:matchbox-adr-0001-primary-motherboard-raspberry-pi-5-16gb]]
+- [[system_requirements:matchbox-system-requirements]]
+- [[bom:matchbox-bom]]

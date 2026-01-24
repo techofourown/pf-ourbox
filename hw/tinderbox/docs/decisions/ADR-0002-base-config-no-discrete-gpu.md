@@ -1,3 +1,11 @@
+---
+typeId: adr
+recordId: tinderbox-adr-0002-base-config-no-discrete-gpu
+parent: model:tinderbox
+fields:
+  status: Accepted
+  date: '2026-01-19'
+---
 # ADR-0002: Ship OurBox Tinderbox Base Configuration Without a Discrete GPU
 
 ## Status

@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+jobs:
+  validate-graphmd-dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: FAIL-FAST PREFLIGHT — validator must exist + lockfile must be current
+        run: |
+          set -euo pipefail
+          REG='https://registry.npmjs.org'
+
+          test -f package-lock.json || {
+            echo "FATAL: package-lock.json is missing."
+            echo "Run: npm install && commit package-lock.json"
+            exit 1
+          }
+
+          RANGE=$(node -p "require('./package.json').devDependencies['@graphmd/dataset']")
+          echo "Declared @graphmd/dataset range: $RANGE"
+
+          LATEST=$(npm view "@graphmd/dataset@${RANGE}" version --registry="$REG" 2>/dev/null || true)
+          if [ -z "$LATEST" ]; then
+            echo "FATAL: @graphmd/dataset range '$RANGE' not resolvable on npm."
+            exit 1
+          fi
+          echo "Latest @graphmd/dataset satisfying range: $LATEST"
+
+          LOCKED=$(node -p "require('./package-lock.json').packages['node_modules/@graphmd/dataset'].version")
+          echo "Locked @graphmd/dataset in package-lock.json: $LOCKED"
+
+          if [ "$LOCKED" != "$LATEST" ]; then
+            echo "FATAL: validator is stale."
+            echo "Fix:"
+            echo "  npm install"
+            echo "  git add package-lock.json"
+            echo "  git commit -m \"chore: bump @graphmd/dataset validator\""
+            exit 1
+          fi
+
+          echo "OK: validator is published and lockfile is current."
+
+      - name: Install validator (deterministic)
+        run: npm ci
+
+      - name: Validate dataset with GraphMD
+        run: npm test
