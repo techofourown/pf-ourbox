@@ -4,7 +4,8 @@ recordId: matchbox-bom
 parent: model:matchbox
 fields:
   modelIdentifier: TOO-OBX-MBX-01
-  configurationIdentifier: CFG-MBX-BASE-01
+  skuIdentifier: SKU-MBX-BASE-001
+  trim: Base
 ---
 # Bill of Materials — OurBox Matchbox (TOO-OBX-MBX-01)
 

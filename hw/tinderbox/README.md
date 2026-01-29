@@ -5,7 +5,8 @@ parent: product_family:ourbox
 fields:
   marketingName: OurBox Tinderbox
   modelIdentifier: TOO-OBX-TBX-01
-  baseConfigurationIdentifier: CFG-TBX-BASE-01
+  defaultTrim: Base
+  trims: Base, Forge
 ---
 # OurBox Tinderbox
 
@@ -13,7 +14,7 @@ Hardware design and documentation for **OurBox Tinderbox**, the larger model in 
 
 - **Marketing name:** OurBox Tinderbox
 - **Model identifier:** `TOO-OBX-TBX-01`
-- **Base configuration identifier:** `CFG-TBX-BASE-01`
+- **Default trim:** Base
 
 OurBox Tinderbox is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a "wide" set of services (k3s pods) with low latency for a single user.
 

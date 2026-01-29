@@ -4,6 +4,8 @@ fields:
   fieldDefs:
     modelIdentifier:
       required: false
-    configurationIdentifier:
+    skuIdentifier:
+      required: false
+    trim:
       required: false
 ---

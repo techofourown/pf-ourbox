@@ -35,13 +35,23 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 - Matchbox: `TOO-OBX-MBX-01`
 - Tinderbox: `TOO-OBX-TBX-01`
 
-### Configuration Identifiers
+### Trims
+
+A trim is an intent/positioning label. Meaning varies by model:
+
+- **Base** — default trim for both models
+- **Harvest** — Matchbox trim (use case TBD)
+- **Forge** — Tinderbox trim (GPU-enabled)
+
+### SKU Identifiers
+
+SKU IDs pin a trim to an exact BOM and software load: `SKU-{MODEL}-{TRIM}-{SEQ}`
 
 Examples:
-- `CFG-MBX-BASE-01` — Matchbox base configuration
-- `CFG-MBX-HARVEST-01` — Matchbox with Harvest trim
-- `CFG-TBX-BASE-01` — Tinderbox base configuration
-- `CFG-TBX-FORGE-01` — Tinderbox with Forge trim (GPU-enabled)
+- `SKU-MBX-BASE-001` — Matchbox Base SKU
+- `SKU-MBX-HARVEST-001` — Matchbox Harvest SKU
+- `SKU-TBX-BASE-001` — Tinderbox Base SKU
+- `SKU-TBX-FORGE-001` — Tinderbox Forge SKU (GPU-enabled)
 
 ## Repository Structure
 

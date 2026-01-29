@@ -4,13 +4,14 @@ recordId: tinderbox-bom
 parent: model:tinderbox
 fields:
   modelIdentifier: TOO-OBX-TBX-01
-  configurationIdentifier: CFG-TBX-BASE-01
+  skuIdentifier: SKU-TBX-BASE-001
+  trim: Base
 ---
 # Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX-01)
 
-This BOM is the **baseline** for `CFG-TBX-BASE-01` (OurBox Tinderbox base configuration). Some items are intentionally TBD until the relevant RFCs are resolved.
+This BOM is the **baseline** for `SKU-TBX-BASE-001` (OurBox Tinderbox Base trim). Some items are intentionally TBD until the relevant RFCs are resolved.
 
-## Base Configuration — `CFG-TBX-BASE-01`
+## Base Configuration — `SKU-TBX-BASE-001`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|
@@ -26,5 +27,5 @@ This BOM is the **baseline** for `CFG-TBX-BASE-01` (OurBox Tinderbox base config
 
 ## Notes
 
-- “No GPU” is the base decision ([[adr:tinderbox-adr-0002-base-config-no-discrete-gpu]]). A future Forge trim may add a discrete GPU and will have its own configuration identifier.
+- “No GPU” is the base decision ([[adr:tinderbox-adr-0002-base-config-no-discrete-gpu]]). A future Forge trim may add a discrete GPU and will have its own SKU identifier.
 - The base storage topology assumes **NVMe for OS** and **2× SATA HDD RAID 0** for user data. RAID is implemented in Linux (software RAID), not BIOS RAID.

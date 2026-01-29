@@ -6,7 +6,9 @@ fields:
       required: true
     modelIdentifier:
       required: true
-    baseConfigurationIdentifier:
+    defaultTrim:
+      required: false
+    trims:
       required: false
     notes:
       required: false

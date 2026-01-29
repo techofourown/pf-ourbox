@@ -49,14 +49,22 @@ Full model identifiers follow the pattern: `TOO-OBX-{MODEL}-{REVISION}`
 - Matchbox: `TOO-OBX-MBX-01`
 - Tinderbox: `TOO-OBX-TBX-01`
 
-### Configuration Identifiers
+### Trims
 
-Configuration IDs are model-specific: `CFG-{MODEL}-{VARIANT}-{REVISION}`
+A trim is an intent/positioning label. Meaning varies by model:
+
+- **Base** — default trim for both models
+- **Harvest** — Matchbox trim (use case TBD)
+- **Forge** — Tinderbox trim (GPU-enabled)
+
+### SKU Identifiers
+
+SKU IDs pin a trim to an exact BOM and software load: `SKU-{MODEL}-{TRIM}-{SEQ}`
 
 Examples:
-- `CFG-MBX-BASE-01` — Matchbox base configuration
-- `CFG-TBX-BASE-01` — Tinderbox base configuration (32GB RAM, no GPU)
-- `CFG-TBX-FORGE-01` — Tinderbox with discrete GPU
+- `SKU-MBX-BASE-001` — Matchbox Base SKU
+- `SKU-TBX-BASE-001` — Tinderbox Base SKU (32GB RAM, no GPU)
+- `SKU-TBX-FORGE-001` — Tinderbox Forge SKU (discrete GPU)
 
 ## Documentation Structure
 
