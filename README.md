@@ -23,12 +23,12 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 
 ## Naming Conventions
 
-### Family → Model → Trim → Config/SKU
+### Family → Model → Trim → SKU (TOO-prefixed part numbers)
 
 - **Family:** OurBox
 - **Model:** Matchbox (`MBX`) / Tinderbox (`TBX`)
 - **Trim:** Optional intent label (e.g., Harvest / Forge)
-- **SKU / Config:** Exact BOM-level specification (RAM, storage, region, PSU)
+- **SKU / Part Number:** Exact BOM-level specification (RAM, storage, region, PSU) using `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 ### Model Identifiers
 
@@ -43,15 +43,15 @@ A trim is an intent/positioning label. Meaning varies by model:
 - **Harvest** — Matchbox trim (use case TBD)
 - **Forge** — Tinderbox trim (GPU-enabled)
 
-### SKU Identifiers
+### SKU / Part Numbers
 
-SKU IDs pin a trim to an exact BOM and software load: `SKU-{MODEL}-{TRIM}-{SEQ}`
+SKU/part numbers pin a trim to an exact BOM and software load: `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 Examples:
-- `SKU-MBX-BASE-001` — Matchbox Base SKU
-- `SKU-MBX-HARVEST-001` — Matchbox Harvest SKU
-- `SKU-TBX-BASE-001` — Tinderbox Base SKU
-- `SKU-TBX-FORGE-001` — Tinderbox Forge SKU (GPU-enabled)
+- `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
+- `TOO-OBX-MBX-HARVEST-001` — Matchbox Harvest SKU
+- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU
+- `TOO-OBX-TBX-FORGE-001` — Tinderbox Forge SKU (GPU-enabled)
 
 ## Repository Structure
 

@@ -39,7 +39,7 @@ We want to explore this without contaminating the base SKU with GPU-driven requi
 ### Scope
 
 - Base configuration ships with **no discrete GPU** (ADR-0002).
-- This RFC is for a potential future SKU (e.g., `SKU-TBX-FORGE-001`).
+- This RFC is for a potential future SKU (e.g., `TOO-OBX-TBX-FORGE-001`).
 
 ### Constraints to capture
 
