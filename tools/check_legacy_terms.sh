@@ -26,6 +26,18 @@ for term in "${LEGACY_TERMS[@]}"; do
     fi
 done
 
+if rg --quiet --glob='!tools/check_legacy_terms.sh' -e 'C[F]G-' .; then
+    echo "ERROR: Found legacy identifier prefix: C F G-"
+    rg --color=always -n --glob='!tools/check_legacy_terms.sh' -e 'C[F]G-' .
+    FOUND_LEGACY=1
+fi
+
+if rg --quiet --glob='!tools/check_legacy_terms.sh' -e 'S[K]U-' .; then
+    echo "ERROR: Found legacy identifier prefix: S K U-"
+    rg --color=always -n --glob='!tools/check_legacy_terms.sh' -e 'S[K]U-' .
+    FOUND_LEGACY=1
+fi
+
 if [ $FOUND_LEGACY -eq 1 ]; then
     echo ""
     echo "❌ Legacy terms found! Please update to use:"
@@ -33,6 +45,7 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
     echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - 'TOO-' part-number prefixes instead of legacy prefixes"
     exit 1
 fi
 
