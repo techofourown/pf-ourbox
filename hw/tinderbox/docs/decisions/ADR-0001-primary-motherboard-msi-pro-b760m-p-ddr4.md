@@ -31,7 +31,7 @@ An RFC is maintained to track alternative motherboards as supply, pricing, and a
 
 ## Decision
 
-We will use the following motherboard as the **primary motherboard** for the OurBox Tinderbox Base SKU (`TOO-OBX-TBX-BASE-001`):
+We will use the following motherboard as the **primary motherboard** for the OurBox Tinderbox Base SKU (`SKU-TBX-BASE-001`):
 
 - **Manufacturer:** MSI
 - **Model:** **PRO B760M-P DDR4**

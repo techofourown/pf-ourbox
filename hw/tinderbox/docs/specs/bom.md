@@ -4,14 +4,14 @@ recordId: tinderbox-bom
 parent: model:tinderbox
 fields:
   modelIdentifier: TOO-OBX-TBX-01
-  skuIdentifier: TOO-OBX-TBX-BASE-001
+  skuIdentifier: SKU-TBX-BASE-001
   trim: Base
 ---
 # Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX-01)
 
-This BOM is the **baseline** for `TOO-OBX-TBX-BASE-001` (OurBox Tinderbox Base trim). Some items are intentionally TBD until the relevant RFCs are resolved.
+This BOM is the **baseline** for `SKU-TBX-BASE-001` (OurBox Tinderbox Base trim). Some items are intentionally TBD until the relevant RFCs are resolved.
 
-## Base Configuration — `TOO-OBX-TBX-BASE-001`
+## Base Configuration — `SKU-TBX-BASE-001`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|
