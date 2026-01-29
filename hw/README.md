@@ -59,12 +59,12 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 ### SKU Identifiers
 
-SKU IDs pin a trim to an exact BOM and software load: `SKU-{MODEL}-{TRIM}-{SEQ}`
+SKU IDs pin a trim to an exact BOM and software load: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}`
 
 Examples:
-- `SKU-MBX-BASE-001` — Matchbox Base SKU
-- `SKU-TBX-BASE-001` — Tinderbox Base SKU (32GB RAM, no GPU)
-- `SKU-TBX-FORGE-001` — Tinderbox Forge SKU (discrete GPU)
+- `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
+- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU (32GB RAM, no GPU)
+- `TOO-OBX-TBX-FORGE-001` — Tinderbox Forge SKU (discrete GPU)
 
 ## Documentation Structure
 

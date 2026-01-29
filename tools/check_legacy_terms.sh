@@ -4,6 +4,9 @@
 
 set -e
 
+CFG_PREFIX="CFG""-"
+SKU_PREFIX="SKU""-"
+
 LEGACY_TERMS=(
     "OurBox Mini"
     "OurBox Desk"
@@ -12,6 +15,8 @@ LEGACY_TERMS=(
     "img-ourbox-mini-rpi"
     "TOO-OBX-MINI-"
     "TOO-OBX-DESK-"
+    "$CFG_PREFIX"
+    "$SKU_PREFIX"
 )
 
 FOUND_LEGACY=0
@@ -33,6 +38,7 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
     echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - 'TOO-' prefixes instead of CFG/SKU identifier prefixes"
     exit 1
 fi
 

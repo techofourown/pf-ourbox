@@ -22,7 +22,7 @@ At the same time, we want to keep BOM cost, thermals, and complexity controlled.
 
 ## Decision
 
-The base configuration (`SKU-TBX-BASE-001`) will include **32 GB of DDR4 RAM**.
+The base configuration (`TOO-OBX-TBX-BASE-001`) will include **32 GB of DDR4 RAM**.
 
 - Default assumption for now: **1×32 GB UDIMM**, leaving a second slot free if the chosen board supports it.
 - The exact RAM SKU (speed, timings, vendor) is not decided in this ADR and will be captured in an RFC and later BOM update.
