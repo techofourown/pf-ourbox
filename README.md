@@ -26,9 +26,9 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 ### Family → Model → Trim → SKU (TOO-prefixed part numbers)
 
 - **Family:** OurBox
-- **Model:** Matchbox (`MBX`) / Tinderbox (`TBX`)
+- **Model:** Matchbox (`MBX`) / Tinderbox (`TBX`), representing a size/form-factor class
 - **Trim:** Optional intent label (e.g., Harvest / Forge)
-- **SKU / Part Number:** Exact BOM-level specification (RAM, storage, region, PSU) using `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
+- **SKU / Part Number:** Exact BOM + software build (including color, storage, vendor swaps, region bundles) using `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 ### Model Identifiers
 
@@ -45,7 +45,7 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 ### SKU / Part Numbers
 
-SKU/part numbers pin a trim to an exact BOM and software load: `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
+SKU/part numbers pin a trim to an exact BOM and software load (including enclosure colors, storage capacity, vendor substitutions, and region bundles): `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 Examples:
 - `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU

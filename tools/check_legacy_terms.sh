@@ -12,6 +12,8 @@ LEGACY_TERMS=(
     "img-ourbox-mini-rpi"
     "TOO-OBX-MINI-"
     "TOO-OBX-DESK-"
+    "S[K]U-"
+    "C[F]G-"
 )
 
 FOUND_LEGACY=0
@@ -33,6 +35,7 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
     echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - Only TOO-prefixed part numbers (no legacy SKU or CFG prefixes)"
     exit 1
 fi
 

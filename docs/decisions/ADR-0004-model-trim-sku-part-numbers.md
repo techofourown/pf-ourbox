@@ -71,7 +71,7 @@ SKU identifiers are treated as **manufacturer part numbers** and must be globall
 - `<SEQ>` is a three-digit sequence number (`001`, `002`, …) that uniquely identifies a specific BOM/software build within a model+trim
 
 **Critical rule (normative):** SKU/part numbers MUST begin with `TOO-`.  
-Do not use identifiers that begin with `SKU-` or `CFG-`.
+Do not use identifiers that begin with legacy SKU or CFG prefixes.
 
 ## Operational Rules (Normative)
 
@@ -87,7 +87,7 @@ Do not use identifiers that begin with `SKU-` or `CFG-`.
    - enclosure material/color,
    - factory programming/software load differences.
 
-Examples of SKU-level differences (explicitly SKU, not trim):
+Examples of SKU level differences (explicitly SKU, not trim):
 - red vs blue enclosure
 - 1 TB vs 2 TB storage
 - vendor swap for an equivalent component where traceability matters

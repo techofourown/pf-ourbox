@@ -38,9 +38,9 @@ The Tinderbox is designed for users who need more compute, memory, and storage c
 The OurBox naming system follows this hierarchy:
 
 1. **Family:** OurBox (the product line)
-2. **Model:** Matchbox (`MBX`) or Tinderbox (`TBX`)
+2. **Model:** Matchbox (`MBX`) or Tinderbox (`TBX`), representing a size/form-factor class
 3. **Trim:** Optional marketing/intent label (e.g., Harvest, Forge)
-4. **SKU / Part Number:** Specific BOM-level configuration using `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
+4. **SKU / Part Number:** Specific BOM + software build (including colors, storage capacity, vendor swaps, region bundles) using `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 ### Model Identifiers
 
@@ -59,7 +59,7 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 ### SKU / Part Numbers
 
-SKU/part numbers pin a trim to an exact BOM and software load: `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
+SKU/part numbers pin a trim to an exact BOM and software load (including enclosure colors, storage capacity, vendor substitutions, and region bundles): `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>`
 
 Examples:
 - `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU

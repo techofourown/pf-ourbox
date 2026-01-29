@@ -68,7 +68,7 @@ Three-tier hierarchy: **Model → Trim → SKU**
 
 - **Model IDs**: `TOO-<FAM>-{MODEL}-{GEN}` (e.g., `TOO-OBX-MBX-01`)
 - **Trims**: Intent labels per model (Base, Harvest, Forge for OurBox; each product family defines its own).
-- **SKU / part numbers**: `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>` (e.g., `TOO-OBX-MBX-BASE-001`). All SKU/part numbers MUST start with `TOO-`; `SKU-` and `CFG-` prefixes are banned.
+- **SKU / part numbers**: `TOO-<FAM>-<MODEL>-<TRIM>-<SEQ>` (e.g., `TOO-OBX-MBX-BASE-001`). All SKU/part numbers MUST start with `TOO-`; legacy SKU or CFG prefixes are banned.
 - **Legacy names are banned**: Never use "OurBox Mini", "OurBox Desk", `TOO-OBX-MINI-`, or `TOO-OBX-DESK-`. Use Matchbox/Tinderbox. The legacy term checker will catch violations.
 
 ## CI Pipeline
