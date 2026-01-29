@@ -13,8 +13,11 @@ This repository contains the complete product family for OurBox: hardware design
 
 OurBox hardware is organized by model:
 
-- **[Matchbox](hw/matchbox/)** — Small-form-factor model ([[model:matchbox]])
-- **[Tinderbox](hw/tinderbox/)** — Larger desktop-class model ([[model:tinderbox]])
+- **[Matchbox](hw/matchbox/)** — Raspberry Pi Bolt Pattern model ([[model:matchbox]])
+- **[Tinderbox](hw/tinderbox/)** — Micro-ATX model ([[model:tinderbox]])
+- **Firebox** — Stub name reserved for a future form factor
+- **Cinderbox** — Stub name reserved for a future form factor
+- **Woodbox** — Stub name reserved for a future form factor
 
 See [hw/README.md](hw/README.md) for details on the hardware family.
 
