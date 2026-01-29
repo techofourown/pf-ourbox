@@ -14,6 +14,11 @@ LEGACY_TERMS=(
     "TOO-OBX-DESK-"
 )
 
+LEGACY_PREFIXES=(
+    "CFG"
+    "SKU"
+)
+
 FOUND_LEGACY=0
 
 echo "Checking for legacy terms..."
@@ -26,6 +31,15 @@ for term in "${LEGACY_TERMS[@]}"; do
     fi
 done
 
+for prefix in "${LEGACY_PREFIXES[@]}"; do
+    term="${prefix}-"
+    if rg --quiet --glob='!tools/check_legacy_terms.sh' "$term" .; then
+        echo "ERROR: Found legacy identifier prefix: ${prefix}"
+        rg --color=always -n --glob='!tools/check_legacy_terms.sh' "$term" .
+        FOUND_LEGACY=1
+    fi
+done
+
 if [ $FOUND_LEGACY -eq 1 ]; then
     echo ""
     echo "❌ Legacy terms found! Please update to use:"
@@ -33,6 +47,7 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
     echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - 'TOO-' prefixed SKU part numbers for all buildable hardware identifiers"
     exit 1
 fi
 
