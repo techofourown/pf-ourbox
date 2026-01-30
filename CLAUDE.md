@@ -68,9 +68,9 @@ Three-tier hierarchy: **Model → Trim → SKU**
 
 - **Model IDs**: `TOO-OBX-{MODEL}-{REV}` (e.g., `TOO-OBX-MBX-01`)
 - **Trims**: Intent labels per model (Base, Harvest, Forge). Not encoded in a formal ID; referenced by name.
-- **SKU IDs**: `SKU-{MODEL}-{TRIM}-{SEQ}` (e.g., `SKU-MBX-BASE-001`). Pins a trim to an exact BOM + software load.
+- **SKU IDs**: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}` (e.g., `TOO-OBX-MBX-BASE-001`). Pins a trim to an exact BOM + software load.
 - **Legacy names are banned**: Never use "OurBox Mini", "OurBox Desk", `TOO-OBX-MINI-`, or `TOO-OBX-DESK-`. Use Matchbox/Tinderbox. The legacy term checker will catch violations.
-- **`CFG-` identifiers are retired**: Use `SKU-` identifiers instead.
+- **CFG/SKU prefixed identifiers are banned**: Only `TOO-` prefixed part numbers are valid.
 
 ## CI Pipeline
 

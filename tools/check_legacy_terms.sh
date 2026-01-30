@@ -14,6 +14,11 @@ LEGACY_TERMS=(
     "TOO-OBX-DESK-"
 )
 
+LEGACY_PREFIXES=(
+    "CFG"
+    "SKU"
+)
+
 FOUND_LEGACY=0
 
 echo "Checking for legacy terms..."
@@ -26,6 +31,14 @@ for term in "${LEGACY_TERMS[@]}"; do
     fi
 done
 
+for prefix in "${LEGACY_PREFIXES[@]}"; do
+    if rg --quiet --glob='!tools/check_legacy_terms.sh' "${prefix}-" .; then
+        echo "ERROR: Found legacy prefix: ${prefix}-"
+        rg --color=always -n --glob='!tools/check_legacy_terms.sh' "${prefix}-" .
+        FOUND_LEGACY=1
+    fi
+done
+
 if [ $FOUND_LEGACY -eq 1 ]; then
     echo ""
     echo "❌ Legacy terms found! Please update to use:"
@@ -33,6 +46,7 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
     echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - 'TOO-' prefixed part numbers instead of CFG or SKU prefixed identifiers"
     exit 1
 fi
 
