@@ -56,7 +56,7 @@ Approved OurBox model names (normative vocabulary):
 | Matchbox | `MBX` | Raspberry Pi-class mounting / small-form-factor appliance |
 | Tinderbox | `TBX` | Jetson SoM-based edge AI appliance (formerly Cinderbox; Cinderbox name now reserved) |
 | Woodbox | `WBX` | Micro-ATX class enclosure / desktop-class server |
-| Cinderbox | `CBX` | Reserved name for Jetson-based systems (kept for reference; not current shipping token) |
+| Cinderbox | `CBX` | Reserved name for Raspberry Pi CM5-based systems (kept for reference; not current shipping token) |
 
 ### 3) OurBox model identifiers
 
@@ -67,10 +67,8 @@ OurBox model identifiers follow the org-wide format:
 Current instantiated model IDs:
 - OurBox Matchbox: `TOO-OBX-MBX-01`
 - OurBox Tinderbox: `TOO-OBX-TBX-01`
+- OurBox Cinderbox: `TOO-OBX-CBX-01`
 - OurBox Woodbox: `TOO-OBX-WBX-01`
-
-Manufacturing revisions are tracked as `Rev A`, `Rev B`, … and do not change the model identifier unless
-a generation bump is warranted.
 
 ### 4) OurBox trims are intent labels (not spec sheets)
 
