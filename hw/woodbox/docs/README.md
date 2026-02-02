@@ -1,13 +1,13 @@
 ---
 typeId: docs_guide
-recordId: tinderbox-docs-readme
-parent: model:tinderbox
+recordId: woodbox-docs-readme
+parent: model:woodbox
 fields:
-  scope: tinderbox
+  scope: woodbox
 ---
-# OurBox Tinderbox Documentation
+# OurBox Woodbox Documentation
 
-This directory contains documentation for the OurBox Tinderbox hardware model.
+This directory contains documentation for the OurBox Woodbox hardware model.
 
 ## Directory Structure
 
@@ -17,8 +17,8 @@ This directory contains documentation for the OurBox Tinderbox hardware model.
 
 ## Model Information
 
-- **Model:** OurBox Tinderbox
-- **Model ID:** `TOO-OBX-TBX-01`
+- **Model:** OurBox Woodbox
+- **Model ID:** `TOO-OBX-WBX-01`
 - **Form Factor:** Desktop tower (Micro-ATX)
 - **Primary Motherboard:** MSI PRO B760M-P DDR4
 

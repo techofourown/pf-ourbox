@@ -9,7 +9,7 @@ A product family monorepo for **OurBox** hardware, structured as a **GraphMD dat
 Three hardware models exist:
 - **Matchbox** (`TOO-OBX-MBX-01`) — Raspberry Pi 5 small-form-factor server
 - **Cinderbox** (`TOO-OBX-CBX-01`) — Jetson Orin Nano/NX SoM-based edge AI appliance
-- **Tinderbox** (`TOO-OBX-TBX-01`) — Micro-ATX desktop-class server
+- **Woodbox** (`TOO-OBX-WBX-01`) — Micro-ATX desktop-class server
 
 ## Commands
 
@@ -71,7 +71,7 @@ Three-tier hierarchy: **Model → Trim → SKU**
 * **Trims**: Intent labels per model (Base, Harvest, Forge). Not encoded in a formal ID; referenced by name.
 * **SKU IDs**: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}` (e.g., `TOO-OBX-MBX-BASE-001`). Pins a trim to an exact BOM + software load.
 * **Legacy names are banned**: Never use the deprecated Mini/Desk model names or the old
-  MINI/DESK part-number prefixes. Use Matchbox/Cinderbox/Tinderbox and the MBX/CBX/TBX
+  MINI/DESK part-number prefixes. Use Matchbox/Cinderbox/Woodbox and the MBX/CBX/WBX
   prefixes instead. The legacy term checker will catch violations.
 * **CFG/SKU prefixed identifiers are banned**: Only `TOO-` prefixed part numbers are valid.
 

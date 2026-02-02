@@ -42,7 +42,7 @@ OurBox marketing names use:
 Examples:
 - OurBox Matchbox
 - OurBox Matchbox Harvest
-- OurBox Tinderbox Forge
+- OurBox Woodbox Forge
 
 ### 2) OurBox models are size/form-factor classes (physical contracts)
 
@@ -54,12 +54,9 @@ Approved OurBox model names (normative vocabulary):
 | Model | Model Token | Physical contract (normative intent) |
 |---|---|---|
 | Matchbox | `MBX` | Raspberry Pi-class mounting / small-form-factor appliance |
-| Firebox | `FBX` | Reserved: small PC-class form factor (instantiate with a concrete mount pattern when introduced) |
-| Tinderbox | `TBX` | Micro-ATX class enclosure / desktop-class server |
-| Woodbox | `WBX` | Reserved: larger enclosure class optimized for expansion/storage (instantiate when introduced) |
-
-**Note:** Firebox and Woodbox are reserved model names. They are not “shipping models” until they have
-their own model records and supporting specs/ADRs.
+| Cinderbox | `CBX` | Reserved: small PC-class form factor (instantiate with a concrete mount pattern when introduced) |
+| Woodbox | `WBX` | Micro-ATX class enclosure / desktop-class server |
+| Tinderboxc | `TBX` | Reserved: larger enclosure class optimized for expansion/storage (instantiate when introduced) |
 
 ### 3) OurBox model identifiers
 
@@ -70,11 +67,8 @@ OurBox model identifiers follow the org-wide format:
 Current instantiated model IDs:
 - OurBox Matchbox: `TOO-OBX-MBX-01`
 - OurBox Tinderbox: `TOO-OBX-TBX-01`
-
-Reserved (not yet instantiated, but tokens are reserved):
-- OurBox Firebox: `TOO-OBX-FBX-01` (reserved)
-- OurBox Cinderbox: `TOO-OBX-CBX-01` (reserved)
-- OurBox Woodbox: `TOO-OBX-WBX-01` (reserved)
+- OurBox Cinderbox: `TOO-OBX-CBX-01`
+- OurBox Woodbox: `TOO-OBX-WBX-01`
 
 Manufacturing revisions are tracked as `Rev A`, `Rev B`, … and do not change the model identifier unless
 a generation bump is warranted.
@@ -104,8 +98,8 @@ with `TOO-`.
 Examples:
 - Matchbox Base: `TOO-OBX-MBX-BASE-001`
 - Matchbox Harvest: `TOO-OBX-MBX-HARVEST-001`
-- Tinderbox Base: `TOO-OBX-TBX-BASE-001`
-- Tinderbox Forge: `TOO-OBX-TBX-FORGE-001`
+- Woodbox Base: `TOO-OBX-WBX-BASE-001`
+- Woodbox Forge: `TOO-OBX-WBX-FORGE-001`
 
 SKU sequencing rules (normative):
 - Increment `<SEQ>` for any BOM or software-load delta that matters to buildability, traceability,

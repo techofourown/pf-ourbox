@@ -1,7 +1,7 @@
 ---
 typeId: adr
-recordId: tinderbox-adr-0004-data-storage-2x-sata-raid0
-parent: model:tinderbox
+recordId: woodbox-adr-0004-data-storage-2x-sata-raid0
+parent: model:woodbox
 fields:
   status: Accepted
   date: '2026-01-19'
@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Tinderbox needs a high-capacity user-data volume without making the OS drive huge or expensive.
+OurBox Woodbox needs a high-capacity user-data volume without making the OS drive huge or expensive.
 
 The design intent is:
 - OS + system state on a dedicated NVMe SSD,
@@ -28,7 +28,7 @@ Because this is a Linux-first product, we prefer a RAID implementation that does
 
 ## Decision
 
-The base configuration (`TOO-OBX-TBX-BASE-001`) will include:
+The base configuration (`TOO-OBX-WBX-BASE-001`) will include:
 - **2× SATA HDDs** for user data, and
 - the supported user-data volume will be configured as **RAID 0 using Linux software RAID**.
 
@@ -38,7 +38,7 @@ This ADR does not lock the HDD capacity or vendor/model.
 
 - Keeps the OS drive small and fast (NVMe) while delivering large, cost-effective bulk storage on HDDs.
 - Linux software RAID is observable, scriptable, and portable across motherboards.
-- RAID 0 matches the "capacity-first" goal for the base Tinderbox unit, with backups handled at a higher layer.
+- RAID 0 matches the "capacity-first" goal for the base Woodbox unit, with backups handled at a higher layer.
 
 ## Consequences
 

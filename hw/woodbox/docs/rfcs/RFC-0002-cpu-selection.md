@@ -1,13 +1,13 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0002-cpu-selection
-parent: model:tinderbox
+recordId: woodbox-rfc-0002-cpu-selection
+parent: model:woodbox
 fields:
   status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
-# RFC-0002: CPU Selection for OurBox Tinderbox
+# RFC-0002: CPU Selection for OurBox Woodbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores CPU options and selection criteria for OurBox Tinderbox (TOO-OBX-TBX-01), without committing to a specific CPU SKU yet.
+This RFC explores CPU options and selection criteria for OurBox Woodbox (TOO-OBX-WBX-01), without committing to a specific CPU SKU yet.
 
 ## Why
 

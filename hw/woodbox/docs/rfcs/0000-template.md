@@ -1,7 +1,7 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0000-template
-parent: model:tinderbox
+recordId: woodbox-rfc-0000-template
+parent: model:woodbox
 fields:
   status: Template
 ---

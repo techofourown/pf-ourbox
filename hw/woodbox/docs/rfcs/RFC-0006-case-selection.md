@@ -1,13 +1,13 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0006-case-selection
-parent: model:tinderbox
+recordId: woodbox-rfc-0006-case-selection
+parent: model:woodbox
 fields:
   status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
-# RFC-0006: Case / Enclosure Selection for OurBox Tinderbox
+# RFC-0006: Case / Enclosure Selection for OurBox Woodbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores enclosure options for the OurBox Tinderbox form factor.
+This RFC explores enclosure options for the OurBox Woodbox form factor.
 
 We have not chosen a case yet. This RFC exists to capture requirements, candidate enclosures, and the trade-offs that matter for a quiet always-on appliance.
 
@@ -26,7 +26,7 @@ We have not chosen a case yet. This RFC exists to capture requirements, candidat
 The case drives:
 - thermals and acoustics,
 - serviceability and assembly time,
-- physical footprint (Tinderbox form factor),
+- physical footprint (Woodbox form factor),
 - drive mounting and vibration isolation,
 - and (optionally) GPU clearance for a future Forge trim.
 
@@ -62,14 +62,14 @@ The case drives:
 ## Open Questions
 
 1. Do we want one case that supports both base and future GPU trims?
-2. What is the target external volume for "Tinderbox" vs "Tower" in our naming scheme?
+2. What is the target external volume for "Woodbox" vs "Tower" in our naming scheme?
 3. Are we optimizing for aesthetics (consumer) or simplicity (manufacturing)?
 
 ## Next Steps
 
 - Pick 3–5 candidate cases and compare dimensions, drive mounting, and airflow.
 - Prototype-fit the motherboard + two HDDs + cabling.
-- If we choose a case, write an ADR: “ADR-XXXX: Select <Case> for OurBox Tinderbox”.
+- If we choose a case, write an ADR: “ADR-XXXX: Select <Case> for OurBox Woodbox”.
 
 ## References
 

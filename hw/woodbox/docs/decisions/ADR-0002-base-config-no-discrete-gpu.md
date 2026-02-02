@@ -1,12 +1,12 @@
 ---
 typeId: adr
-recordId: tinderbox-adr-0002-base-config-no-discrete-gpu
-parent: model:tinderbox
+recordId: woodbox-adr-0002-base-config-no-discrete-gpu
+parent: model:woodbox
 fields:
   status: Accepted
   date: '2026-01-19'
 ---
-# ADR-0002: Ship OurBox Tinderbox Base Configuration Without a Discrete GPU
+# ADR-0002: Ship OurBox Woodbox Base Configuration Without a Discrete GPU
 
 ## Status
 Accepted
@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Tinderbox is intended to be a home/office friendly appliance optimized for “service capacity” (many always-on pods) rather than peak performance.
+OurBox Woodbox is intended to be a home/office friendly appliance optimized for “service capacity” (many always-on pods) rather than peak performance.
 
 A discrete GPU introduces major complexity and cost:
 - higher power supply requirements,
@@ -28,10 +28,10 @@ We still want to keep a path open for GPU-enabled trims (e.g., an “Forge” co
 
 ## Decision
 
-The **base configuration** (`TOO-OBX-TBX-BASE-001`) of OurBox Tinderbox will ship with **no discrete GPU** installed.
+The **base configuration** (`TOO-OBX-WBX-BASE-001`) of OurBox Woodbox will ship with **no discrete GPU** installed.
 
 - The motherboard must still provide a PCIe x16 physical slot so a future configuration can add a GPU.
-- Any GPU-enabled configuration will be introduced via an RFC followed by a dedicated ADR and a separate SKU identifier (e.g., `TOO-OBX-TBX-FORGE-001`).
+- Any GPU-enabled configuration will be introduced via an RFC followed by a dedicated ADR and a separate SKU identifier (e.g., `TOO-OBX-WBX-FORGE-001`).
 
 ## Rationale
 
@@ -55,4 +55,4 @@ The **base configuration** (`TOO-OBX-TBX-BASE-001`) of OurBox Tinderbox will shi
 ## References
 - [System Requirements](../specs/system-requirements.md)
 - [Bill of Materials](../specs/bom.md)
-- [RFC-0004: GPU Options for OurBox Tinderbox](../rfcs/RFC-0004-gpu-options.md)
+- [RFC-0004: GPU Options for OurBox Woodbox](../rfcs/RFC-0004-gpu-options.md)

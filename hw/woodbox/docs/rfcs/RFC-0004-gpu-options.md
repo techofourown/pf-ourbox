@@ -1,13 +1,13 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0004-gpu-options
-parent: model:tinderbox
+recordId: woodbox-rfc-0004-gpu-options
+parent: model:woodbox
 fields:
   status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
-# RFC-0004: GPU Options for OurBox Tinderbox
+# RFC-0004: GPU Options for OurBox Woodbox
 
 **Status:** Draft  
 **Created:** 2026-01-19  
@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores whether (and how) OurBox Tinderbox should support an optional discrete GPU configuration (a future Forge trim), and what constraints that would impose on the motherboard, power supply, and case.
+This RFC explores whether (and how) OurBox Woodbox should support an optional discrete GPU configuration (a future Forge trim), and what constraints that would impose on the motherboard, power supply, and case.
 
 ## Why
 
@@ -39,7 +39,7 @@ We want to explore this without contaminating the base SKU with GPU-driven requi
 ### Scope
 
 - Base configuration ships with **no discrete GPU** (ADR-0002).
-- This RFC is for a potential future SKU (e.g., `TOO-OBX-TBX-FORGE-001`).
+- This RFC is for a potential future SKU (e.g., `TOO-OBX-WBX-FORGE-001`).
 
 ### Constraints to capture
 

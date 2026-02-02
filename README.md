@@ -15,9 +15,9 @@ OurBox hardware is organized by model:
 
 - **[Matchbox](hw/matchbox/)** — Raspberry Pi Bolt Pattern model ([[model:matchbox]])
 - **[Cinderbox](hw/cinderbox/)** — Jetson Orin Nano/NX (SoM) model ([[model:cinderbox]])
-- **[Tinderbox](hw/tinderbox/)** — Micro-ATX model ([[model:tinderbox]])
-- **Firebox** — Stub name reserved for a future form factor
-- **Woodbox** — Stub name reserved for a future form factor
+- **[Woodbox](hw/woodbox/)** — Micro-ATX model ([[model:woodbox]])
+- **[Tinderbox]** — Stub name reserved for a future form factor
+
 
 See [hw/README.md](hw/README.md) for details on the hardware family.
 
@@ -26,7 +26,7 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 ### Family → Model → Trim → SKU
 
 - **Family:** OurBox
-- **Model:** Matchbox (`MBX`) / Cinderbox (`CBX`) / Tinderbox (`TBX`) — size/form-factor class
+- **Model:** Matchbox (`MBX`) / Cinderbox (`CBX`) / Woodbox (`WBX`) — size/form-factor class
 - **Trim:** Optional intent label (e.g., Harvest / Forge)
 - **SKU:** Exact BOM and software build, including color/capacity/vendor differences
 
@@ -34,7 +34,7 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 
 - Matchbox: `TOO-OBX-MBX-01`
 - Cinderbox: `TOO-OBX-CBX-01`
-- Tinderbox: `TOO-OBX-TBX-01`
+- Woodbox: `TOO-OBX-WBX-01`
 
 ### Trims
 
@@ -42,7 +42,7 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 - **Base** — default trim for all models
 - **Harvest** — Matchbox trim (use case TBD)
-- **Forge** — Tinderbox trim (GPU-enabled)
+- **Forge** — Woodbox trim (GPU-enabled)
 
 ### SKU Identifiers
 
@@ -52,8 +52,8 @@ Examples:
 - `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
 - `TOO-OBX-MBX-HARVEST-001` — Matchbox Harvest SKU
 - `TOO-OBX-CBX-BASE-001` — Cinderbox Base SKU
-- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU
-- `TOO-OBX-TBX-FORGE-001` — Tinderbox Forge SKU (GPU-enabled)
+- `TOO-OBX-WBX-BASE-001` — Woodbox Base SKU
+- `TOO-OBX-WBX-FORGE-001` — Woodbox Forge SKU (GPU-enabled)
 
 ## Repository Structure
 
@@ -63,7 +63,7 @@ pf-ourbox/
 ├── hw/              # Hardware designs and documentation
 │   ├── matchbox/    # Matchbox model
 │   ├── cinderbox/   # Cinderbox model
-│   └── tinderbox/   # Tinderbox model
+│   └── woodbox/   # Woodbox model
 └── tools/           # Development and validation tools
 
 ```
@@ -78,4 +78,4 @@ Each model directory contains:
 Start with the model-specific README in:
 - `hw/matchbox/`
 - `hw/cinderbox/`
-- `hw/tinderbox/`
+- `hw/woodbox/`

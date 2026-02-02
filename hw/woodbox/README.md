@@ -1,24 +1,24 @@
 ---
 typeId: model
-recordId: tinderbox
+recordId: woodbox
 parent: product_family:ourbox
 fields:
-  marketingName: OurBox Tinderbox
-  modelIdentifier: TOO-OBX-TBX-01
+  marketingName: OurBox Woodbox
+  modelIdentifier: TOO-OBX-WBX-01
   defaultTrim: Base
   trims: Base, Forge
 ---
-# OurBox Tinderbox
+# OurBox Woodbox
 
-Hardware design and documentation for **OurBox Tinderbox**, the larger model in the OurBox hardware family.
+Hardware design and documentation for **OurBox Woodbox**, the larger model in the OurBox hardware family.
 
-- **Marketing name:** OurBox Tinderbox
-- **Model identifier:** `TOO-OBX-TBX-01`
+- **Marketing name:** OurBox Woodbox
+- **Model identifier:** `TOO-OBX-WBX-01`
 - **Default trim:** Base
 
-OurBox Tinderbox is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a "wide" set of services (k3s pods) with low latency for a single user.
+OurBox Woodbox is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a "wide" set of services (k3s pods) with low latency for a single user.
 
-Key records: [[system_requirements:tinderbox-system-requirements]], [[bom:tinderbox-bom]]
+Key records: [[system_requirements:woodbox-system-requirements]], [[bom:woodbox-bom]]
 
 ## What’s in here
 
@@ -42,4 +42,4 @@ See the ADRs under `docs/decisions/` for rationale and consequences.
 
 ## Status
 
-This is the starting point ("beginning") of the OurBox Tinderbox hardware track. Expect lots of TBDs while we explore CPUs, RAM SKUs, SATA drive capacity, and enclosure options.
+This is the starting point ("beginning") of the OurBox Woodbox hardware track. Expect lots of TBDs while we explore CPUs, RAM SKUs, SATA drive capacity, and enclosure options.

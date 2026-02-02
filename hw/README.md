@@ -31,14 +31,14 @@ The Matchbox is designed to be a small, quiet, always-on appliance that can run 
 
 Cinderbox is designed around a Jetson SoM and a consumer-friendly carrier board, with **two NVMe SSDs** for a clean “OS vs user data” storage split.
 
-### [Tinderbox](tinderbox/) — Desktop-Class Model
+### [Woodbox](woodbox/) — Desktop-Class Model
 
-- **Model ID:** `TOO-OBX-TBX-01`
+- **Model ID:** `TOO-OBX-WBX-01`
 - **Form factor:** Desktop tower (Micro-ATX)
 - **Primary motherboard:** MSI PRO B760M-P DDR4
 - **Target use:** High-capacity service host
 
-The Tinderbox is designed for users who need more compute, memory, and storage capacity to run a "wide" set of services concurrently.
+The Woodbox is designed for users who need more compute, memory, and storage capacity to run a "wide" set of services concurrently.
 
 ## Naming Hierarchy
 
@@ -47,7 +47,7 @@ The Tinderbox is designed for users who need more compute, memory, and storage c
 The OurBox naming system follows this hierarchy:
 
 1. **Family:** OurBox (the product line)
-2. **Model:** Matchbox (`MBX`), Cinderbox (`CBX`), or Tinderbox (`TBX`) — size/form-factor class
+2. **Model:** Matchbox (`MBX`), Cinderbox (`CBX`), or Woodbox (`WBX`) — size/form-factor class
 3. **Trim:** Optional marketing/intent label (e.g., Harvest, Forge)
 4. **SKU:** Exact BOM and software build, including color/capacity/vendor differences
 
@@ -57,7 +57,7 @@ Full model identifiers follow the pattern: `TOO-OBX-{MODEL}-{REVISION}`
 
 - Matchbox: `TOO-OBX-MBX-01`
 - Cinderbox: `TOO-OBX-CBX-01`
-- Tinderbox: `TOO-OBX-TBX-01`
+- Woodbox: `TOO-OBX-WBX-01`
 
 ### Trims
 
@@ -65,7 +65,7 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 - **Base** — default trim for a model
 - **Harvest** — storage-oriented intent (Matchbox)
-- **Forge** — compute/acceleration-oriented intent (Tinderbox)
+- **Forge** — compute/acceleration-oriented intent (Woodbox)
 
 ### SKU Identifiers
 
@@ -74,8 +74,8 @@ SKU IDs pin a trim to an exact BOM + software load: `TOO-OBX-{MODEL}-{TRIM}-{SEQ
 Examples:
 - `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
 - `TOO-OBX-CBX-BASE-001` — Cinderbox Base SKU
-- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU (32GB RAM, no GPU)
-- `TOO-OBX-TBX-FORGE-001` — Tinderbox Forge SKU (discrete GPU)
+- `TOO-OBX-WBX-BASE-001` — Woodbox Base SKU (32GB RAM, no GPU)
+- `TOO-OBX-WBX-FORGE-001` — Woodbox Forge SKU (discrete GPU)
 
 ## Documentation Structure
 
@@ -97,4 +97,4 @@ Each model directory follows this structure:
 See each model's README for model-specific information:
 - [Matchbox README](matchbox/README.md)
 - [Cinderbox README](cinderbox/README.md)
-- [Tinderbox README](tinderbox/README.md)
+- [Woodbox README](woodbox/README.md)

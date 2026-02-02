@@ -1,7 +1,7 @@
 ---
 typeId: adr
-recordId: tinderbox-adr-0000-template
-parent: model:tinderbox
+recordId: woodbox-adr-0000-template
+parent: model:woodbox
 fields:
   status: Template
 ---

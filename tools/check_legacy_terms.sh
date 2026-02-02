@@ -43,9 +43,9 @@ if [ $FOUND_LEGACY -eq 1 ]; then
     echo ""
     echo "❌ Legacy terms found! Please update to use:"
     echo "  - 'OurBox Matchbox' instead of 'OurBox Mini'"
-    echo "  - 'OurBox Tinderbox' instead of 'OurBox Desk'"
+    echo "  - 'OurBox Woodbox' instead of 'OurBox Desk'"
     echo "  - 'TOO-OBX-MBX-' instead of 'TOO-OBX-MINI-'"
-    echo "  - 'TOO-OBX-TBX-' instead of 'TOO-OBX-DESK-'"
+    echo "  - 'TOO-OBX-WBX-' instead of 'TOO-OBX-DESK-'"
     echo "  - 'TOO-' prefixed part numbers instead of CFG or SKU prefixed identifiers"
     exit 1
 fi

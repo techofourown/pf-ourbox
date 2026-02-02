@@ -1,7 +1,7 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0005-sata-hdd-capacity
-parent: model:tinderbox
+recordId: woodbox-rfc-0005-sata-hdd-capacity
+parent: model:woodbox
 fields:
   status: Draft
   created: '2026-01-19'
@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores capacity and model options for the **two SATA HDDs** used for the OurBox Tinderbox user-data volume (ADR-0004).
+This RFC explores capacity and model options for the **two SATA HDDs** used for the OurBox Woodbox user-data volume (ADR-0004).
 
 ## Why
 

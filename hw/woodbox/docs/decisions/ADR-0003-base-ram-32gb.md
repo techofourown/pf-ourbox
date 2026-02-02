@@ -1,12 +1,12 @@
 ---
 typeId: adr
-recordId: tinderbox-adr-0003-base-ram-32gb
-parent: model:tinderbox
+recordId: woodbox-adr-0003-base-ram-32gb
+parent: model:woodbox
 fields:
   status: Accepted
   date: '2026-01-19'
 ---
-# ADR-0003: Set OurBox Tinderbox Base Configuration RAM to 32 GB
+# ADR-0003: Set OurBox Woodbox Base Configuration RAM to 32 GB
 
 ## Status
 Accepted
@@ -16,13 +16,13 @@ Accepted
 
 ## Context
 
-OurBox Tinderbox is expected to run a “wide” set of services concurrently (k3s pods) even for a single user. In this style of workload, memory pressure is often the first hard limit (OOM kills, evictions, degraded latency) long before CPU peak performance becomes the bottleneck.
+OurBox Woodbox is expected to run a “wide” set of services concurrently (k3s pods) even for a single user. In this style of workload, memory pressure is often the first hard limit (OOM kills, evictions, degraded latency) long before CPU peak performance becomes the bottleneck.
 
 At the same time, we want to keep BOM cost, thermals, and complexity controlled.
 
 ## Decision
 
-The base configuration (`TOO-OBX-TBX-BASE-001`) will include **32 GB of DDR4 RAM**.
+The base configuration (`TOO-OBX-WBX-BASE-001`) will include **32 GB of DDR4 RAM**.
 
 - Default assumption for now: **1×32 GB UDIMM**, leaving a second slot free if the chosen board supports it.
 - The exact RAM SKU (speed, timings, vendor) is not decided in this ADR and will be captured in an RFC and later BOM update.

@@ -1,7 +1,7 @@
 ---
 typeId: rfc
-recordId: tinderbox-rfc-0003-ram-options
-parent: model:tinderbox
+recordId: woodbox-rfc-0003-ram-options
+parent: model:woodbox
 fields:
   status: Draft
   created: '2026-01-19'
@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores which **DDR4 RAM** SKU(s) to validate for the OurBox Tinderbox base configuration, and whether the base 32 GB should be 1×32 GB or 2×16 GB.
+This RFC explores which **DDR4 RAM** SKU(s) to validate for the OurBox Woodbox base configuration, and whether the base 32 GB should be 1×32 GB or 2×16 GB.
 
 ## Why
 
