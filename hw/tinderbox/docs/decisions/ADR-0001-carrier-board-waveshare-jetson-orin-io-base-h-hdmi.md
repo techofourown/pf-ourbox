@@ -1,12 +1,12 @@
 ---
 typeId: adr
-recordId: cinderbox-adr-0001-carrier-board-waveshare-jetson-orin-io-base-h-hdmi
-parent: model:cinderbox
+recordId: tinderbox-adr-0001-carrier-board-waveshare-jetson-orin-io-base-h-hdmi
+parent: model:tinderbox
 fields:
   status: Accepted
   date: '2026-01-30'
 ---
-# ADR-0001: Select Waveshare JETSON-ORIN-IO-BASE-H (HDMI) as the Carrier Board for OurBox Cinderbox
+# ADR-0001: Select Waveshare JETSON-ORIN-IO-BASE-H (HDMI) as the Carrier Board for OurBox Tinderbox
 
 ## Status
 Accepted
@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Cinderbox (TOO-OBX-CBX-01) is our Jetson SoM-based model. We need an off-the-shelf carrier board that:
+OurBox Tinderbox (TOO-OBX-TBX-01) is our Jetson SoM-based model. We need an off-the-shelf carrier board that:
 
 1. Supports **Jetson Orin Nano / Orin NX SoM form factor**
 2. Uses **consumer-friendly connectors** for the base product experience
@@ -30,7 +30,7 @@ We evaluated a small set of buyable carrier boards with clearly stated 2× M.2 K
 
 ## Decision
 
-We will use the following carrier board as the Cinderbox baseline carrier:
+We will use the following carrier board as the Tinderbox baseline carrier:
 
 - **Manufacturer:** Waveshare
 - **Model / Part No.:** **JETSON-ORIN-IO-BASE-H**
@@ -39,7 +39,7 @@ We will use the following carrier board as the Cinderbox baseline carrier:
 ## Rationale
 
 ### 1) Meets the dual-NVMe storage requirement without ambiguity
-This board explicitly includes **2× M.2 Key‑M** for NVMe SSDs, enabling the OS/data split that is a hard requirement for Cinderbox.
+This board explicitly includes **2× M.2 Key‑M** for NVMe SSDs, enabling the OS/data split that is a hard requirement for Tinderbox.
 
 ### 2) HDMI is the preferred consumer video output
 We prefer HDMI over DisplayPort for this model family, and this variant is specifically the HDMI version.
@@ -61,7 +61,7 @@ Not selected because it is physically larger than our preferred dev-kit-like foo
 ### C) Other Waveshare variants (DisplayPort, Dual Ethernet)
 Not selected because:
 - We prefer **HDMI** output over DisplayPort, and
-- we do not need or want dual Ethernet for the base Cinderbox.
+- we do not need or want dual Ethernet for the base Tinderbox.
 
 ## Consequences
 

@@ -1,13 +1,13 @@
 ---
 typeId: docs_guide
-recordId: cinderbox-docs-readme
-parent: model:cinderbox
+recordId: tinderbox-docs-readme
+parent: model:tinderbox
 fields:
-  scope: cinderbox
+  scope: tinderbox
 ---
-# OurBox Cinderbox Documentation
+# OurBox Tinderbox Documentation
 
-This directory contains documentation for the OurBox Cinderbox hardware model.
+This directory contains documentation for the OurBox Tinderbox hardware model (Jetson SoM; formerly branded Cinderbox).
 
 ## Directory Structure
 
@@ -17,11 +17,11 @@ This directory contains documentation for the OurBox Cinderbox hardware model.
 
 ## Model Information
 
-- **Model:** OurBox Cinderbox
-- **Model ID:** `TOO-OBX-CBX-01`
+- **Model:** OurBox Tinderbox
+- **Model ID:** `TOO-OBX-TBX-01`
 - **Form Factor:** Jetson Orin Nano / Orin NX SoM on a compact carrier board
 
 ## Key Records
 
-- [[system_requirements:cinderbox-system-requirements]]
-- [[bom:cinderbox-bom]]
+- [[system_requirements:tinderbox-system-requirements]]
+- [[bom:tinderbox-bom]]

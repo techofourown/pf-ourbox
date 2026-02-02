@@ -145,7 +145,7 @@ Internal:
 * [[bom:matchbox-bom]]
 * [[adr:matchbox-adr-0001-primary-motherboard-raspberry-pi-5-16gb]]
 * [[adr:matchbox-adr-0003-dual-nvme-hat-seeed-pcie2]]
-* [[system_requirements:cinderbox-system-requirements]] (reinforces the “2× NVMe required” storage contract in another model)
+* [[system_requirements:tinderbox-system-requirements]] (reinforces the “2× NVMe required” storage contract in another model)
 
 Software / platform posture:
 

@@ -1,12 +1,12 @@
 ---
 typeId: adr
-recordId: cinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb
-parent: model:cinderbox
+recordId: tinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb
+parent: model:tinderbox
 fields:
   status: Accepted
   date: '2026-01-30'
 ---
-# ADR-0002: Select NVIDIA Jetson Orin Nano 8GB as the Baseline Compute Module for OurBox Cinderbox
+# ADR-0002: Select NVIDIA Jetson Orin Nano 8GB as the Baseline Compute Module for OurBox Tinderbox
 
 ## Status
 Accepted
@@ -16,18 +16,18 @@ Accepted
 
 ## Context
 
-OurBox Cinderbox (TOO-OBX-CBX-01) is a Jetson SoM-based model. We need a single baseline compute module to:
+OurBox Tinderbox (TOO-OBX-TBX-01) is a Jetson SoM-based model. We need a single baseline compute module to:
 
 - anchor performance assumptions for OurBox OS on arm64,
 - anchor thermal/power envelope validation,
 - keep the base SKU simple and reproducible,
 - and preserve optionality to offer alternate module SKUs later (via RFC).
 
-Cinderbox is designed around a carrier board that supports Jetson Orin Nano and Jetson Orin NX modules, so we can consider multiple SoM options — but we still need one baseline.
+Tinderbox is designed around a carrier board that supports Jetson Orin Nano and Jetson Orin NX modules, so we can consider multiple SoM options — but we still need one baseline.
 
 ## Decision
 
-The baseline compute module for Cinderbox Base (`TOO-OBX-CBX-BASE-001`) is:
+The baseline compute module for Tinderbox Base (`TOO-OBX-TBX-BASE-001`) is:
 
 - **NVIDIA Jetson Orin Nano 8GB**
 
@@ -47,7 +47,7 @@ Orin Nano 8GB establishes a baseline that’s strong enough for the product to f
 ### Positive
 - Stable baseline for OS builds, thermal validation, and performance expectations.
 - Reduced memory pressure risk compared to the 4GB module variant.
-- Clean story: “Base Cinderbox ships with Orin Nano 8GB.”
+- Clean story: “Base Tinderbox ships with Orin Nano 8GB.”
 
 ### Negative
 - Some users may want a lower-cost entry option (likely Orin Nano 4GB).
@@ -64,4 +64,4 @@ Orin Nano 8GB establishes a baseline that’s strong enough for the product to f
 - NVIDIA Jetson Orin Nano Series datasheet:
   - https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5380/Jetson_Orin_Nano_Series_DS-11105-001_v1.1.pdf
 - Related RFC:
-  - [[rfc:cinderbox-rfc-0001-jetson-module-options]]
+  - [[rfc:tinderbox-rfc-0001-jetson-module-options]]

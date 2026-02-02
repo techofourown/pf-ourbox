@@ -1,24 +1,24 @@
 ---
 typeId: model
-recordId: cinderbox
+recordId: tinderbox
 parent: product_family:ourbox
 fields:
-  marketingName: OurBox Cinderbox
-  modelIdentifier: TOO-OBX-CBX-01
+  marketingName: OurBox Tinderbox
+  modelIdentifier: TOO-OBX-TBX-01
   defaultTrim: Base
   trims: Base
 ---
-# OurBox Cinderbox
+# OurBox Tinderbox
 
-Hardware design and documentation for **OurBox Cinderbox**, the Jetson SoM (edge AI) model in the OurBox hardware family.
+Hardware design and documentation for **OurBox Tinderbox**, the Jetson SoM (edge AI) model in the OurBox hardware family. (Previously referred to as Cinderbox; that name is now reserved.)
 
-- **Marketing name:** OurBox Cinderbox
-- **Model identifier:** `TOO-OBX-CBX-01`
+- **Marketing name:** OurBox Tinderbox
+- **Model identifier:** `TOO-OBX-TBX-01`
 - **Default trim:** Base
 
-OurBox Cinderbox is a compact, always-on appliance optimized for privacy-respecting **local inference** and edge workloads while keeping the “appliance” experience simple.
+OurBox Tinderbox is a compact, always-on appliance optimized for privacy-respecting **local inference** and edge workloads while keeping the “appliance” experience simple.
 
-Key records: [[system_requirements:cinderbox-system-requirements]], [[bom:cinderbox-bom]]
+Key records: [[system_requirements:tinderbox-system-requirements]], [[bom:tinderbox-bom]]
 
 ## What’s in here
 

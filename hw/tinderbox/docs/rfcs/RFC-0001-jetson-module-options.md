@@ -1,13 +1,13 @@
 ---
 typeId: rfc
-recordId: cinderbox-rfc-0001-jetson-module-options
-parent: model:cinderbox
+recordId: tinderbox-rfc-0001-jetson-module-options
+parent: model:tinderbox
 fields:
   status: Draft
   created: '2026-01-30'
   updated: '2026-01-30'
 ---
-# RFC-0001: Jetson Module Options for OurBox Cinderbox (Orin Nano 4GB, Orin NX 8GB/16GB)
+# RFC-0001: Jetson Module Options for OurBox Tinderbox (Orin Nano 4GB, Orin NX 8GB/16GB)
 
 **Status:** Draft  
 **Created:** 2026-01-30  
@@ -17,10 +17,10 @@ fields:
 
 ## What
 
-This RFC evaluates alternate NVIDIA Jetson SoM options we may offer for OurBox Cinderbox **without changing** the baseline carrier board choice.
+This RFC evaluates alternate NVIDIA Jetson SoM options we may offer for OurBox Tinderbox **without changing** the baseline carrier board choice.
 
 Baseline decision (already made):
-- Cinderbox Base uses **Jetson Orin Nano 8GB** ([[adr:cinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb]]).
+- Tinderbox Base uses **Jetson Orin Nano 8GB** ([[adr:tinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb]]).
 
 This RFC is about *optional module SKUs* we may validate and offer later:
 - Jetson Orin Nano **4GB**
@@ -29,7 +29,7 @@ This RFC is about *optional module SKUs* we may validate and offer later:
 
 ## Why
 
-We want the Cinderbox platform to support more than one customer profile:
+We want the Tinderbox platform to support more than one customer profile:
 
 - **Cost-down option:** Orin Nano 4GB (entry)
 - **Performance-up options:** Orin NX 8GB and Orin NX 16GB (more AI throughput / more memory)
@@ -99,7 +99,7 @@ For each candidate module SKU:
 
 ## Open questions
 
-1. What workloads define “minimum acceptable performance” for a Cinderbox entry SKU (Orin Nano 4GB)?
+1. What workloads define “minimum acceptable performance” for a Tinderbox entry SKU (Orin Nano 4GB)?
 2. For Orin NX SKUs, what is our target sustained power limit so that acoustics remain home/office friendly?
 3. Do we want to gate module offerings by enclosure/cooling (i.e., same enclosure but different fan/heatsink SKU), or keep a single thermal stack?
 
@@ -111,12 +111,12 @@ For each candidate module SKU:
    - Orin NX 16GB
 2. Run the standard validation suite (boot, soak, IO, inference, thermal).
 3. If any option is approved for offering, create an ADR:
-   - “ADR-XXXX: Approve <Module SKU> as a supported Cinderbox offering”
+   - “ADR-XXXX: Approve <Module SKU> as a supported Tinderbox offering”
 
 ## References
 
 - Baseline module ADR:
-  - [[adr:cinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb]]
+  - [[adr:tinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb]]
 - NVIDIA Jetson Orin overview:
   - https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/
 - NVIDIA Jetson Orin Nano Series datasheet:
@@ -124,4 +124,4 @@ For each candidate module SKU:
 - NVIDIA Jetson Orin NX Series datasheet:
   - https://developer.nvidia.com/downloads/jetson-orin-nx-series-data-sheet
 - Carrier board ADR:
-  - [[adr:cinderbox-adr-0001-carrier-board-waveshare-jetson-orin-io-base-h-hdmi]]
+  - [[adr:tinderbox-adr-0001-carrier-board-waveshare-jetson-orin-io-base-h-hdmi]]

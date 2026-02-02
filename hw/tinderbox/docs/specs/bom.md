@@ -1,18 +1,18 @@
 ---
 typeId: bom
-recordId: cinderbox-bom
-parent: model:cinderbox
+recordId: tinderbox-bom
+parent: model:tinderbox
 fields:
-  modelIdentifier: TOO-OBX-CBX-01
-  skuIdentifier: TOO-OBX-CBX-BASE-001
+  modelIdentifier: TOO-OBX-TBX-01
+  skuIdentifier: TOO-OBX-TBX-BASE-001
   trim: Base
 ---
-# Bill of Materials — OurBox Cinderbox (TOO-OBX-CBX-01)
+# Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX-01)
 
-This BOM is the baseline for `TOO-OBX-CBX-BASE-001` (OurBox Cinderbox Base trim).
+This BOM is the baseline for `TOO-OBX-TBX-BASE-001` (OurBox Tinderbox Base trim).
 Some items are intentionally TBD until we validate thermals, NVMe compatibility, and procurement.
 
-## Base Configuration — `TOO-OBX-CBX-BASE-001`
+## Base Configuration — `TOO-OBX-TBX-BASE-001`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|
@@ -27,5 +27,5 @@ Some items are intentionally TBD until we validate thermals, NVMe compatibility,
 
 ## Notes
 
-- Storage topology is **two NVMe SSDs**: OS/system vs user data separation is a hard requirement for Cinderbox.
+- Storage topology is **two NVMe SSDs**: OS/system vs user data separation is a hard requirement for Tinderbox.
 - NVMe compatibility must be validated and captured in a living compatibility list during integration.
