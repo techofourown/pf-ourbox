@@ -65,5 +65,5 @@ A back-mounted design keeps the top side of the Pi less cluttered and helps with
 ## References
 - [ADR-0001: Use Raspberry Pi 5 (16 GB) as Primary Motherboard](./ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [ADR-0002: Use a Sheet Metal Enclosure](./ADR-0002-sheet-metal-enclosure.md)
-- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom-K7M2QF.md)
 - Seeed product page: https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html

@@ -54,5 +54,5 @@ The **base configuration** (`TOO-OBX-WBX-BASE-4J7Q2R`) of OurBox Woodbox will sh
 
 ## References
 - [System Requirements](../specs/system-requirements.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [RFC-0004: GPU Options for OurBox Woodbox](../rfcs/RFC-0004-gpu-options.md)

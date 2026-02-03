@@ -174,4 +174,4 @@ A CM5 + carrier substitute is acceptable if:
 - [[system_requirements:matchbox-system-requirements]]
 - [[bom:matchbox-bom]]
 - [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom-K7M2QF.md)

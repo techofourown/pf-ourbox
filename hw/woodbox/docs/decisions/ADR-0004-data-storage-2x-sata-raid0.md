@@ -56,5 +56,5 @@ This ADR does not lock the HDD capacity or vendor/model.
 
 ## References
 - [System Requirements](../specs/system-requirements.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [RFC-0005: SATA HDD Capacity and Model Options](../rfcs/RFC-0005-sata-hdd-capacity.md)

@@ -85,5 +85,5 @@ An alternative motherboard is acceptable if it:
 ## References
 
 - [ADR-0001: Primary Motherboard](../decisions/ADR-0001-primary-motherboard-msi-pro-b760m-p-ddr4.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [System Requirements](../specs/system-requirements.md)

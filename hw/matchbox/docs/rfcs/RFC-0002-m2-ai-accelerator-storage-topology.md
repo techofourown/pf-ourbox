@@ -238,7 +238,7 @@ Internal (Matchbox):
 - [ADR-0002: Use a Sheet Metal Enclosure](../decisions/ADR-0002-sheet-metal-enclosure.md)
 - [ADR-0003: Select Seeed PCIe 2.0 Dual M.2 NVMe HAT](../decisions/ADR-0003-dual-nvme-hat-seeed-pcie2.md)
 - [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom-K7M2QF.md)
 
 External (baseline product pages; validate at procurement time):
 - Seeed dual M.2 HAT (PCIe 2.0) product page:

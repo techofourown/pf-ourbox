@@ -73,5 +73,5 @@ We want to balance capacity with a home-friendly product experience.
 ## References
 
 - [ADR-0004: Two SATA HDDs RAID0](../decisions/ADR-0004-data-storage-2x-sata-raid0.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [System Requirements](../specs/system-requirements.md)

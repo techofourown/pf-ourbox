@@ -46,5 +46,5 @@ The base configuration (`TOO-OBX-WBX-BASE-4J7Q2R`) will include **32 GB of DDR4 
 - Treat RAM SKU selection as a separate RFC so we can optimize cost, availability, and validated part lists.
 
 ## References
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [RFC-0003: RAM SKU and Layout Options](../rfcs/RFC-0003-ram-options.md)

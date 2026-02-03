@@ -67,4 +67,4 @@ RAM is one of the primary determinants of “service capacity” for a pod-heavy
 
 - [ADR-0001: Primary Motherboard](../decisions/ADR-0001-primary-motherboard-msi-pro-b760m-p-ddr4.md)
 - [ADR-0003: Base RAM 32 GB](../decisions/ADR-0003-base-ram-32gb.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)

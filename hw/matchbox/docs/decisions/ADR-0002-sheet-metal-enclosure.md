@@ -229,6 +229,6 @@ A good future option once geometry stabilizes, but sheet metal is better for rap
 ## References
 
 - [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom-K7M2QF.md)
 - [ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard](./ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [RFC-0001: CM5 + Carrier Board as a Fallback Path](../rfcs/RFC-0001-cm5-carrier-board-fallback.md)

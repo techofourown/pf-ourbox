@@ -98,5 +98,5 @@ We can adopt that complexity later when we have a clearer product-market fit and
 ## References
 
 - [System Requirements — OurBox Matchbox](../specs/system-requirements.md)
-- [Bill of Materials — OurBox Matchbox](../specs/bom.md)
+- [Bill of Materials — OurBox Matchbox](../specs/bom-K7M2QF.md)
 - [RFC-0001: CM5 + Carrier Board Fallback for OurBox Matchbox](../rfcs/RFC-0001-cm5-carrier-board-fallback.md)

@@ -74,4 +74,4 @@ The case drives:
 ## References
 
 - [System Requirements](../specs/system-requirements.md)
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)

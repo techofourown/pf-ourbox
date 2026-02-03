@@ -68,6 +68,6 @@ Micro-ATX tends to be cheaper than Mini-ITX and provides more physical room for 
 - Treat BIOS version + key component IDs as part of the manufacturing configuration for reproducibility.
 
 ## References
-- [Bill of Materials](../specs/bom.md)
+- [Bill of Materials](../specs/bom-4J7Q2R.md)
 - [System Requirements](../specs/system-requirements.md)
 - [RFC-0001: Alternative Motherboards for OurBox Woodbox](../rfcs/RFC-0001-alternative-motherboards.md)
