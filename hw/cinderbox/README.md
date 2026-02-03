@@ -53,12 +53,3 @@ Everything else (exact ports, exact storage media, exact accelerator interface) 
 - **`docs/decisions/`** — Architecture Decision Records (ADRs): decisions that are *already made*
 - **`docs/rfcs/`** — RFCs: explorations/proposals before we decide
 
-## Status
-
-This model is newly instantiated. Immediate work is to:
-
-- pin down *at least one* carrier-board configuration we can validate end-to-end,
-- validate boot + provisioning flow with the chosen OS-drive approach,
-- validate user-data drive(s) and encryption posture,
-- validate an internal AI accelerator option,
-- validate thermals and enclosure integration.

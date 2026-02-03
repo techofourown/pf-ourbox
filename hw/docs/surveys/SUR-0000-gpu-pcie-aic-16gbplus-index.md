@@ -5,7 +5,7 @@ parent: product_family:ourbox
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-02-03'
   component: gpu
   interface: pcie-aic
   vramMinimumGB: 16
@@ -19,7 +19,7 @@ fields:
 - **Professional / Workstation:** Workstation/creator PCIe cards (RTX/RTX PRO, Radeon Pro, Arc Pro).
 - **Datacenter / Compute:** Datacenter accelerators and inference cards (H/A/L series, Instinct, Intel datacenter lines).
 
-## Full grid (9 surveys)
+## Full grid (12 surveys)
 
 1. Consumer / Desktop — NVIDIA GeForce RTX
 2. Consumer / Desktop — AMD Radeon RX
@@ -30,6 +30,9 @@ fields:
 7. Datacenter / Compute — NVIDIA datacenter PCIe
 8. Datacenter / Compute — AMD Instinct PCIe
 9. Datacenter / Compute — Intel datacenter PCIe
+10. MXM (consumer) — NVIDIA GeForce MXM
+11. MXM (professional) — NVIDIA RTX / Quadro MXM
+12. MXM carriers — MXM-to-PCIe adapters with aux power
 
 ## Secondary tags
 
@@ -54,3 +57,8 @@ fields:
 7. [[survey:ourbox-sur-0007-nvidia-datacenter-compute-pcie-16gbplus]]
 8. [[survey:ourbox-sur-0008-amd-instinct-datacenter-compute-pcie-16gbplus]]
 9. [[survey:ourbox-sur-0009-intel-datacenter-gpu-pcie-16gbplus]]
+
+### MXM (modules + carriers)
+10. [[survey:ourbox-sur-0010-nvidia-geforce-mxm-16gbplus]]
+11. [[survey:ourbox-sur-0011-nvidia-pro-mxm-16gbplus]]
+12. [[survey:ourbox-sur-0012-mxm-to-pcie-adapters-aux-power]]
