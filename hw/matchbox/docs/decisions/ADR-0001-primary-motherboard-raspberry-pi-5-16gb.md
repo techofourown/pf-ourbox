@@ -12,7 +12,7 @@ Accepted
 
 ## Context
 
-OurBox Matchbox (TOO-OBX-MBX-01) is intended to be a small, always-on, self-hosted appliance that enables privacy-respecting applications (e.g., tasks, photos, messaging, "portal" UX) without relying on app stores, proprietary relay services, or ad-tech business models.
+OurBox Matchbox (TOO-OBX-MBX) is intended to be a small, always-on, self-hosted appliance that enables privacy-respecting applications (e.g., tasks, photos, messaging, "portal" UX) without relying on app stores, proprietary relay services, or ad-tech business models.
 
 We have two plausible compute approaches:
 

@@ -4,7 +4,7 @@ recordId: woodbox
 parent: product_family:ourbox
 fields:
   marketingName: OurBox Woodbox
-  modelIdentifier: TOO-OBX-WBX-01
+  modelIdentifier: TOO-OBX-WBX
   defaultTrim: Base
   trims: Base, Forge
 ---
@@ -13,7 +13,7 @@ fields:
 Hardware design and documentation for **OurBox Woodbox**, the larger model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Woodbox
-- **Model identifier:** `TOO-OBX-WBX-01`
+- **Model identifier:** `TOO-OBX-WBX`
 - **Default trim:** Base
 
 OurBox Woodbox is a headless, always-on personal server intended to run **OurBox OS** (Linux) and host a "wide" set of services (k3s pods) with low latency for a single user.

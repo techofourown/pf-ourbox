@@ -3,16 +3,16 @@ typeId: bom
 recordId: tinderbox-bom
 parent: model:tinderbox
 fields:
-  modelIdentifier: TOO-OBX-TBX-01
-  skuIdentifier: TOO-OBX-TBX-BASE-001
+  modelIdentifier: TOO-OBX-TBX
+  skuIdentifier: TOO-OBX-TBX-BASE-N5C7PX
   trim: Base
 ---
-# Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX-01)
+# Bill of Materials — OurBox Tinderbox (TOO-OBX-TBX)
 
-This BOM is the baseline for `TOO-OBX-TBX-BASE-001` (OurBox Tinderbox Base trim).
+This BOM is the baseline for `TOO-OBX-TBX-BASE-N5C7PX` (OurBox Tinderbox Base trim).
 Some items are intentionally TBD until we validate thermals, NVMe compatibility, and procurement.
 
-## Base Configuration — `TOO-OBX-TBX-BASE-001`
+## Base Configuration — `TOO-OBX-TBX-BASE-N5C7PX`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|

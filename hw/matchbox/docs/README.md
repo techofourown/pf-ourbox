@@ -18,7 +18,7 @@ This directory contains documentation for the OurBox Matchbox hardware model.
 ## Model Information
 
 - **Model:** OurBox Matchbox
-- **Model ID:** `TOO-OBX-MBX-01`
+- **Model ID:** `TOO-OBX-MBX`
 - **Form Factor:** Small-form-factor appliance
 - **Primary Motherboard:** Raspberry Pi 5 (16 GB)
 

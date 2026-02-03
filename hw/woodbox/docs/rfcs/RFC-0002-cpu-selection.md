@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC explores CPU options and selection criteria for OurBox Woodbox (TOO-OBX-WBX-01), without committing to a specific CPU SKU yet.
+This RFC explores CPU options and selection criteria for OurBox Woodbox (TOO-OBX-WBX), without committing to a specific CPU SKU yet.
 
 ## Why
 

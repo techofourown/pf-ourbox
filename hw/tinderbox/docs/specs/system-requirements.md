@@ -3,9 +3,9 @@ typeId: system_requirements
 recordId: tinderbox-system-requirements
 parent: model:tinderbox
 fields:
-  modelIdentifier: TOO-OBX-TBX-01
+  modelIdentifier: TOO-OBX-TBX
 ---
-# System Requirements — OurBox Tinderbox (TOO-OBX-TBX-01)
+# System Requirements — OurBox Tinderbox (TOO-OBX-TBX)
 
 ## Operating system
 

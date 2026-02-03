@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC maintains a short list of **alternative motherboards** for OurBox Woodbox (TOO-OBX-WBX-01) in case the primary choice (ADR-0001) becomes unavailable, increases in price, or fails validation.
+This RFC maintains a short list of **alternative motherboards** for OurBox Woodbox (TOO-OBX-WBX) in case the primary choice (ADR-0001) becomes unavailable, increases in price, or fails validation.
 
 The goal is not to “shop forever” — it is to keep a Plan B (and Plan C) that can be swapped with minimal enclosure redesign and minimal software/support changes.
 

@@ -62,13 +62,13 @@ Approved OurBox model names (normative vocabulary):
 
 OurBox model identifiers follow the org-wide format:
 
-`TOO-OBX-<MODEL>-<GEN>`
+`TOO-OBX-<MODEL>`
 
 Current instantiated model IDs:
-- OurBox Matchbox: `TOO-OBX-MBX-01`
-- OurBox Cinderbox: `TOO-OBX-CBX-01`
-- OurBox Tinderbox: `TOO-OBX-TBX-01`
-- OurBox Woodbox: `TOO-OBX-WBX-01`
+- OurBox Matchbox: `TOO-OBX-MBX`
+- OurBox Cinderbox: `TOO-OBX-CBX`
+- OurBox Tinderbox: `TOO-OBX-TBX`
+- OurBox Woodbox: `TOO-OBX-WBX`
 
 ### 4) OurBox trims are intent labels (not spec sheets)
 
@@ -90,18 +90,21 @@ A **SKU** is the exact BOM + software load. SKU identifiers are manufacturer par
 with `TOO-`.
 
 **OurBox SKU / Part Number format (normative):**
-`TOO-OBX-<MODEL>-<TRIM>-<SEQ>`
+`TOO-OBX-<MODEL>-<TRIM>-<CFG>`
 
 Examples:
-- Matchbox Base: `TOO-OBX-MBX-BASE-001`
-- Matchbox Harvest: `TOO-OBX-MBX-HARVEST-001`
-- Cinderbox Base: `TOO-OBX-CBX-BASE-001`
-- Woodbox Base: `TOO-OBX-WBX-BASE-001`
-- Woodbox Forge: `TOO-OBX-WBX-FORGE-001`
+- Matchbox Base: `TOO-OBX-MBX-BASE-K7M2QF`
+- Matchbox Harvest: `TOO-OBX-MBX-HARVEST-3D9N6T`
+- Cinderbox Base: `TOO-OBX-CBX-BASE-R8H4Z6`
+- Woodbox Base: `TOO-OBX-WBX-BASE-4J7Q2R`
+- Woodbox Forge: `TOO-OBX-WBX-FORGE-8P2X7R`
 
-SKU sequencing rules (normative):
-- Increment `<SEQ>` for any BOM or software-load delta that matters to buildability, traceability,
+SKU minting rules (normative):
+- `<CFG>` is a 6-character base32-ish code with no ordering or embedded meaning.
+- Alphabet: `23456789ABCDEFGHJKMNPQRSTUVWXYZ` (no 0/1/I/O).
+- Mint a new `<CFG>` for any BOM or software-load delta that matters to buildability, traceability,
   support, or compliance.
+- Never reuse a `<CFG>` across different BOMs.
 - Treat these as SKU level differences (explicitly SKU, not trim):
   - enclosure color (red vs blue),
   - enclosure material change if both are offered under the same trim,
@@ -127,10 +130,10 @@ SKU sequencing rules (normative):
 - SKUs cleanly represent incidental variants (color/capacity/vendor swaps) without marketing churn.
 
 ### Negative
-- Requires disciplined SKU sequencing when BOM/software changes.
+- Requires disciplined SKU minting when BOM/software changes.
 
 ### Mitigation
-- Treat BOM updates as SKU lifecycle events: new SKU number when the shipped build changes.
+- Treat BOM updates as SKU lifecycle events: mint a new `<CFG>` when the shipped build changes.
 - Maintain a clear mapping in docs/specs and validate there are no legacy identifiers.
 
 ## References

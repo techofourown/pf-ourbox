@@ -3,15 +3,15 @@ typeId: bom
 recordId: woodbox-bom
 parent: model:woodbox
 fields:
-  modelIdentifier: TOO-OBX-WBX-01
-  skuIdentifier: TOO-OBX-WBX-BASE-001
+  modelIdentifier: TOO-OBX-WBX
+  skuIdentifier: TOO-OBX-WBX-BASE-4J7Q2R
   trim: Base
 ---
-# Bill of Materials — OurBox Woodbox (TOO-OBX-WBX-01)
+# Bill of Materials — OurBox Woodbox (TOO-OBX-WBX)
 
-This BOM is the **baseline** for `TOO-OBX-WBX-BASE-001` (OurBox Woodbox Base trim). Some items are intentionally TBD until the relevant RFCs are resolved.
+This BOM is the **baseline** for `TOO-OBX-WBX-BASE-4J7Q2R` (OurBox Woodbox Base trim). Some items are intentionally TBD until the relevant RFCs are resolved.
 
-## Base Configuration — `TOO-OBX-WBX-BASE-001`
+## Base Configuration — `TOO-OBX-WBX-BASE-4J7Q2R`
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
 |------|-----|--------------|-------------|---------------|-------|

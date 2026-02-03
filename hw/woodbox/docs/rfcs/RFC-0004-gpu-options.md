@@ -54,7 +54,7 @@ We want a clean path for GPU capability without contaminating the **Base** SKU (
 ### Scope
 
 - Base configuration ships with **no discrete GPU** (see ADR-0002).
-- This RFC is for a potential future SKU (e.g., `TOO-OBX-WBX-FORGE-001`) *and* for documenting “customer-installable” GPU guidance.
+- This RFC is for a potential future SKU (e.g., `TOO-OBX-WBX-FORGE-8P2X7R`) *and* for documenting “customer-installable” GPU guidance.
 
 ### Constraints to capture (to drive later decisions)
 

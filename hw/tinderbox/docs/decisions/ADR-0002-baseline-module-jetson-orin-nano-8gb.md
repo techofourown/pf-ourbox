@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Tinderbox (TOO-OBX-TBX-01) is a Jetson SoM-based model. We need a single baseline compute module to:
+OurBox Tinderbox (TOO-OBX-TBX) is a Jetson SoM-based model. We need a single baseline compute module to:
 
 - anchor performance assumptions for OurBox OS on arm64,
 - anchor thermal/power envelope validation,
@@ -27,7 +27,7 @@ Tinderbox is designed around a carrier board that supports Jetson Orin Nano and 
 
 ## Decision
 
-The baseline compute module for Tinderbox Base (`TOO-OBX-TBX-BASE-001`) is:
+The baseline compute module for Tinderbox Base (`TOO-OBX-TBX-BASE-N5C7PX`) is:
 
 - **NVIDIA Jetson Orin Nano 8GB**
 

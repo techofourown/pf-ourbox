@@ -3,9 +3,9 @@ typeId: system_requirements
 recordId: woodbox-system-requirements
 parent: model:woodbox
 fields:
-  modelIdentifier: TOO-OBX-WBX-01
+  modelIdentifier: TOO-OBX-WBX
 ---
-# System Requirements — OurBox Woodbox (TOO-OBX-WBX-01)
+# System Requirements — OurBox Woodbox (TOO-OBX-WBX)
 
 OurBox Woodbox is a desktop-class, always-on personal server intended to host many services (k3s pods) for a single user with low perceived latency.
 

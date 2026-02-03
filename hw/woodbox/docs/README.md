@@ -21,7 +21,7 @@ This directory contains documentation for the OurBox Woodbox hardware model.
 ## Model Information
 
 - **Model:** OurBox Woodbox
-- **Model ID:** `TOO-OBX-WBX-01`
+- **Model ID:** `TOO-OBX-WBX`
 - **Form Factor:** Desktop tower
 - **Primary Motherboard:** MSI PRO B760M-P DDR4
 

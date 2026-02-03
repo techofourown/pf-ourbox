@@ -28,10 +28,10 @@ We still want to keep a path open for GPU-enabled trims (e.g., an “Forge” co
 
 ## Decision
 
-The **base configuration** (`TOO-OBX-WBX-BASE-001`) of OurBox Woodbox will ship with **no discrete GPU** installed.
+The **base configuration** (`TOO-OBX-WBX-BASE-4J7Q2R`) of OurBox Woodbox will ship with **no discrete GPU** installed.
 
 - The motherboard must still provide a PCIe x16 physical slot so a future configuration can add a GPU.
-- Any GPU-enabled configuration will be introduced via an RFC followed by a dedicated ADR and a separate SKU identifier (e.g., `TOO-OBX-WBX-FORGE-001`).
+- Any GPU-enabled configuration will be introduced via an RFC followed by a dedicated ADR and a separate SKU identifier (e.g., `TOO-OBX-WBX-FORGE-8P2X7R`).
 
 ## Rationale
 

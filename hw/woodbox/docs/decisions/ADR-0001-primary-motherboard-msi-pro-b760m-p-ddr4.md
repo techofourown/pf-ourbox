@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Woodbox (TOO-OBX-WBX-01) is a desktop-class, always-on personal server intended to run many services concurrently (k3s pods) for a single user.
+OurBox Woodbox (TOO-OBX-WBX) is a desktop-class, always-on personal server intended to run many services concurrently (k3s pods) for a single user.
 
 The base configuration requires:
 - a mainstream x86_64 platform compatible with Linux,
@@ -31,7 +31,7 @@ An RFC is maintained to track alternative motherboards as supply, pricing, and a
 
 ## Decision
 
-We will use the following motherboard as the **primary motherboard** for the OurBox Woodbox Base SKU (`TOO-OBX-WBX-BASE-001`):
+We will use the following motherboard as the **primary motherboard** for the OurBox Woodbox Base SKU (`TOO-OBX-WBX-BASE-4J7Q2R`):
 
 - **Manufacturer:** MSI
 - **Model:** **PRO B760M-P DDR4**

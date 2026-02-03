@@ -18,7 +18,7 @@ This directory contains documentation for the OurBox Tinderbox hardware model (J
 ## Model Information
 
 - **Model:** OurBox Tinderbox
-- **Model ID:** `TOO-OBX-TBX-01`
+- **Model ID:** `TOO-OBX-TBX`
 - **Form Factor:** Jetson Orin Nano / Orin NX SoM on a compact carrier board
 
 ## Key Records

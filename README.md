@@ -31,10 +31,10 @@ See [hw/README.md](hw/README.md) for details on the hardware family.
 
 ### Model Identifiers
 
-- Matchbox: `TOO-OBX-MBX-01`
-- Cinderbox: `TOO-OBX-CBX-01`
-- Tinderbox: `TOO-OBX-TBX-01`
-- Woodbox: `TOO-OBX-WBX-01`
+- Matchbox: `TOO-OBX-MBX`
+- Cinderbox: `TOO-OBX-CBX`
+- Tinderbox: `TOO-OBX-TBX`
+- Woodbox: `TOO-OBX-WBX`
 
 ### Trims
 
@@ -46,15 +46,16 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 ### SKU Identifiers
 
-SKU IDs pin a trim to an exact BOM + software load: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}`
+SKU IDs pin a trim to an exact BOM + software load: `TOO-OBX-{MODEL}-{TRIM}-{CFG}`
+where `<CFG>` is an opaque, non-sequential configuration code minted once per BOM/software load.
 
 Examples:
-- `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
-- `TOO-OBX-MBX-HARVEST-001` — Matchbox Harvest SKU
-- `TOO-OBX-CBX-BASE-001` — Cinderbox Base SKU
-- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU
-- `TOO-OBX-WBX-BASE-001` — Woodbox Base SKU
-- `TOO-OBX-WBX-FORGE-001` — Woodbox Forge SKU (GPU-enabled)
+- `TOO-OBX-MBX-BASE-K7M2QF` — Matchbox Base SKU
+- `TOO-OBX-MBX-HARVEST-3D9N6T` — Matchbox Harvest SKU
+- `TOO-OBX-CBX-BASE-R8H4Z6` — Cinderbox Base SKU
+- `TOO-OBX-TBX-BASE-N5C7PX` — Tinderbox Base SKU
+- `TOO-OBX-WBX-BASE-4J7Q2R` — Woodbox Base SKU
+- `TOO-OBX-WBX-FORGE-8P2X7R` — Woodbox Forge SKU (GPU-enabled)
 
 ## Repository Structure
 

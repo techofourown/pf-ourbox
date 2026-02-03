@@ -7,10 +7,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 A product family monorepo for **OurBox** hardware, structured as a **GraphMD dataset**. There is no executable application code — the primary deliverables are structured Markdown documents (ADRs, RFCs, specs, BOMs) validated by the GraphMD dataset validator in CI.
 
 Four hardware models exist:
-- **Matchbox** (`TOO-OBX-MBX-01`) — Raspberry Pi 5 small-form-factor server
-- **Cinderbox** (`TOO-OBX-CBX-01`) — Raspberry Pi Compute Module 5 (CM5) carrier-board small-form-factor server
-- **Tinderbox** (`TOO-OBX-TBX-01`) — Jetson Orin Nano/NX SoM-based edge AI appliance (previously referred to as “Cinderbox”; that name is now reserved for the CM5-based Cinderbox model)
-- **Woodbox** (`TOO-OBX-WBX-01`) — Desktop-class server
+- **Matchbox** (`TOO-OBX-MBX`) — Raspberry Pi 5 small-form-factor server
+- **Cinderbox** (`TOO-OBX-CBX`) — Raspberry Pi Compute Module 5 (CM5) carrier-board small-form-factor server
+- **Tinderbox** (`TOO-OBX-TBX`) — Jetson Orin Nano/NX SoM-based edge AI appliance (previously referred to as “Cinderbox”; that name is now reserved for the CM5-based Cinderbox model)
+- **Woodbox** (`TOO-OBX-WBX`) — Desktop-class server
 
 ## Commands
 
@@ -34,7 +34,7 @@ recordId: matchbox     # Unique identifier for this record
 parent: product_family:ourbox  # Optional cross-reference
 fields:
   marketingName: OurBox Matchbox
-  modelIdentifier: TOO-OBX-MBX-01
+  modelIdentifier: TOO-OBX-MBX
 ---
 ```
 
@@ -68,9 +68,9 @@ Conventional Commits enforced via commitlint (`.commitlintrc.cjs`):
 
 Three-tier hierarchy: **Model → Trim → SKU**
 
-* **Model IDs**: `TOO-OBX-{MODEL}-{REV}` (e.g., `TOO-OBX-MBX-01`)
+* **Model IDs**: `TOO-OBX-{MODEL}` (e.g., `TOO-OBX-MBX`)
 * **Trims**: Intent labels per model (Base, Harvest, Forge). Not encoded in a formal ID; referenced by name.
-* **SKU IDs**: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}` (e.g., `TOO-OBX-MBX-BASE-001`). Pins a trim to an exact BOM + software load.
+* **SKU IDs**: `TOO-OBX-{MODEL}-{TRIM}-{CFG}` (e.g., `TOO-OBX-MBX-BASE-K7M2QF`). Pins a trim to an exact BOM + software load.
 * **Legacy names are banned**: Never use the deprecated Mini/Desk model names or the old
   MINI/DESK part-number prefixes. Use Matchbox/Cinderbox/Tinderbox/Woodbox and the MBX/CBX/TBX/WBX
   prefixes instead. The legacy term checker will catch violations.

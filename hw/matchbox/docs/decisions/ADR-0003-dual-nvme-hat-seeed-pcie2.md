@@ -12,7 +12,7 @@ Accepted
 
 ## Context
 
-OurBox Matchbox (TOO-OBX-MBX-01) uses a Raspberry Pi 5 (16 GB) as the primary motherboard (ADR-0001).
+OurBox Matchbox (TOO-OBX-MBX) uses a Raspberry Pi 5 (16 GB) as the primary motherboard (ADR-0001).
 
 We need a storage expansion approach that:
 - Supports **two NVMe SSDs** (e.g., OS / system + user data separation, or future flexibility).
