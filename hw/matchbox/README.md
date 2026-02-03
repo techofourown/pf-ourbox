@@ -4,7 +4,7 @@ recordId: matchbox
 parent: product_family:ourbox
 fields:
   marketingName: OurBox Matchbox
-  modelIdentifier: TOO-OBX-MBX-01
+  modelIdentifier: TOO-OBX-MBX
   defaultTrim: Base
   trims: Base, Harvest
 ---
@@ -13,7 +13,7 @@ fields:
 Hardware design and documentation for **OurBox Matchbox**, the small-form-factor model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Matchbox
-- **Model identifier:** `TOO-OBX-MBX-01`
+- **Model identifier:** `TOO-OBX-MBX`
 - **Default trim:** Base
 
 OurBox Matchbox is a small, always-on, self-hosted appliance that enables privacy-respecting applications (tasks, photos, messaging, portal UX) without relying on app stores, proprietary relay services, or ad-tech business models.

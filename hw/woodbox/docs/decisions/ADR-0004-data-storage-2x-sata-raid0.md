@@ -28,7 +28,7 @@ Because this is a Linux-first product, we prefer a RAID implementation that does
 
 ## Decision
 
-The base configuration (`TOO-OBX-WBX-BASE-001`) will include:
+The base configuration (`TOO-OBX-WBX-BASE-4J7Q2R`) will include:
 - **2× SATA HDDs** for user data, and
 - the supported user-data volume will be configured as **RAID 0 using Linux software RAID**.
 

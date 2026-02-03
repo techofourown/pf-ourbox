@@ -17,7 +17,7 @@ fields:
 
 ## What
 
-This RFC proposes a **fallback hardware path** for OurBox Matchbox (TOO-OBX-MBX-01):
+This RFC proposes a **fallback hardware path** for OurBox Matchbox (TOO-OBX-MBX):
 
 > If the standard **Raspberry Pi 5 (16 GB)** board becomes unavailable, constrained, or otherwise unsuitable, we can substitute it with a **Compute Module 5 (CM5)** installed on a **Pi-mechanically-compatible carrier board**.
 

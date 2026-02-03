@@ -4,7 +4,7 @@ recordId: cinderbox
 parent: product_family:ourbox
 fields:
   marketingName: OurBox Cinderbox
-  modelIdentifier: TOO-OBX-CBX-01
+  modelIdentifier: TOO-OBX-CBX
   defaultTrim: Base
   trims: Base
 ---
@@ -13,7 +13,7 @@ fields:
 Hardware design and documentation for **OurBox Cinderbox**, the Raspberry Pi **Compute Module 5 (CM5)** model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Cinderbox
-- **Model identifier:** `TOO-OBX-CBX-01`
+- **Model identifier:** `TOO-OBX-CBX`
 - **Default trim:** Base
 
 ## Why Cinderbox exists

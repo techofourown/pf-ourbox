@@ -18,7 +18,7 @@ This directory contains documentation for the OurBox Cinderbox hardware model (R
 ## Model Information
 
 - **Model:** OurBox Cinderbox
-- **Model ID:** `TOO-OBX-CBX-01`
+- **Model ID:** `TOO-OBX-CBX`
 - **Compute module family:** Raspberry Pi Compute Module 5 (CM5)
 - **Carrier board:** Custom (vendor/implementation may vary by trim/SKU)
 

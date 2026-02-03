@@ -12,7 +12,7 @@ Accepted
 
 ## Context
 
-OurBox Matchbox (TOO-OBX-MBX-01) is intended to be a small, always-on, self-hosted appliance that can be assembled and serviced with basic tools, and iterated quickly as the hardware and software mature.
+OurBox Matchbox (TOO-OBX-MBX) is intended to be a small, always-on, self-hosted appliance that can be assembled and serviced with basic tools, and iterated quickly as the hardware and software mature.
 
 In the early product phases, we expect:
 

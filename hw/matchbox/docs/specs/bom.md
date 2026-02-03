@@ -3,11 +3,11 @@ typeId: bom
 recordId: matchbox-bom
 parent: model:matchbox
 fields:
-  modelIdentifier: TOO-OBX-MBX-01
-  skuIdentifier: TOO-OBX-MBX-BASE-001
+  modelIdentifier: TOO-OBX-MBX
+  skuIdentifier: TOO-OBX-MBX-BASE-K7M2QF
   trim: Base
 ---
-# Bill of Materials — OurBox Matchbox (TOO-OBX-MBX-01)
+# Bill of Materials — OurBox Matchbox (TOO-OBX-MBX)
 
 ## Primary (Flagship) Build — Raspberry Pi 5 Board
 

@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Tinderbox (TOO-OBX-TBX-01) is our Jetson SoM-based model. We need an off-the-shelf carrier board that:
+OurBox Tinderbox (TOO-OBX-TBX) is our Jetson SoM-based model. We need an off-the-shelf carrier board that:
 
 1. Supports **Jetson Orin Nano / Orin NX SoM form factor**
 2. Uses **consumer-friendly connectors** for the base product experience

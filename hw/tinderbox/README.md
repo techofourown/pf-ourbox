@@ -4,7 +4,7 @@ recordId: tinderbox
 parent: product_family:ourbox
 fields:
   marketingName: OurBox Tinderbox
-  modelIdentifier: TOO-OBX-TBX-01
+  modelIdentifier: TOO-OBX-TBX
   defaultTrim: Base
   trims: Base
 ---
@@ -13,7 +13,7 @@ fields:
 Hardware design and documentation for **OurBox Tinderbox**, the Jetson SoM (edge AI) model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Tinderbox
-- **Model identifier:** `TOO-OBX-TBX-01`
+- **Model identifier:** `TOO-OBX-TBX`
 - **Default trim:** Base
 
 OurBox Tinderbox is a compact, always-on appliance optimized for privacy-respecting **local inference** and edge workloads while keeping the “appliance” experience simple.

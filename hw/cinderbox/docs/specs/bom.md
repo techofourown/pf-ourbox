@@ -3,13 +3,13 @@ typeId: bom
 recordId: cinderbox-bom
 parent: model:cinderbox
 fields:
-  modelIdentifier: TOO-OBX-CBX-01
-  skuIdentifier: TOO-OBX-CBX-BASE-001
+  modelIdentifier: TOO-OBX-CBX
+  skuIdentifier: TOO-OBX-CBX-BASE-R8H4Z6
   trim: Base
 ---
-# Bill of Materials — OurBox Cinderbox (TOO-OBX-CBX-01)
+# Bill of Materials — OurBox Cinderbox (TOO-OBX-CBX)
 
-This BOM is the baseline placeholder for `TOO-OBX-CBX-BASE-001` (OurBox Cinderbox Base trim).
+This BOM is the baseline placeholder for `TOO-OBX-CBX-BASE-R8H4Z6` (OurBox Cinderbox Base trim).
 
 Most line items are intentionally **TBD** until we:
 - select/lock at least one carrier-board implementation,
@@ -17,7 +17,7 @@ Most line items are intentionally **TBD** until we:
 - validate thermals and power,
 - and validate an internal AI accelerator option.
 
-## Base Configuration — `TOO-OBX-CBX-BASE-001`
+## Base Configuration — `TOO-OBX-CBX-BASE-R8H4Z6`
 
 | Item | Qty | Status | Notes |
 |---|---:|---|---|

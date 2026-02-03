@@ -15,7 +15,7 @@ The OurBox family includes hardware models:
 
 ### [Matchbox](matchbox/) — Raspberry Pi 5 Board Model
 
-- **Model ID:** `TOO-OBX-MBX-01`
+- **Model ID:** `TOO-OBX-MBX`
 - **Primary motherboard:** Raspberry Pi 5 (16 GB)
 - **Target use:** Always-on personal server for home/office
 
@@ -23,7 +23,7 @@ Matchbox is the flagship small-form-factor appliance built around the standard R
 
 ### [Cinderbox](cinderbox/) — Raspberry Pi CM5 Carrier-Board Model
 
-- **Model ID:** `TOO-OBX-CBX-01`
+- **Model ID:** `TOO-OBX-CBX`
 - **Primary compute module (baseline):** Raspberry Pi Compute Module 5 (16 GB)
 - **Carrier board:** Pi-mechanically-compatible CM5 carrier board
 - **Target use:** Always-on personal server with a more “productized” compute module posture (supply-chain and SKU optionality)
@@ -32,7 +32,7 @@ Cinderbox is the CM5-based sibling of Matchbox: same “small appliance” inten
 
 ### [Tinderbox](tinderbox/) — Jetson SoM Model (Edge AI)
 
-- **Model ID:** `TOO-OBX-TBX-01`
+- **Model ID:** `TOO-OBX-TBX`
 - **Form factor:** Jetson Orin Nano / Orin NX system-on-module (SoM) on a compact carrier board
 - **Primary compute module (baseline):** NVIDIA Jetson Orin Nano 8GB
 - **Target use:** Always-on edge AI appliance (local inference + sensor/USB peripherals)
@@ -41,7 +41,7 @@ Tinderbox (previously referred to as “Cinderbox”; that name is now reserved 
 
 ### [Woodbox](woodbox/) — x86 Model
 
-- **Model ID:** `TOO-OBX-WBX-01`
+- **Model ID:** `TOO-OBX-WBX`
 - **Primary motherboard:** MSI PRO B760M-P DDR4
 - **Target use:** High-capacity service host
 
@@ -60,12 +60,12 @@ The OurBox naming system follows this hierarchy:
 
 ### Model Identifiers
 
-Full model identifiers follow the pattern: `TOO-OBX-{MODEL}-{REVISION}`
+Model identifiers follow the pattern: `TOO-OBX-{MODEL}` (no revision segment)
 
-- Matchbox: `TOO-OBX-MBX-01`
-- Cinderbox: `TOO-OBX-CBX-01`
-- Tinderbox: `TOO-OBX-TBX-01`
-- Woodbox: `TOO-OBX-WBX-01`
+- Matchbox: `TOO-OBX-MBX`
+- Cinderbox: `TOO-OBX-CBX`
+- Tinderbox: `TOO-OBX-TBX`
+- Woodbox: `TOO-OBX-WBX`
 
 ### Trims
 
@@ -77,14 +77,15 @@ A trim is an intent/positioning label. Meaning varies by model:
 
 ### SKU Identifiers
 
-SKU IDs pin a trim to an exact BOM + software load: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}`
+SKU IDs pin a trim to an exact BOM + software load: `TOO-OBX-{MODEL}-{TRIM}-{CFG}`
+where `<CFG>` is an opaque, non-sequential configuration code minted once per BOM/software load.
 
 Examples:
-- `TOO-OBX-MBX-BASE-001` — Matchbox Base SKU
-- `TOO-OBX-CBX-BASE-001` — Cinderbox Base SKU
-- `TOO-OBX-TBX-BASE-001` — Tinderbox Base SKU
-- `TOO-OBX-WBX-BASE-001` — Woodbox Base SKU (32GB RAM, no GPU)
-- `TOO-OBX-WBX-FORGE-001` — Woodbox Forge SKU (discrete GPU)
+- `TOO-OBX-MBX-BASE-K7M2QF` — Matchbox Base SKU
+- `TOO-OBX-CBX-BASE-R8H4Z6` — Cinderbox Base SKU
+- `TOO-OBX-TBX-BASE-N5C7PX` — Tinderbox Base SKU
+- `TOO-OBX-WBX-BASE-4J7Q2R` — Woodbox Base SKU (32GB RAM, no GPU)
+- `TOO-OBX-WBX-FORGE-8P2X7R` — Woodbox Forge SKU (discrete GPU)
 
 ## Documentation Structure
 

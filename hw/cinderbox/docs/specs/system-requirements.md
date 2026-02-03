@@ -3,9 +3,9 @@ typeId: system_requirements
 recordId: cinderbox-system-requirements
 parent: model:cinderbox
 fields:
-  modelIdentifier: TOO-OBX-CBX-01
+  modelIdentifier: TOO-OBX-CBX
 ---
-# System Requirements — OurBox Cinderbox (TOO-OBX-CBX-01)
+# System Requirements — OurBox Cinderbox (TOO-OBX-CBX)
 
 These requirements intentionally describe **capabilities and contracts**, not a single fixed bill of materials. Cinderbox may ship in multiple trims/SKUs as we validate different carrier-board and storage combinations.
 

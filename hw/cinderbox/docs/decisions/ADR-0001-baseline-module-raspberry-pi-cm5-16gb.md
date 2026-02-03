@@ -16,7 +16,7 @@ Accepted
 
 ## Context
 
-OurBox Cinderbox (TOO-OBX-CBX-01) exists to keep the full “appliance” experience **inside the case**:
+OurBox Cinderbox (TOO-OBX-CBX) exists to keep the full “appliance” experience **inside the case**:
 
 - a dedicated physical OS drive,
 - a separate dedicated physical user-data drive,
