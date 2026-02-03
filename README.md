@@ -15,7 +15,7 @@ OurBox hardware is organized by model:
 
 - **[Matchbox](hw/matchbox/)** — Raspberry Pi 5 board model ([[model:matchbox]])
 - **[Cinderbox](hw/cinderbox/)** — Raspberry Pi Compute Module 5 (CM5) carrier-board model ([[model:cinderbox]])
-- **[Tinderbox](hw/tinderbox/)** — Jetson Orin Nano/NX (SoM) model (previously referred to as “Cinderbox”; that name is now reserved for [[model:cinderbox]]) ([[model:tinderbox]])
+- **[Tinderbox](hw/tinderbox/)** — Jetson Orin Nano/NX (SoM) model
 - **[Woodbox](hw/woodbox/)** — x86 model ([[model:woodbox]])
 
 See [hw/README.md](hw/README.md) for details on the hardware family.

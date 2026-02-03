@@ -10,19 +10,42 @@ fields:
 ---
 # OurBox Cinderbox
 
-Hardware design and documentation for **OurBox Cinderbox**, the Raspberry Pi **Compute Module 5 (CM5)** carrier-board model in the OurBox hardware family.
+Hardware design and documentation for **OurBox Cinderbox**, the Raspberry Pi **Compute Module 5 (CM5)** model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Cinderbox
 - **Model identifier:** `TOO-OBX-CBX-01`
 - **Default trim:** Base
 
-Cinderbox exists to deliver the same “small always-on appliance” intent as Matchbox, but with a more **productized compute module** posture:
+## Why Cinderbox exists
 
-- the **compute module** can vary (Lite vs eMMC, Wi‑Fi vs no Wi‑Fi) without redesigning the enclosure,
-- carrier-board sourcing provides a supply-chain fallback posture,
-- and the storage contract stays consistent with OurBox’s Pi-class baseline (NVMe boot + separate NVMe user data).
+Cinderbox exists because we cannot reliably fit the full “OurBox storage + accelerator” intent into the Raspberry Pi 5 Matchbox form factor.
 
-Key records: [[system_requirements:cinderbox-system-requirements]], [[bom:cinderbox-bom]]
+The Cinderbox intent is:
+
+- a **dedicated physical drive** for the operating system
+- a **second dedicated physical drive** for user data
+- an **internal option** for an AI accelerator module
+
+With the single-lane constraints of the Pi-class baseline, we need a **custom carrier board** to make that practical while keeping everything inside the enclosure.
+
+## What makes a Cinderbox a Cinderbox
+
+A hardware variant qualifies as “Cinderbox” if it:
+
+1. uses a **Raspberry Pi CM5** compute module, and  
+2. uses a **custom CM5 carrier board** (not an off-the-shelf Pi 5 HAT stack).
+
+Everything else (exact ports, exact storage media, exact accelerator interface) is allowed to vary across trims/SKUs as we learn.
+
+### Explicit non-goals / exclusions
+
+- **We do not use eMMC as part of the supported user experience.** (CM5 variants with eMMC are out of scope for supported SKUs.)
+- microSD may exist for compatibility/recovery/provisioning, but is not treated as the primary OS drive in supported configurations.
+
+## Key records
+
+- [[system_requirements:cinderbox-system-requirements]]
+- [[bom:cinderbox-bom]]
 
 ## What’s in here
 
@@ -30,21 +53,12 @@ Key records: [[system_requirements:cinderbox-system-requirements]], [[bom:cinder
 - **`docs/decisions/`** — Architecture Decision Records (ADRs): decisions that are *already made*
 - **`docs/rfcs/`** — RFCs: explorations/proposals before we decide
 
-## Current baseline decisions
-
-- **Compute module (baseline):** Raspberry Pi Compute Module 5 (16 GB)
-- **Carrier board:** Waveshare CM5-IO-BASE-A (Pi-mechanically-compatible)
-- **Storage topology:** 2× NVMe SSDs
-  - NVMe #1: OS / system (boots the device)
-  - NVMe #2: user data
-- **Enclosure:** Sheet metal (laser cut + bent)
-
-See the ADRs under `docs/decisions/` for rationale and consequences.
-
 ## Status
 
-This model is newly instantiated. The immediate integration work is:
+This model is newly instantiated. Immediate work is to:
 
-- confirm CM5 + carrier boot reliability from NVMe,
-- validate dual-NVMe topology and SSD compatibility,
-- validate thermals in the sheet-metal enclosure envelope.
+- pin down *at least one* carrier-board configuration we can validate end-to-end,
+- validate boot + provisioning flow with the chosen OS-drive approach,
+- validate user-data drive(s) and encryption posture,
+- validate an internal AI accelerator option,
+- validate thermals and enclosure integration.

@@ -4,62 +4,66 @@ recordId: cinderbox-adr-0001-baseline-module-raspberry-pi-cm5-16gb
 parent: model:cinderbox
 fields:
   status: Accepted
-  date: '2026-02-02'
+  date: '2026-02-03'
 ---
-# ADR-0001: Select Raspberry Pi Compute Module 5 (16 GB) as the Baseline Compute Module for OurBox Cinderbox
+# ADR-0001: Select Raspberry Pi Compute Module 5 (CM5) as the Baseline Compute Module Family for OurBox Cinderbox
 
 ## Status
 Accepted
 
 ## Date
-2026-02-02
+2026-02-03
 
 ## Context
 
-OurBox Cinderbox (TOO-OBX-CBX-01) is the CM5-based small-form-factor model in the OurBox family.
+OurBox Cinderbox (TOO-OBX-CBX-01) exists to keep the full “appliance” experience **inside the case**:
 
-Cinderbox exists to create a more “productized” compute posture than a single fixed board SKU:
+- a dedicated physical OS drive,
+- a separate dedicated physical user-data drive,
+- and an internal AI accelerator option.
 
-- a compute **module** can be sourced in multiple variants (Lite vs eMMC, Wi‑Fi vs no Wi‑Fi),
-- the carrier board can be swapped later (if needed) without changing the model identity,
-- and manufacturing can treat the module as a controlled sub-assembly.
+On the Raspberry Pi 5 single-board baseline, it is difficult to satisfy that topology without compromises because of limited high-speed expansion.
 
-We still want the OurBox Pi-class storage contract to hold (boot from NVMe #1 + separate NVMe #2 for user data), so the baseline compute must be modern enough to support PCIe-first storage.
+Cinderbox is the only OurBox model that assumes a **custom carrier board**. Therefore, we need a compute platform designed to pair with a custom carrier.
 
 ## Decision
 
-The baseline compute module for Cinderbox Base (`TOO-OBX-CBX-BASE-001`) is:
+Cinderbox is a **Raspberry Pi Compute Module 5 (CM5)** based model.
 
-- **Raspberry Pi Compute Module 5 (CM5), 16 GB RAM**
+For initial validation and development we will use a CM5 configuration that matches these policies:
 
-Variant policy (Lite vs eMMC, Wi‑Fi vs no Wi‑Fi) is tracked as an RFC and is not locked by this ADR.
+- **No eMMC in the supported user experience** (CM5 eMMC variants are out of scope for supported SKUs)
+- **Wi‑Fi is required at the product level**, provided either by:
+  - the CM5 variant, and/or
+  - carrier-board wireless support
+
+RAM capacity may vary by trim/SKU; **16 GB** is a practical validation baseline but not a permanent commitment.
 
 ## Rationale
 
-### 1) Module posture without giving up the Pi-class ecosystem
-CM5 preserves the Raspberry Pi ecosystem while enabling a productizable module + carrier separation.
+### 1) Enables a custom carrier board (the point of Cinderbox)
+CM5 is explicitly designed for a carrier-board architecture. That is required for Cinderbox, because the product intent depends on a carrier board that can accommodate discrete storage plus an internal accelerator option.
 
-### 2) Supply-chain and SKU optionality
-CM5 variants allow us to maintain multiple procurement pathways and reduce “single board SKU” fragility.
+### 2) Preserve Pi ecosystem without inheriting Pi 5 single-board constraints
+We keep Raspberry Pi compatibility and ecosystem benefits while moving the IO “shape” into a carrier board we control.
 
-### 3) Headroom for containerized workloads
-16 GB RAM is a practical floor for an always-on appliance running multiple services (and optional local inference workloads).
+### 3) Avoid an eMMC-based provisioning divergence
+We want consistent provisioning and storage expectations across OurBox models. eMMC adds a separate provisioning and recovery path that we do not want to support.
 
 ## Consequences
 
 ### Positive
-- Establishes a stable baseline for OS builds, thermal validation, and enclosure integration.
-- Preserves optionality to adopt different CM5 variants without re-platforming the model.
+- Unblocks a carrier-board design that can satisfy the “OS + data + accelerator internal” topology.
+- Keeps Cinderbox in the Raspberry Pi ecosystem.
 
 ### Negative
-- Increases assembly complexity vs a single-board design (module seating + carrier dependencies).
-- Expands the validation surface (carrier quirks, CM5 variant behavior).
+- More integration and validation work than a single-board design (module seating, carrier variants, more combinations).
+- Requires explicit policies for which CM5 variants we support.
 
 ### Mitigation
-- Pin a single baseline carrier board (see ADR-0002).
-- Track CM5 variant policy + provisioning explicitly in an RFC before changing what we ship.
+- Track CM5 variant policy (RAM tiers, Wi‑Fi sourcing) in RFCs before locking SKUs.
+- Keep system requirements focused on **capabilities/contracts**, not on one assumed storage media.
 
 ## References
-- [[adr:cinderbox-adr-0002-carrier-board-waveshare-cm5-io-base-a]]
 - [[system_requirements:cinderbox-system-requirements]]
 - [[bom:cinderbox-bom]]

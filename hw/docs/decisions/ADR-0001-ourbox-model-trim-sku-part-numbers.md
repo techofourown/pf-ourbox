@@ -55,7 +55,7 @@ Approved OurBox model names (normative vocabulary):
 |---|---|---|
 | Matchbox | `MBX` | Raspberry Pi 5 board / small-form-factor appliance |
 | Cinderbox | `CBX` | Raspberry Pi **CM5** carrier-board / small-form-factor appliance |
-| Tinderbox | `TBX` | Jetson SoM-based edge AI appliance (previously referred to as “Cinderbox”; now renamed to Tinderbox) |
+| Tinderbox | `TBX` | Jetson SoM-based edge AI appliance|
 | Woodbox | `WBX` | Desktop-class server |
 
 ### 3) OurBox model identifiers

@@ -9,24 +9,28 @@ fields:
 ---
 # Bill of Materials — OurBox Cinderbox (TOO-OBX-CBX-01)
 
-This BOM is the baseline for `TOO-OBX-CBX-BASE-001` (OurBox Cinderbox Base trim).
-Some items are intentionally TBD until we validate thermals, NVMe compatibility, and procurement.
+This BOM is the baseline placeholder for `TOO-OBX-CBX-BASE-001` (OurBox Cinderbox Base trim).
+
+Most line items are intentionally **TBD** until we:
+- select/lock at least one carrier-board implementation,
+- validate storage device compatibility,
+- validate thermals and power,
+- and validate an internal AI accelerator option.
 
 ## Base Configuration — `TOO-OBX-CBX-BASE-001`
 
-| Item | Qty | Manufacturer | Model / MPN | Purchase Link | Notes |
-|------|-----|--------------|-------------|---------------|-------|
-| Sheet metal enclosure | 1 | Custom | TBD | TBD | Enclosure sized for CM5 carrier + dual NVMe board; includes mounting hardware. |
-| Compute module | 1 | Raspberry Pi | Compute Module 5 (16 GB RAM) | TBD | Baseline module. Variant policy (Lite vs eMMC, Wi‑Fi vs no Wi‑Fi) is tracked in [[rfc:cinderbox-rfc-0001-cm5-variants-provisioning]]. |
-| CM5 carrier board | 1 | Waveshare | CM5-IO-BASE-A | https://www.waveshare.com/cm5-io-base-a.htm | Baseline carrier board. Must expose PCIe in a way compatible with our NVMe strategy. |
-| Dual NVMe storage board | 1 | Seeed Studio | PCIe2.0 to Dual M.2 HAT for Raspberry Pi 5 (SKU: 103110064) | https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html | Provides 2× M.2 NVMe sockets (no SATA). Mechanical integration assumes underside/back-mount orientation. Carrier board must provide a compatible PCIe connection (validate cable/connector specifics). Maintain a validated NVMe compatibility list. |
-| NVMe SSD (OS / system) | 1 | TBD | M.2 NVMe SSD | TBD | Dedicated OS drive. Must be a known-good boot SSD. |
-| NVMe SSD (user data) | 1 | TBD | M.2 NVMe SSD | TBD | Dedicated data drive. Maintain a validated NVMe list. |
-| Cooling solution | 1 | TBD | TBD | TBD | Passive heatsink baseline; add a fan only if validation requires it. |
-| Power adapter | 1 | TBD | TBD | TBD | Sized for CM5 + dual NVMe under sustained load. |
-| Mounting hardware | 1 | TBD | Standoffs / screws / PEM | TBD | Final set depends on enclosure. |
+| Item | Qty | Status | Notes |
+|---|---:|---|---|
+| Raspberry Pi CM5 (Lite, no eMMC) | 1 | TBD | RAM and Wi‑Fi variant TBD by SKU; eMMC variants are out of scope |
+| Custom CM5 carrier board | 1 | TBD | Vendor/board implementation TBD (Cinderbox-defining feature) |
+| OS storage device (SSD) | 1 | TBD | Interface/media TBD (NVMe/SATA/internal USB-attached SSD) |
+| User-data storage device | 1+ | TBD | One or more drives depending on SKU; SSD/HDD TBD |
+| Internal AI accelerator module | 0–1 | TBD | Optional by SKU; interface TBD (M.2 / PCIe header / internal USB module, etc.) |
+| Enclosure | 1 | TBD | Mechanical + mounting TBD |
+| Cooling solution | 1 | TBD | Heatsink/fan/passive TBD based on validation |
+| Power supply | 1 | TBD | Sized for sustained load with drives + accelerator |
 
 ## Notes
 
-- Cinderbox inherits the OurBox Pi-class storage contract: **2× NVMe** with **boot from NVMe #1**.
-- Exact CM5 variant policy and provisioning strategy is tracked in the RFC; keep this BOM conservative until we decide.
+- This BOM does **not** assume a single final Cinderbox configuration. Multiple trims/SKUs are expected.
+- microSD support may exist for recovery/provisioning workflows, but is not treated as the primary OS drive for supported SKUs.

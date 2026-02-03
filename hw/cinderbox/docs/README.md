@@ -7,7 +7,7 @@ fields:
 ---
 # OurBox Cinderbox Documentation
 
-This directory contains documentation for the OurBox Cinderbox hardware model (Raspberry Pi CM5 + carrier).
+This directory contains documentation for the OurBox Cinderbox hardware model (Raspberry Pi CM5 + custom carrier board).
 
 ## Directory Structure
 
@@ -19,8 +19,8 @@ This directory contains documentation for the OurBox Cinderbox hardware model (R
 
 - **Model:** OurBox Cinderbox
 - **Model ID:** `TOO-OBX-CBX-01`
-- **Baseline compute module:** Raspberry Pi Compute Module 5 (16 GB)
-- **Baseline carrier board:** Waveshare CM5-IO-BASE-A
+- **Compute module family:** Raspberry Pi Compute Module 5 (CM5)
+- **Carrier board:** Custom (vendor/implementation may vary by trim/SKU)
 
 ## Key Records
 
@@ -31,7 +31,4 @@ This directory contains documentation for the OurBox Cinderbox hardware model (R
 
 See the [decisions/](decisions/) directory for complete ADRs. Key decisions include:
 
-- ADR-0001: Raspberry Pi Compute Module 5 (16 GB) as baseline compute module
-- ADR-0002: Waveshare CM5-IO-BASE-A as baseline carrier board
-- ADR-0003: Dual NVMe storage via Seeed PCIe 2.0 dual-NVMe HAT
-- ADR-0004: Sheet metal enclosure approach
+- ADR-0001: Raspberry Pi Compute Module 5 (CM5) as the baseline compute module family

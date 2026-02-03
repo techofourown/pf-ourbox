@@ -7,6 +7,8 @@ fields:
 ---
 # System Requirements — OurBox Cinderbox (TOO-OBX-CBX-01)
 
+These requirements intentionally describe **capabilities and contracts**, not a single fixed bill of materials. Cinderbox may ship in multiple trims/SKUs as we validate different carrier-board and storage combinations.
+
 ## Operating system
 
 - Runs **OurBox OS** as the supported/validated operating system.
@@ -14,33 +16,54 @@ fields:
 ## Power and availability
 
 - Designed to remain **plugged in continuously**; no battery/portable assumptions.
-- Power adapter sized for:
+- Power adapter sized for sustained load across:
   - CM5 + carrier board,
-  - 2× NVMe SSDs,
-  - and any attached USB peripherals under sustained load.
+  - OS storage device,
+  - user-data storage device(s),
+  - and an internal AI accelerator module (if present),
+  - plus any supported USB peripherals.
 
 ## Networking
 
-- Supports **Ethernet** as the default connection.
-- Wi‑Fi is optional (depends on CM5 variant and/or carrier-board wireless support).
+- **Ethernet** is the default connection (at least one port).
+- **Wi‑Fi is required** for supported SKUs (for headless setup / mobile-first onboarding use cases).
+  - Wi‑Fi may be provided by the CM5 variant *or* by the carrier board.
+  - The Wi‑Fi interface must support access point mode (software-dependent, but the hardware must not block it).
 
-## Storage (hard contract)
+## Storage and accelerator topology
 
-Cinderbox MUST satisfy the OurBox Pi-class storage contract:
+Cinderbox must support a “two discrete drives + internal accelerator option” topology.
 
-1. **Two NVMe SSDs are required.**
-2. **NVMe #1 (OS / system)** is a dedicated physical NVMe SSD and the device **boots from it**.
-3. **NVMe #2 (user data)** is a separate dedicated physical NVMe SSD.
+### 1) Dedicated OS drive
 
-Notes:
-- “NVMe over USB” is not considered NVMe for this contract.
-- “Boot from something else and pivot later” (SD/eMMC/USB) is not acceptable for supported SKUs.
+- A **dedicated physical drive** is used for the operating system.
+- The device **boots from this OS drive** in supported configurations.
+- Acceptable media/interface is **TBD by trim**, but the intent is a solid-state device (e.g., NVMe SSD, SATA SSD, or an internally mounted USB-attached SSD).
+
+### 2) Dedicated user-data drive
+
+- A **separate dedicated physical drive** is used for user data.
+- It must be physically distinct from the OS drive (not just a partition).
+- Media may vary by trim/SKU (SSD or HDD). Multi-drive user-data configurations (e.g., RAID) are allowed but not required unless a specific SKU states otherwise.
+
+### 3) Internal AI accelerator option
+
+- The platform must provide an **internal** interface suitable for an AI accelerator module.
+- The accelerator interface and bandwidth requirements are **modest** (inference throughput is not gated by sustained high PCIe bandwidth in the intended use case).
+- The accelerator option must not require sacrificing the OS drive or user-data drive.
+
+### 4) microSD support
+
+- The system may include a microSD slot for compatibility/recovery/provisioning workflows.
+- microSD is **not** treated as the primary OS drive in supported configurations.
 
 ## Environmental/physical
 
 - Enclosure must accommodate:
   - CM5 + carrier board stack
-  - dual-NVMe storage board
+  - OS storage device mounting
+  - user-data storage device mounting
+  - AI accelerator module clearance (if present)
   - cooling solution adequate for continuous load (passive or active as validated)
 
 Thermal performance must be verified under continuous load.

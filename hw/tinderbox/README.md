@@ -10,7 +10,7 @@ fields:
 ---
 # OurBox Tinderbox
 
-Hardware design and documentation for **OurBox Tinderbox**, the Jetson SoM (edge AI) model in the OurBox hardware family. (Previously referred to as Cinderbox; that name is now reserved for the CM5-based Cinderbox model: [[model:cinderbox]].)
+Hardware design and documentation for **OurBox Tinderbox**, the Jetson SoM (edge AI) model in the OurBox hardware family.
 
 - **Marketing name:** OurBox Tinderbox
 - **Model identifier:** `TOO-OBX-TBX-01`
