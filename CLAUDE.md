@@ -6,10 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A product family monorepo for **OurBox** hardware, structured as a **GraphMD dataset**. There is no executable application code — the primary deliverables are structured Markdown documents (ADRs, RFCs, specs, BOMs) validated by the GraphMD dataset validator in CI.
 
-Three hardware models exist:
+Four hardware models exist:
 - **Matchbox** (`TOO-OBX-MBX-01`) — Raspberry Pi 5 small-form-factor server
-- **Tinderbox** (`TOO-OBX-TBX-01`) — Jetson Orin Nano/NX SoM-based edge AI appliance (formerly Cinderbox; old name reserved for Jetson-based systems)
-- **Woodbox** (`TOO-OBX-WBX-01`) — Micro-ATX desktop-class server
+- **Cinderbox** (`TOO-OBX-CBX-01`) — Raspberry Pi Compute Module 5 (CM5) carrier-board small-form-factor server
+- **Tinderbox** (`TOO-OBX-TBX-01`) — Jetson Orin Nano/NX SoM-based edge AI appliance (previously referred to as “Cinderbox”; that name is now reserved for the CM5-based Cinderbox model)
+- **Woodbox** (`TOO-OBX-WBX-01`) — Desktop-class server
 
 ## Commands
 
@@ -71,7 +72,7 @@ Three-tier hierarchy: **Model → Trim → SKU**
 * **Trims**: Intent labels per model (Base, Harvest, Forge). Not encoded in a formal ID; referenced by name.
 * **SKU IDs**: `TOO-OBX-{MODEL}-{TRIM}-{SEQ}` (e.g., `TOO-OBX-MBX-BASE-001`). Pins a trim to an exact BOM + software load.
 * **Legacy names are banned**: Never use the deprecated Mini/Desk model names or the old
-  MINI/DESK part-number prefixes. Use Matchbox/Tinderbox/Woodbox and the MBX/TBX/WBX
+  MINI/DESK part-number prefixes. Use Matchbox/Cinderbox/Tinderbox/Woodbox and the MBX/CBX/TBX/WBX
   prefixes instead. The legacy term checker will catch violations.
 * **CFG/SKU prefixed identifiers are banned**: Only `TOO-` prefixed part numbers are valid.
 

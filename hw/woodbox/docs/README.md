@@ -9,6 +9,9 @@ fields:
 
 This directory contains documentation for the OurBox Woodbox hardware model.
 
+> NOTE: The ADRs under `decisions/` reflect an earlier baseline and must be revisited as the Woodbox posture evolves.  
+> For now, do **not** edit `hw/woodbox/docs/decisions/` in this change set.
+
 ## Directory Structure
 
 - **[decisions/](decisions/)** — Architecture Decision Records (ADRs) documenting finalized design choices
@@ -19,7 +22,7 @@ This directory contains documentation for the OurBox Woodbox hardware model.
 
 - **Model:** OurBox Woodbox
 - **Model ID:** `TOO-OBX-WBX-01`
-- **Form Factor:** Desktop tower (Micro-ATX)
+- **Form Factor:** Desktop tower
 - **Primary Motherboard:** MSI PRO B760M-P DDR4
 
 ## Key Decisions

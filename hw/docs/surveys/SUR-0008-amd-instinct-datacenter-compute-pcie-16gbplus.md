@@ -93,7 +93,7 @@ For OurBox OS, “does it fit in a PCIe slot” is necessary but not sufficient:
 - ROCm documentation — Compatibility matrix (for current ROCm support posture):  
   https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html
 
-- AMD support pages (useful for “spec snippet” + driver packaging posture; SKU-specific):
+- AMD support pages (useful for “spec snippet” + driver packaging posture; SKU specific):
   - MI60: https://www.amd.com/en/support/downloads/drivers.html/accelerators/instinct/instinct-mi-series/instinct-mi60.html
   - MI50: https://www.amd.com/en/support/downloads/drivers.html/accelerators/instinct/instinct-mi-series/instinct-mi50.html
   - MI6:  https://www.amd.com/en/support/downloads/drivers.html/accelerators/instinct/instinct-mi-series/instinct-mi6.html

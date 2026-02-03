@@ -53,10 +53,10 @@ Approved OurBox model names (normative vocabulary):
 
 | Model | Model Token | Physical contract (normative intent) |
 |---|---|---|
-| Matchbox | `MBX` | Raspberry Pi-class mounting / small-form-factor appliance |
-| Tinderbox | `TBX` | Jetson SoM-based edge AI appliance (formerly Cinderbox; Cinderbox name now reserved) |
-| Woodbox | `WBX` | Micro-ATX class enclosure / desktop-class server |
-| Cinderbox | `CBX` | Reserved name for Raspberry Pi CM5-based systems (kept for reference; not current shipping token) |
+| Matchbox | `MBX` | Raspberry Pi 5 board / small-form-factor appliance |
+| Cinderbox | `CBX` | Raspberry Pi **CM5** carrier-board / small-form-factor appliance |
+| Tinderbox | `TBX` | Jetson SoM-based edge AI appliance (previously referred to as “Cinderbox”; now renamed to Tinderbox) |
+| Woodbox | `WBX` | Desktop-class server |
 
 ### 3) OurBox model identifiers
 
@@ -66,8 +66,8 @@ OurBox model identifiers follow the org-wide format:
 
 Current instantiated model IDs:
 - OurBox Matchbox: `TOO-OBX-MBX-01`
-- OurBox Tinderbox: `TOO-OBX-TBX-01`
 - OurBox Cinderbox: `TOO-OBX-CBX-01`
+- OurBox Tinderbox: `TOO-OBX-TBX-01`
 - OurBox Woodbox: `TOO-OBX-WBX-01`
 
 ### 4) OurBox trims are intent labels (not spec sheets)
@@ -95,6 +95,7 @@ with `TOO-`.
 Examples:
 - Matchbox Base: `TOO-OBX-MBX-BASE-001`
 - Matchbox Harvest: `TOO-OBX-MBX-HARVEST-001`
+- Cinderbox Base: `TOO-OBX-CBX-BASE-001`
 - Woodbox Base: `TOO-OBX-WBX-BASE-001`
 - Woodbox Forge: `TOO-OBX-WBX-FORGE-001`
 
