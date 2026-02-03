@@ -19,7 +19,7 @@ fields:
 - **Professional / Workstation:** Workstation/creator PCIe cards (RTX/RTX PRO, Radeon Pro, Arc Pro).
 - **Datacenter / Compute:** Datacenter accelerators and inference cards (H/A/L series, Instinct, Intel datacenter lines).
 
-## Full grid (12 surveys)
+## Full grid (13 surveys)
 
 1. Consumer / Desktop — NVIDIA GeForce RTX
 2. Consumer / Desktop — AMD Radeon RX
@@ -33,6 +33,7 @@ fields:
 10. MXM (consumer) — NVIDIA GeForce MXM
 11. MXM (professional) — NVIDIA RTX / Quadro MXM
 12. MXM carriers — MXM-to-PCIe adapters with aux power
+13. M.2 AI accelerators (≥16 GB DRAM on-module)
 
 ## Secondary tags
 
@@ -62,3 +63,6 @@ fields:
 10. [[survey:ourbox-sur-0010-nvidia-geforce-mxm-16gbplus]] ([SUR-0010-nvidia-geforce-mxm-16gbplus.md](SUR-0010-nvidia-geforce-mxm-16gbplus.md))
 11. [[survey:ourbox-sur-0011-nvidia-pro-mxm-16gbplus]] ([SUR-0011-nvidia-pro-mxm-16gbplus.md](SUR-0011-nvidia-pro-mxm-16gbplus.md))
 12. [[survey:ourbox-sur-0012-mxm-to-pcie-adapters-aux-power]] ([SUR-0012-mxm-to-pcie-adapters-aux-power.md](SUR-0012-mxm-to-pcie-adapters-aux-power.md))
+
+### M.2 AI accelerators
+13. [[survey:ourbox-sur-0013-m2-ai-accelerator-modules-16gbplus]] ([SUR-0013-m2-ai-accelerator-modules-16gbplus.md](SUR-0013-m2-ai-accelerator-modules-16gbplus.md))

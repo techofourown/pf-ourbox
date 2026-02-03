@@ -22,7 +22,7 @@ This RFC explores adding an **optional M.2 AI accelerator module** to **OurBox M
 This RFC is intentionally **module-agnostic**: it is about the **storage topology impact** of dedicating one of our M.2 slots to an AI accelerator.
 
 For the landscape of candidate M.2 AI modules and tiers, see:
-- **RFC-0003: Survey of M.2 AI Accelerator Modules Relevant to OurBox Matchbox**
+- **SUR-0013: M.2 AI Accelerator Modules with ≥16 GB DRAM** ([[survey:ourbox-sur-0013-m2-ai-accelerator-modules-16gbplus]])
 
 ### The single, central impact
 
@@ -233,7 +233,7 @@ The Raspberry Pi Flash Drive is a first-party USB 3.0 flash drive with published
 ## References
 
 Internal (Matchbox):
-- [RFC-0003: Survey of M.2 AI Accelerator Modules Relevant to Matchbox](./RFC-0003-m2-ai-accelerator-module-survey.md)
+- [SUR-0013: M.2 AI Accelerator Modules with ≥16 GB DRAM](../../docs/surveys/SUR-0013-m2-ai-accelerator-modules-16gbplus.md)
 - [ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard](../decisions/ADR-0001-primary-motherboard-raspberry-pi-5-16gb.md)
 - [ADR-0002: Use a Sheet Metal Enclosure](../decisions/ADR-0002-sheet-metal-enclosure.md)
 - [ADR-0003: Select Seeed PCIe 2.0 Dual M.2 NVMe HAT](../decisions/ADR-0003-dual-nvme-hat-seeed-pcie2.md)
