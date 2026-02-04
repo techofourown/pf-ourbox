@@ -23,11 +23,11 @@ This BOM represents a budget-oriented Forge trim configuration optimized for loc
 | GPU cooling fan shroud | 1 | Aftermarket | Generic (M40/P40/P100/V100 compatible) | eBay - steffisellsstuff (205707055509) | $22.49 | Includes fan and screws. Mounts to passive datacenter GPU for active cooling |
 | Power supply | 1 | Corsair | CX750M | eBay - onlyonedeal (168118460775) | $49.99 | 750W modular PSU. Includes cables for GPU PCIe power |
 | DDR4 RAM | 1 | Micron | 16GB DDR4-3200MHz DIMM | eBay - thehazma-82 (147133135070) | $54.99 | 1x16GB stick, OEM pull, DDR4-3200 |
-| NVMe SSD (OS drive) | 1 | Kingston (HPE branded) | 0M8S1S3128K-AH / M57100-001 | eBay - ph2electronic (375658399298) | $11.89 | 128GB M.2 2280 SATA SSD for OS. Note: This is SATA protocol on M.2 form factor, not NVMe protocol |
+| NVMe SSD (OS drive) | 1 | Toshiba | SSS0L24702 / KBG30ZMT128G | TBD (returning prior SATA drive) | TBD | 128GB M.2 2242 PCIe NVMe SSD. Replaces incompatible SATA M.2 drive (board slot is PCIe-only) |
 | SATA HDD (user data) | 2 | HP | 461289-001 (1TB 7.2K) | eBay - overnightcomputers (145074586807) | $29.54 (for pair) | 2x 1TB 7200 RPM SATA drives. Matched pair for RAID configuration |
 | SATA cables | 2 | TBD | TBD | TBD | Included with motherboard or case | One per SATA drive (verify motherboard/case includes cables) |
 
-**Total as purchased:** $424.85 (components) + $6.43 (shipping) + $25.51 (tax) = **$456.79**
+**Total as purchased:** Update after NVMe SSD purchase and SATA return are completed. Previous total ($456.79) excluded the new NVMe and included the returned SATA M.2 drive.
 
 ### Key Differences from Base Woodbox
 
@@ -37,7 +37,7 @@ This configuration differs significantly from the baseline Woodbox (`TOO-OBX-WBX
 - **RAM**: 16GB instead of 32GB base
 - **GPU**: Includes NVIDIA Tesla P100 16GB datacenter GPU (Forge trim defining feature)
 - **Storage capacity**: 2x 1TB SATA drives instead of TBD capacity
-- **OS drive**: 128GB M.2 SATA SSD (note: SATA protocol, not NVMe)
+- **OS drive**: 128GB M.2 2242 PCIe NVMe SSD (replaces incompatible SATA M.2 drive)
 
 ### Design Intent
 
@@ -52,10 +52,10 @@ This build prioritizes:
 1. **GPU cooling**: The Tesla P100 is passively cooled and requires the aftermarket fan shroud. Connect fan to motherboard fan header for automatic speed control
 2. **Power**: GPU requires PCIe power connector from modular PSU. CX750M includes necessary cables
 3. **Storage topology**:
-   - 128GB M.2 SATA SSD for OS (installs in M.2 slot)
+   - 128GB M.2 2242 PCIe NVMe SSD for OS (installs in M.2 slot)
    - 2x 1TB SATA drives in software RAID 0 for user data
    - Ensure drives are identical model for RAID pairing
-4. **M.2 compatibility**: Motherboard supports M.2 2242/2260/2280 only (not 2230)
+4. **M.2 compatibility**: Motherboard storage slot supports PCIe Gen3x2 M.2 2242/2260/2280 (no SATA support)
 5. **Case airflow**: Utilize case fan mounting points (top/side/front) for adequate GPU cooling
 6. **RAM**: Single-channel configuration (board has only 1 DIMM slot)
 
