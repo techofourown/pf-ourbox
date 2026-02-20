@@ -12,15 +12,15 @@ fields:
 ## Base Configuration — `TOO-OBX-TBX-BASE-52TB5R`
 
 This SKU upgrades the compute module to Jetson Orin NX 16GB (100 TOPS) and moves to the
-Waveshare aluminum alloy case with integrated camera holder, replacing the custom sheet-metal
-enclosure from [[bom:tinderbox-bom]] (`TOO-OBX-TBX-BASE-N5C7PX`). Carrier board changes
-from the HDMI variant to the DP variant.
+Waveshare aluminum alloy case, replacing the custom sheet-metal enclosure from
+[[bom:tinderbox-bom]] (`TOO-OBX-TBX-BASE-N5C7PX`). Carrier board changes from the HDMI
+variant to the DP variant.
 
 | Item | Qty | Manufacturer | Model / MPN | Purchase Source | Notes |
 |------|-----|--------------|-------------|-----------------|-------|
 | Compute module (SoM) | 1 | NVIDIA | Jetson Orin NX 16GB — 900-13767-0000-000 | eBay | 100 TOPS. Upgrade from Orin Nano 8GB baseline. |
 | Jetson carrier board | 1 | Waveshare | JETSON-ORIN-IO-BASE-DP | Amazon | DisplayPort variant. Compatible with Jetson Orin Nano and Orin NX modules. |
-| Enclosure | 1 | Waveshare | Aluminum Alloy Case for Jetson Orin (with Camera Holder) | Amazon | Cast-aluminum mini-computer case. Compatible with Jetson Orin Nano and Orin NX developer kits. Replaces custom sheet-metal enclosure from N5C7PX. |
+| Enclosure | 1 | Waveshare | Aluminum Alloy Case for Jetson Orin | Amazon | Cast-aluminum mini-computer case. Compatible with Jetson Orin Nano and Orin NX developer kits. Ships with a camera holder accessory (unused). Replaces custom sheet-metal enclosure from N5C7PX. |
 | Active cooling fan | 1 | Waveshare | Official Cooling Fan for Jetson Orin Nano / Orin NX (speed-adjustable) | Amazon | PWM speed-adjustable. Sized for Jetson Orin Nano/NX. |
 | Power supply (DC) | 1 | ABLEGRID | AC Adapter ANU-120200A — 12V 2A (24W) | Unknown | Input: 100–240VAC 0.3A 50/60Hz. Output: 12V 2000mA. DC barrel jack. Matches carrier board DC input. |
 | NVMe SSD (OS / system) | 1 | fanxiang | S501 128 GB M.2 2280 PCIe Gen3x4 NVMe | Amazon | OS/system drive. Up to 1,100 MB/s read. |
@@ -32,7 +32,7 @@ from the HDMI variant to the DP variant.
 |--------|-------------------------|-------------------|
 | Compute module | Jetson Orin Nano 8GB | Jetson Orin NX 16GB (900-13767-0000-000) |
 | Carrier board | Waveshare JETSON-ORIN-IO-BASE-H (HDMI) | Waveshare JETSON-ORIN-IO-BASE-DP |
-| Enclosure | Custom sheet metal (TBD) | Waveshare aluminum alloy case with camera holder |
+| Enclosure | Custom sheet metal (TBD) | Waveshare aluminum alloy case |
 | Cooling | TBD active cooling | Waveshare PWM fan (speed-adjustable) |
 | Power supply | TBD DC adapter | ABLEGRID ANU-120200A 12V 2A |
 | NVMe OS drive | TBD | fanxiang S501 128 GB M.2 2280 |
