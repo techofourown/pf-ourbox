@@ -19,9 +19,11 @@ npm ci                    # Install validator (deterministic)
 npm test                  # Validate the entire GraphMD dataset
 npm run validate:dataset  # Same as npm test
 bash tools/check_legacy_terms.sh  # Check for banned old naming
+python3 tools/mint_cfg.py         # Mint a unique CFG code for a new SKU
 ```
 
-Node.js 20+ required.
+Node.js 20+ required. `tools/mint_cfg.py` requires Python 3.9+ and `ripgrep` (`rg`) as a system
+binary — install with `apt install ripgrep` (Debian/Ubuntu) or `brew install ripgrep` (macOS).
 
 ## GraphMD Dataset Structure
 

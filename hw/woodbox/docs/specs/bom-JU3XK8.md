@@ -15,19 +15,17 @@ This BOM represents a budget-oriented Forge trim configuration optimized for loc
 
 ### Complete Parts List
 
-| Item | Qty | Manufacturer | Model / MPN | Purchase Source | Price (as purchased) | Notes |
-|------|-----|--------------|-------------|-----------------|---------------------|-------|
-| Micro-ATX motherboard with integrated CPU | 1 | ASRock | N100M | Newegg (305093486162) | $124.49 | Intel Quad-Core N100 (up to 3.4 GHz), CPU cooler pre-installed. Has 1x PCIe expansion slot, 1x DDR4 RAM slot, 2x SATA, 1x M.2 NVMe (2242/2260/2280 support) |
-| Case | 1 | Antec | NX200M | Newegg (294748866891) | $41.49 | Micro-ATX tower with 120mm rear fan pre-installed. Supports additional fans (2x top, 2x side, 1x front) |
-| GPU | 1 | NVIDIA | Tesla P100 16GB | eBay - microint (157172285898) | $89.97 | Datacenter GPU with 16GB HBM2. Passive cooling (requires active airflow) |
-| GPU cooling fan shroud | 1 | Aftermarket | Generic (M40/P40/P100/V100 compatible) | eBay - steffisellsstuff (205707055509) | $22.49 | Includes fan and screws. Mounts to passive datacenter GPU for active cooling |
-| Power supply | 1 | Corsair | CX750M | eBay - onlyonedeal (168118460775) | $49.99 | 750W modular PSU. Includes cables for GPU PCIe power |
-| DDR4 RAM | 1 | Micron | 16GB DDR4-3200MHz DIMM | eBay - thehazma-82 (147133135070) | $54.99 | 1x16GB stick, OEM pull, DDR4-3200 |
-| NVMe SSD (OS drive) | 1 | Toshiba | SSS0L24702 / KBG30ZMT128G | TBD (returning prior SATA drive) | TBD | 128GB M.2 2242 PCIe NVMe SSD. Replaces incompatible SATA M.2 drive (board slot is PCIe-only) |
-| SATA HDD (user data) | 2 | HP | 461289-001 (1TB 7.2K) | eBay - overnightcomputers (145074586807) | $29.54 (for pair) | 2x 1TB 7200 RPM SATA drives. Matched pair for RAID configuration |
-| SATA cables | 2 | TBD | TBD | TBD | Included with motherboard or case | One per SATA drive (verify motherboard/case includes cables) |
-
-**Total as purchased:** Update after NVMe SSD purchase and SATA return are completed. Previous total ($456.79) excluded the new NVMe and included the returned SATA M.2 drive.
+| Item | Qty | Manufacturer | Model / MPN | Purchase Source | Notes |
+|------|-----|--------------|-------------|-----------------|-------|
+| Micro-ATX motherboard with integrated CPU | 1 | ASRock | N100M | Newegg (305093486162) | Intel Quad-Core N100 (up to 3.4 GHz), CPU cooler pre-installed. Has 1x PCIe expansion slot, 1x DDR4 RAM slot, 2x SATA, 1x M.2 NVMe (2242/2260/2280 support) |
+| Case | 1 | Antec | NX200M | Newegg (294748866891) | Micro-ATX tower with 120mm rear fan pre-installed. Supports additional fans (2x top, 2x side, 1x front) |
+| GPU | 1 | NVIDIA | Tesla P100 16GB | eBay - microint (157172285898) | Datacenter GPU with 16GB HBM2. Passive cooling (requires active airflow) |
+| GPU cooling fan shroud | 1 | Aftermarket | Generic (M40/P40/P100/V100 compatible) | eBay - steffisellsstuff (205707055509) | Includes fan and screws. Mounts to passive datacenter GPU for active cooling |
+| Power supply | 1 | Corsair | CX750M | eBay - onlyonedeal (168118460775) | 750W modular PSU. Includes cables for GPU PCIe power |
+| DDR4 RAM | 1 | Micron | 16GB DDR4-3200MHz DIMM | eBay - thehazma-82 (147133135070) | 1x16GB stick, OEM pull, DDR4-3200 |
+| NVMe SSD (OS drive) | 1 | Toshiba | SSS0L24702 / KBG30ZMT128G | TBD (returning prior SATA drive) | 128GB M.2 2242 PCIe NVMe SSD. Replaces incompatible SATA M.2 drive (board slot is PCIe-only) |
+| SATA HDD (user data) | 2 | HP | 461289-001 (1TB 7.2K) | eBay - overnightcomputers (145074586807) | 2x 1TB 7200 RPM SATA drives. Matched pair for RAID configuration |
+| SATA cables | 2 | TBD | TBD | TBD | One per SATA drive (verify motherboard/case includes cables) |
 
 ### Key Differences from Base Woodbox
 
@@ -44,7 +42,7 @@ This configuration differs significantly from the baseline Woodbox (`TOO-OBX-WBX
 This build prioritizes:
 1. **Local AI inference** - P100 GPU with 16GB VRAM suitable for running 7B-13B parameter LLMs locally
 2. **Data sovereignty** - Personal server to replace cloud services (calendar, photos, documents, chat)
-3. **Cost effectiveness** - Budget-oriented component selection (~$450 total)
+3. **Cost effectiveness** - Budget-oriented component selection
 4. **Reliability** - Datacenter-grade GPU, RAID-capable storage
 
 ### Assembly Notes
