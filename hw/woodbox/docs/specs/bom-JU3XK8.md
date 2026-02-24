@@ -20,12 +20,13 @@ This BOM represents a budget-oriented Forge trim configuration optimized for loc
 | Micro-ATX motherboard with integrated CPU | 1 | ASRock | N100M | Newegg (305093486162) | Intel Quad-Core N100 (up to 3.4 GHz), CPU cooler pre-installed. Has 1x PCIe expansion slot, 1x DDR4 RAM slot, 2x SATA, 1x M.2 NVMe (2242/2260/2280 support) |
 | Case | 1 | Antec | NX200M | Newegg (294748866891) | Micro-ATX tower with 120mm rear fan pre-installed. Supports additional fans (2x top, 2x side, 1x front) |
 | GPU | 1 | NVIDIA | Tesla P100 16GB | eBay - microint (157172285898) | Datacenter GPU with 16GB HBM2. Passive cooling (requires active airflow) |
-| GPU cooling fan shroud | 1 | Aftermarket | Generic (M40/P40/P100/V100 compatible) | eBay - steffisellsstuff (205707055509) | Includes fan and screws. Mounts to passive datacenter GPU for active cooling |
+| GPU cooling fan shroud | 1 | poly-fab | Nvidia Tesla Compact Blower Fan Kit (K20/K40/K80/M10/M40/M60/P40/P100/V100s) | TBD (on order) | 3D-printed shroud, mounting screws, and adhesive. Adds 1.26" to card length and 1.37" to height (quad-slot). Case fit not yet verified. |
+| GPU cooling fan | 1 | AVC | BAZB0925R2U | on hand | 97mm centrifugal blower, 12V DC 1A, hydraulic bearing, 24.0 CFM. Mounts in poly-fab shroud. |
 | Power supply | 1 | Corsair | CX750M | eBay - onlyonedeal (168118460775) | 750W modular PSU. Includes cables for GPU PCIe power |
 | DDR4 RAM | 1 | Micron | 16GB DDR4-3200MHz DIMM | eBay - thehazma-82 (147133135070) | 1x16GB stick, OEM pull, DDR4-3200 |
 | NVMe SSD (OS drive) | 1 | Toshiba | SSS0L24702 / KBG30ZMT128G | TBD (returning prior SATA drive) | 128GB M.2 2242 PCIe NVMe SSD. Replaces incompatible SATA M.2 drive (board slot is PCIe-only) |
-| SATA HDD (user data) | 2 | HP | 461289-001 (1TB 7.2K) | eBay - overnightcomputers (145074586807) | 2x 1TB 7200 RPM SATA drives. Matched pair for RAID configuration |
-| SATA cables | 2 | TBD | TBD | TBD | One per SATA drive (verify motherboard/case includes cables) |
+| SATA HDD (user data) | 1 | Seagate | ST6000DM003-2CY186 | TBD | 6TB 3.5" SATA HDD |
+| SATA cables | 1 | TBD | TBD | TBD | Verify motherboard/case includes cable |
 
 ### Key Differences from Base Woodbox
 
@@ -43,16 +44,15 @@ This build prioritizes:
 1. **Local AI inference** - P100 GPU with 16GB VRAM suitable for running 7B-13B parameter LLMs locally
 2. **Data sovereignty** - Personal server to replace cloud services (calendar, photos, documents, chat)
 3. **Cost effectiveness** - Budget-oriented component selection
-4. **Reliability** - Datacenter-grade GPU, RAID-capable storage
+4. **Reliability** - Datacenter-grade GPU
 
 ### Assembly Notes
 
-1. **GPU cooling**: The Tesla P100 is passively cooled and requires the aftermarket fan shroud. Connect fan to motherboard fan header for automatic speed control
+1. **GPU cooling**: The Tesla P100 is passively cooled. The poly-fab shroud with AVC BAZB0925R2U fan provides active cooling. Connect fan to motherboard fan header for automatic speed control. Case fit not yet verified.
 2. **Power**: GPU requires PCIe power connector from modular PSU. CX750M includes necessary cables
 3. **Storage topology**:
    - 128GB M.2 2242 PCIe NVMe SSD for OS (installs in M.2 slot)
-   - 2x 1TB SATA drives in software RAID 0 for user data
-   - Ensure drives are identical model for RAID pairing
+   - 6TB SATA HDD for user data (installs in 3.5" drive bay)
 4. **M.2 compatibility**: Motherboard storage slot supports PCIe Gen3x2 M.2 2242/2260/2280 (no SATA support)
 5. **Case airflow**: Utilize case fan mounting points (top/side/front) for adequate GPU cooling
 6. **RAM**: Single-channel configuration (board has only 1 DIMM slot)
@@ -63,14 +63,12 @@ Intended software load:
 - Linux-based OS (distribution TBD)
 - Local LLM inference stack (for AI chatbot capabilities)
 - Self-hosted services for calendar, file sync, photos, etc.
-- Software RAID 0 configuration for SATA drives (via Linux mdadm)
 
 ### Validation Status
 
 - [ ] Physical fit verified (GPU length vs case clearance)
 - [ ] Power budget validated (PSU wattage sufficient)
 - [ ] Thermal testing (GPU temps under load with fan shroud)
-- [ ] RAID array creation and testing
 - [ ] Software load deployment
 
 ### References
