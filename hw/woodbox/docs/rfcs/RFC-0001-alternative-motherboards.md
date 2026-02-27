@@ -3,13 +3,10 @@ typeId: rfc
 recordId: woodbox-rfc-0001-alternative-motherboards
 parent: model:woodbox
 fields:
-  status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
 # RFC-0001: Alternative Motherboards for OurBox Woodbox
-
-**Status:** Draft  
 **Created:** 2026-01-19  
 **Updated:** 2026-01-19
 

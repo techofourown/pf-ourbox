@@ -3,13 +3,10 @@ typeId: adr
 recordId: woodbox-adr-0002-base-config-no-discrete-gpu
 parent: model:woodbox
 fields:
-  status: Accepted
   date: '2026-01-19'
 ---
 # ADR-0002: Ship OurBox Woodbox Base Configuration Without a Discrete GPU
 
-## Status
-Accepted
 
 ## Date
 2026-01-19

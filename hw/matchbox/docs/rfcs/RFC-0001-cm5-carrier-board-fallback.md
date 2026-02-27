@@ -3,13 +3,10 @@ typeId: rfc
 recordId: matchbox-rfc-0001-cm5-carrier-board-fallback
 parent: model:matchbox
 fields:
-  status: Draft
   created: '2026-01-16'
   updated: '2026-01-16'
 ---
 # RFC-0001: CM5 + Pi-Compatible Carrier Board as a Fallback Path for OurBox Matchbox
-
-**Status:** Draft  
 **Created:** 2026-01-16  
 **Updated:** 2026-01-16
 

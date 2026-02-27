@@ -3,13 +3,10 @@ typeId: adr
 recordId: tinderbox-adr-0001-carrier-board-waveshare-jetson-orin-io-base-h-hdmi
 parent: model:tinderbox
 fields:
-  status: Accepted
   date: '2026-01-30'
 ---
 # ADR-0001: Select Waveshare JETSON-ORIN-IO-BASE-H (HDMI) as the Carrier Board for OurBox Tinderbox
 
-## Status
-Accepted
 
 ## Date
 2026-01-30

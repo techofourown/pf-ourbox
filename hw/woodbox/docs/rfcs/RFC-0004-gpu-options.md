@@ -3,14 +3,11 @@ typeId: rfc
 recordId: woodbox-rfc-0004-gpu-options
 parent: model:woodbox
 fields:
-  status: Draft
   created: '2026-01-19'
   updated: '2026-02-02'
 ---
 
 # RFC-0004: GPU Options for OurBox Woodbox
-
-**Status:** Draft  
 **Created:** 2026-01-19  
 **Updated:** 2026-02-02
 

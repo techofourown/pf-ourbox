@@ -3,15 +3,11 @@ typeId: adr
 recordId: ourbox-adr-0002-minimum-raspberry-pi-platform-pi5
 parent: product_family:ourbox
 fields:
-  status: Accepted
   date: '2026-02-01'
 ---
 
 # ADR-0002: Set Raspberry Pi 5 as the Minimum Supported Raspberry Pi Platform for OurBox
 
-## Status
-
-Accepted
 
 ## Date
 

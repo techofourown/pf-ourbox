@@ -3,11 +3,8 @@ typeId: rfc
 recordId: matchbox-rfc-0000-template
 parent: model:matchbox
 fields:
-  status: Template
 ---
 # RFC-XXXX: [Title]
-
-**Status:** Draft | Discussion | Accepted | Rejected | Withdrawn  
 **Created:** YYYY-MM-DD  
 **Updated:** YYYY-MM-DD
 

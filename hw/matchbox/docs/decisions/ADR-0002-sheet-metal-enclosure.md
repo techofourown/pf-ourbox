@@ -3,12 +3,9 @@ typeId: adr
 recordId: matchbox-adr-0002-sheet-metal-enclosure
 parent: model:matchbox
 fields:
-  status: Accepted
 ---
 # ADR-0002: Use a Sheet Metal Enclosure for OurBox Matchbox
 
-## Status
-Accepted
 
 ## Context
 

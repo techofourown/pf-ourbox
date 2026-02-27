@@ -3,13 +3,10 @@ typeId: adr
 recordId: woodbox-adr-0003-base-ram-32gb
 parent: model:woodbox
 fields:
-  status: Accepted
   date: '2026-01-19'
 ---
 # ADR-0003: Set OurBox Woodbox Base Configuration RAM to 32 GB
 
-## Status
-Accepted
 
 ## Date
 2026-01-19

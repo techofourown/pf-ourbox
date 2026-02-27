@@ -3,13 +3,10 @@ typeId: adr
 recordId: cinderbox-adr-0001-baseline-module-raspberry-pi-cm5-16gb
 parent: model:cinderbox
 fields:
-  status: Accepted
   date: '2026-02-03'
 ---
 # ADR-0001: Select Raspberry Pi Compute Module 5 (CM5) as the Baseline Compute Module Family for OurBox Cinderbox
 
-## Status
-Accepted
 
 ## Date
 2026-02-03

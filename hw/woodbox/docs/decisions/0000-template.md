@@ -3,12 +3,9 @@ typeId: adr
 recordId: woodbox-adr-0000-template
 parent: model:woodbox
 fields:
-  status: Template
 ---
 # ADR-XXXX: [Title in Active Voice]
 
-## Status
-Proposed | Accepted | Deprecated | Superseded by [ADR-YYYY-descriptive-slug]
 
 ## Context
 

@@ -3,13 +3,10 @@ typeId: adr
 recordId: tinderbox-adr-0002-baseline-module-jetson-orin-nano-8gb
 parent: model:tinderbox
 fields:
-  status: Accepted
   date: '2026-01-30'
 ---
 # ADR-0002: Select NVIDIA Jetson Orin Nano 8GB as the Baseline Compute Module for OurBox Tinderbox
 
-## Status
-Accepted
 
 ## Date
 2026-01-30

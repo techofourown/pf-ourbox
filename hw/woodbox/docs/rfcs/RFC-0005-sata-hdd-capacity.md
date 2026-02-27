@@ -3,13 +3,10 @@ typeId: rfc
 recordId: woodbox-rfc-0005-sata-hdd-capacity
 parent: model:woodbox
 fields:
-  status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
 # RFC-0005: SATA HDD Capacity and Model Options
-
-**Status:** Draft  
 **Created:** 2026-01-19  
 **Updated:** 2026-01-19
 

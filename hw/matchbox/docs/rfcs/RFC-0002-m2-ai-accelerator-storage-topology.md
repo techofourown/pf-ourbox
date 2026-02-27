@@ -3,13 +3,10 @@ typeId: rfc
 recordId: matchbox-rfc-0002-m2-ai-accelerator-storage-topology
 parent: model:matchbox
 fields:
-  status: Draft
   created: '2026-01-25'
   updated: '2026-01-25'
 ---
 # RFC-0002: Optional M.2 AI Accelerator Module Trim for OurBox Matchbox (Storage Topology Impacts)
-
-**Status:** Draft  
 **Created:** 2026-01-25  
 **Updated:** 2026-01-25
 

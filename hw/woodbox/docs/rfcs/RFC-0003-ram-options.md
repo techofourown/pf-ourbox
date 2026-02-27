@@ -3,13 +3,10 @@ typeId: rfc
 recordId: woodbox-rfc-0003-ram-options
 parent: model:woodbox
 fields:
-  status: Draft
   created: '2026-01-19'
   updated: '2026-01-19'
 ---
 # RFC-0003: RAM SKU and Layout Options
-
-**Status:** Draft  
 **Created:** 2026-01-19  
 **Updated:** 2026-01-19
 

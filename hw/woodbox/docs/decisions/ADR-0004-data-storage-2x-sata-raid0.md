@@ -3,13 +3,10 @@ typeId: adr
 recordId: woodbox-adr-0004-data-storage-2x-sata-raid0
 parent: model:woodbox
 fields:
-  status: Accepted
   date: '2026-01-19'
 ---
 # ADR-0004: Use Two SATA HDDs in RAID 0 for User Data in the Base Configuration
 
-## Status
-Accepted
 
 ## Date
 2026-01-19

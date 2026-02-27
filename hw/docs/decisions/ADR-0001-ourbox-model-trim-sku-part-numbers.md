@@ -3,13 +3,10 @@ typeId: adr
 recordId: ourbox-adr-0001-model-trim-sku-part-numbers
 parent: product_family:ourbox
 fields:
-  status: Accepted
   date: '2026-01-29'
 ---
 # ADR-0001: Operationalize OurBox Naming as Model → Trim → SKU (TOO-prefixed Part Numbers)
 
-## Status
-Accepted
 
 ## Date
 2026-01-29

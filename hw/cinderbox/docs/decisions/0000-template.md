@@ -3,12 +3,9 @@ typeId: adr
 recordId: cinderbox-adr-0000-template
 parent: model:cinderbox
 fields:
-  status: Template
 ---
 # ADR-XXXX: [Title in Active Voice]
 
-## Status
-Proposed | Accepted | Deprecated | Superseded by [ADR-YYYY-descriptive-slug]
 
 ## Date
 YYYY-MM-DD

@@ -3,13 +3,10 @@ typeId: rfc
 recordId: tinderbox-rfc-0001-jetson-module-options
 parent: model:tinderbox
 fields:
-  status: Draft
   created: '2026-01-30'
   updated: '2026-01-30'
 ---
 # RFC-0001: Jetson Module Options for OurBox Tinderbox (Orin Nano 4GB, Orin NX 8GB/16GB)
-
-**Status:** Draft  
 **Created:** 2026-01-30  
 **Updated:** 2026-01-30
 
