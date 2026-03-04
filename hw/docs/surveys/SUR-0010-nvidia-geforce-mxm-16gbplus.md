@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. Secondary-market MXM modules often have gray-market provenance, inconsistent labeling, and uncertain firmware history.
 * **Integration issues:** **An MXM module behind a PCIe carrier is a platform build, not a normal GPU purchase.** Do not let module availability read as end-to-end viability. Require the exact module SKU, exact carrier SKU, exact cooling solution, exact aux-power method, and known firmware provenance.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 ## Purpose

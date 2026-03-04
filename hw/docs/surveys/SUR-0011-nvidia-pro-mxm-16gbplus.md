@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. Industrial/embedded parts often arrive without a validated carrier, cooler, or platform documentation.
 * **Integration issues:** **An MXM module behind a PCIe carrier is a platform build, not a normal GPU purchase.** Add-to-cart module listings do **not** prove end-to-end viability. Require the exact module SKU, exact carrier board, exact cooling plan, exact power plan, and known firmware source.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 ## Purpose

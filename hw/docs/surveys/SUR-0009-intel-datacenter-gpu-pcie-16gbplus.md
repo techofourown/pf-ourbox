@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. OEM harnessing, airflow assumptions, and server-only packaging details are often missing from secondary-market listings.
 * **Integration issues:** Write like the deployment class matters. A **600 W PCIe accelerator** is not “just another full-height card.” Elevate server-only expectations, harness ambiguity, and thermal burden. Mark unknown connector details as **not procurement-ready for ATX builds**.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 ## Purpose
