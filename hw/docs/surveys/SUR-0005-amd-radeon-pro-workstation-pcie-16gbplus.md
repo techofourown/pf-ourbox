@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: professional-workstation
   vendor: amd
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0005: AMD Radeon Pro Workstation PCIe GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Professional / workstation PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** Self-cooled as sold, but high-end boards can still be large, high-power, and acoustically challenging in a quiet consumer enclosure.
+* **Power/cabling burden:** Connector families vary across the product stack. PSU and cable planning remain exact-board questions, especially on higher-power models.
+* **Mechanical burden:** Slot thickness, reference length, and exact enclosure behavior vary. Do not infer compact-case suitability from workstation branding alone.
+* **Software/firmware burden:** PRO driver packaging and Linux deployment posture are part of the support burden. Treat graphics/compute/runtime assumptions explicitly.
+* **Used-market / accessory burden:** Moderate. Used-market boards may differ from AMD reference expectations and may omit supporting accessories or documentation.
+* **Integration issues:** Keep connector family, slot thickness, and PSU guidance visible at survey level. Do not let “workstation” read as “predictable in every consumer case.” **Exact board model required for final compatibility.**
+
 
 ## Purpose
 

@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: professional-workstation
   vendor: intel
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0006: Intel Arc Pro Workstation PCIe GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Professional / workstation PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** This family includes both relatively simple self-cooled cards and more server-like passive or specialized variants. Passive variants are **not self-cooling in a tower case**.
+* **Power/cabling burden:** Burden ranges from bus-powered cards to AIB-dependent auxiliary-power designs. Do not infer connector family or PSU impact from the GPU name alone.
+* **Mechanical burden:** Final fit depends on the exact board-partner model. This survey includes meaningful AIB variance in form factor, slot usage, and airflow behavior.
+* **Software/firmware burden:** **ReBAR / Above 4G Decoding, firmware currency, kernel level, and Mesa/userspace currency are real prerequisites.** Do not bury them in deep notes.
+* **Used-market / accessory burden:** Moderate. Passive or specialized boards may require a custom airflow plan that is not obvious from the product name.
+* **Integration issues:** Intel Arc Pro is **not** a single, mechanically uniform category. Make it obvious that some entries are ordinary workstation cards and some are closer to custom-integration projects. **Exact board model required for final compatibility.**
+
 
 ## Purpose
 

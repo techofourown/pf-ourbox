@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: consumer-desktop
   vendor: intel
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0003: Intel Arc Desktop Add-in GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Consumer desktop PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** Self-cooled as sold, but exact card dimensions, slot thickness, and connector layout vary by board partner.
+* **Power/cabling burden:** Exact auxiliary power arrangement depends on the board model. Do not infer connector count or PSU burden from the GPU name alone.
+* **Mechanical burden:** Final fit requires the exact board-partner model. GPU family name is not enough to confirm length, thickness, or cable-clearance behavior.
+* **Software/firmware burden:** **ReBAR / Above 4G Decoding is a real platform prerequisite.** Kernel, Mesa, linux-firmware, and distro currency are part of the deployment plan, not an afterthought.
+* **Used-market / accessory burden:** Moderate. Reference-vs-AIB differences matter more than the GPU name suggests.
+* **Integration issues:** This survey does **not** imply drop-in success on older or poorly configured platforms. Make BIOS prerequisites impossible to miss. Make Linux stack currency impossible to miss. **Exact AIB model required for final compatibility.**
+
 
 ## Purpose
 

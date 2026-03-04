@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-03'
-  updated: '2026-02-03'
+  updated: '2026-03-04'
   component: gpu
   class: consumer-mobile
   vendor: nvidia
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0010: NVIDIA GeForce (Consumer) MXM GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Consumer mobile GPU modules in MXM form.
+* **Consumer-case readiness:** Non-drop-in platform.
+* **Cooling burden:** MXM modules are **not self-cooling as purchased**. A working build requires an exact cooling solution matched to the module and carrier.
+* **Power/cabling burden:** An MXM module behind a PCIe carrier typically requires an auxiliary-powered carrier and a validated power path. Module listing alone does not prove end-to-end power compatibility.
+* **Mechanical burden:** Module form factor, carrier board, retention, display/bracket arrangement, and case integration all remain unresolved unless the exact platform stack is identified.
+* **Software/firmware burden:** vBIOS provenance, host BIOS behavior, and carrier compatibility are real deployment risks.
+* **Used-market / accessory burden:** High. Secondary-market MXM modules often have gray-market provenance, inconsistent labeling, and uncertain firmware history.
+* **Integration issues:** **An MXM module behind a PCIe carrier is a platform build, not a normal GPU purchase.** Do not let module availability read as end-to-end viability. Require the exact module SKU, exact carrier SKU, exact cooling solution, exact aux-power method, and known firmware provenance.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 ## Purpose
 

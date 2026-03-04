@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-03'
-  updated: '2026-02-03'
+  updated: '2026-03-04'
   component: gpu
   class: accessory-adapter
   vendor: various
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0012: MXM-to-PCIe x16 Adapters / Carrier Boards that Accept Auxiliary Power (for ≥16GB NVIDIA MXM GPUs)
+
+## Warning and Integration Issues
+
+* **Deployment class:** Carrier boards / platform fragments for MXM modules.
+* **Consumer-case readiness:** Non-drop-in platform.
+* **Cooling burden:** A carrier board does not solve cooling by itself. Module cooling, airflow direction, and heatsink/blower strategy remain separate requirements.
+* **Power/cabling burden:** A carrier’s auxiliary-power connector does **not** guarantee safe support for every module that can be physically mounted. Published TDP ceiling is procurement-critical.
+* **Mechanical burden:** Carrier size, standoffs, bracket arrangement, riser behavior, display routing, and case installation remain platform-level questions.
+* **Software/firmware burden:** Carrier availability does not solve vBIOS, host BIOS, or end-to-end PCIe compatibility.
+* **Used-market / accessory burden:** High. A buyable carrier board does not imply included cooler, validated bracketry, or an actually working module stack.
+* **Integration issues:** **An MXM carrier is not a GPU. It is a platform fragment.** Do not let “add to cart” read as “ready to use.” Require the exact module, exact carrier, exact cooling, exact aux-power method, and known host assumptions before treating any combination as viable.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 ## Purpose
 

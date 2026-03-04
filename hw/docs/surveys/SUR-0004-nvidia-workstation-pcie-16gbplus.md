@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: professional-workstation
   vendor: nvidia
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0004: NVIDIA Professional / Workstation PCIe GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Professional / workstation PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** Most boards are self-cooled as sold, but blower, compact workstation, and flow-through designs behave differently in small or quiet cases. Do not assume “workstation” means mechanically or thermally uniform.
+* **Power/cabling burden:** Connector family is a first-class deployment fact. This survey includes classic PCIe 6-pin / 8-pin, **EPS / CPU-style 8-pin** cases, and newer **16-pin / CEM5 / 12V-2x6** cases. Cable routing and bend radius matter.
+* **Mechanical burden:** Some boards are single-slot or compact; others are dual-slot flow-through or larger. Final fit depends on the exact card, not the family name.
+* **Software/firmware burden:** Professional driver path is part of the deployment plan. Linux support, licensing posture, and runtime expectations differ from consumer GeForce assumptions.
+* **Used-market / accessory burden:** Moderate. Used workstation cards may be missing adapters, support hardware, or documentation for nonstandard power expectations.
+* **Integration issues:** Do not bury connector-family oddities. Do not bury airflow-style differences. A workstation GPU can still be a poor compact-case fit. **Exact board model required for final compatibility.**
+
 
 **Goal:** Survey NVIDIA’s professional/workstation **PCIe add-in GPUs** that could be relevant to a future **Forge** trim (or a higher-end “creator/AI” profile), emphasizing **VRAM**, **power + connector standards**, **cooling style**, and the **Linux driver/support** implications.
 

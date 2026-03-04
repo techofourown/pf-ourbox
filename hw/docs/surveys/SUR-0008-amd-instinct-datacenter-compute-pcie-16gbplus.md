@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: datacenter-compute
   vendor: amd
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0008: AMD Instinct Datacenter / Compute PCIe GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Datacenter / compute PCIe accelerators.
+* **Consumer-case readiness:** Custom integration required.
+* **Cooling burden:** Most of this class is **passive as sold** and assumes server airflow. These cards are **not consumer-case-ready as sold**.
+* **Power/cabling burden:** Harness planning is mandatory. Connector family is a deployment-critical fact, not a minor note. Where exact connector or harness details are not pinned to the exact board, the entry is **not procurement-ready until exact board and harness are identified**.
+* **Mechanical burden:** Full-length, high-power passive boards must be evaluated as installed assemblies, not just as bare cards. Any added airflow hardware can change effective fit.
+* **Software/firmware burden:** ROCm version, kernel policy, firmware policy, and runtime scope are part of the support burden, not optional later details.
+* **Used-market / accessory burden:** High. Used-market passive cards rarely arrive with a validated consumer-case airflow solution or harness plan.
+* **Integration issues:** Do not let “300 W passive accelerator” read like “ordinary PCIe AIC.” State plainly that airflow engineering is mandatory, harness planning is mandatory, and driver/runtime policy is part of the deployment burden. For cards like **MI210**, elevate the connector-family issue into the main warning language.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 ## Purpose
 

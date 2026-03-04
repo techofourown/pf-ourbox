@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-01-19'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: consumer-desktop
   vendor: nvidia
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0001: NVIDIA GeForce RTX Desktop Add-in GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Consumer desktop PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** Self-cooled as sold, but thermal behavior, noise, and sustained load performance vary materially by exact board-partner cooler. High-power models are not automatically quiet or appliance-friendly.
+* **Power/cabling burden:** Auxiliary power family varies by exact board and generation. Some boards use classic PCIe 8-pin, while newer/high-power boards may use 16-pin / 12V-2x6 / CEM5-era cabling. PSU guidance can drift between reference and AIB boards.
+* **Mechanical burden:** Final fit cannot be inferred from the GPU name alone. Length, height, slot thickness, side-panel clearance, and cable bend radius are exact-board questions.
+* **Software/firmware burden:** Normal consumer driver burden, but Linux support posture and feature behavior still vary by generation and distro.
+* **Used-market / accessory burden:** Moderate. Used cards may be missing included adapters, support brackets, or original packaging that documented connector expectations.
+* **Integration issues:** Inclusion in this survey means only that the GPU family meets the VRAM filter. It does **not** mean the exact card will fit the case, clear the side panel, route power cables safely, or run quietly. **Exact AIB model required for final compatibility.**
+
 
 > This section was initially drafted as a standalone survey RFC and is now incorporated here as the first of multiple market-survey sections.
 
