@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. Used-market cards often arrive without the accessory stack needed for consumer use, and aftermarket “compatible” shrouds/adapters may still require sealing, adaptation, or extra wiring to work correctly.
 * **Integration issues:** Do **not** let “PCIe card” read as “drop-in consumer GPU.” For Tesla **M40 / P40 / P100 / V100-family passive cards**, a validated airflow solution is mandatory. For **Tesla P100 PCIe**, preserve the fact that the board-side auxiliary input is **CPU 8-pin / ATX 2×4 style**, that a normal PCIe 6+2 cable must **not** be reversed or repurposed, and that consumer EPS plug body/latch geometry can still fail at the card end. Preserve the **030-0571-000-style CPU-8 to dual PCIe-8 adapter family** as a known consumer-PSU integration path. Treat the **shroud, fan model, fan power method, fan lead reach, and GPU power adapter** as part of the validated assembly definition.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 **Goal:** Survey NVIDIA datacenter/compute-oriented GPUs that could be relevant for local inference acceleration, with attention to **form factor** (PCIe vs SXM), power delivery, thermals, and support constraints.

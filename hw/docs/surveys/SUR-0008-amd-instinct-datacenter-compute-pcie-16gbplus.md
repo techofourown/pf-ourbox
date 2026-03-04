@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. Used-market passive cards rarely arrive with a validated consumer-case airflow solution or harness plan.
 * **Integration issues:** Do not let “300 W passive accelerator” read like “ordinary PCIe AIC.” State plainly that airflow engineering is mandatory, harness planning is mandatory, and driver/runtime policy is part of the deployment burden. For cards like **MI210**, elevate the connector-family issue into the main warning language.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 ## Purpose

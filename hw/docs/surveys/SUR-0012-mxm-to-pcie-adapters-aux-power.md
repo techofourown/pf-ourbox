@@ -26,7 +26,7 @@ fields:
 * **Used-market / accessory burden:** High. A buyable carrier board does not imply included cooler, validated bracketry, or an actually working module stack.
 * **Integration issues:** **An MXM carrier is not a GPU. It is a platform fragment.** Do not let “add to cart” read as “ready to use.” Require the exact module, exact carrier, exact cooling, exact aux-power method, and known host assumptions before treating any combination as viable.
 
-> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](README.md#server-grade-and-module-based-gpu-integration-hazards-in-consumer-systems).
 
 
 ## Purpose
