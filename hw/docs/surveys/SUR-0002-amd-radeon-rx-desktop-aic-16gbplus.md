@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: consumer-desktop
   vendor: amd
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0002: AMD Radeon RX Desktop Add-in GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Consumer desktop PCIe add-in GPUs.
+* **Consumer-case readiness:** Standard consumer integration.
+* **Cooling burden:** Self-cooled as sold, but cooler size, noise profile, and sustained thermals vary by exact board-partner design. High-power models can be large, loud, and case-sensitive.
+* **Power/cabling burden:** Board-partner connector choices vary materially. Some boards use classic 8-pin power; some newer boards adopt 16-pin-class cabling. Reference PSU guidance and AIB PSU guidance may not match.
+* **Mechanical burden:** Final compatibility cannot be inferred from the GPU name alone. Length, thickness, slot count, connector placement, and cable-clearance needs are exact-board questions.
+* **Software/firmware burden:** Normal consumer driver burden, but generation age and driver-support posture still matter for long-lived product planning.
+* **Used-market / accessory burden:** Moderate. Used-market cards may differ from reference designs and may not include documentation for connector or bracket differences.
+* **Integration issues:** Do not let “Radeon RX with ≥16 GB” read as “safe to buy for any case.” **Exact AIB model required for final compatibility.** Keep connector family, slot thickness, PSU guidance drift, and cable bend radius visible.
+
 
 #### Purpose
 

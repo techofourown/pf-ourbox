@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-03'
-  updated: '2026-02-03'
+  updated: '2026-03-04'
   component: ai-accelerator
   class: accelerator-module
   vendor: various
@@ -14,6 +14,18 @@ fields:
 ---
 
 # SUR-0013: M.2 AI Accelerator Modules with ≥16 GB On‑Module DRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Accelerator modules in M.2 form factor.
+* **Consumer-case readiness:** Non-drop-in platform.
+* **Cooling burden:** These modules may require explicit heatsinking or fan-assisted cooling, and their installed thermal solution can materially change height and enclosure fit.
+* **Power/cabling burden:** M.2 keying alone does not prove host viability. Slot power budget, PCIe lane width, generation, and board-level thermal/power delivery all matter.
+* **Mechanical burden:** “2280 M-key” does **not** guarantee clearance once the required thermal solution is installed. Height and neighboring-component clearance must be validated.
+* **Software/firmware burden:** Vendor runtimes, SDKs, kernel modules, and packaging are part of the platform definition.
+* **Used-market / accessory burden:** Moderate to high. Some offerings are preproduction, niche, or require vendor-specific software and cooling that are not implicit in the module listing.
+* **Integration issues:** Do not present an M.2 AI module like a drop-in GPU substitute. A usable build still requires a compatible host slot, adequate thermals, and an explicit software plan.
+
 
 ## Purpose
 

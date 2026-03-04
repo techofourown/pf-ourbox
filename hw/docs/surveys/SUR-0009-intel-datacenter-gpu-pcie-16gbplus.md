@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: datacenter-compute
   vendor: intel
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0009: Intel Datacenter GPU / Accelerator PCIe Cards with ≥16 GB VRAM (Board Memory)
+
+## Warning and Integration Issues
+
+* **Deployment class:** Datacenter GPU / accelerator PCIe cards.
+* **Consumer-case readiness:** Non-drop-in platform.
+* **Cooling burden:** These parts are server-oriented accelerators, not normal tower GPUs. Passive or high-power cards assume server-grade airflow or OEM system design.
+* **Power/cabling burden:** Auxiliary power and harness requirements are often OEM/server-specific. If the exact connector family is not identified from a primary source, the entry is **not procurement-ready for ATX or mATX builds**.
+* **Mechanical burden:** FHHL, dual-slot, or very-high-power form factors do not make these parts “ordinary AICs.” Mechanical installability and thermal viability are separate questions.
+* **Software/firmware burden:** Flex, Max, and Gaudi families carry different software stacks, runtime expectations, and validation burdens. Do not present them as ordinary consumer GPU installs.
+* **Used-market / accessory burden:** High. OEM harnessing, airflow assumptions, and server-only packaging details are often missing from secondary-market listings.
+* **Integration issues:** Write like the deployment class matters. A **600 W PCIe accelerator** is not “just another full-height card.” Elevate server-only expectations, harness ambiguity, and thermal burden. Mark unknown connector details as **not procurement-ready for ATX builds**.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 ## Purpose
 

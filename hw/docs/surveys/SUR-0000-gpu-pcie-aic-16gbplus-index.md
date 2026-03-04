@@ -5,13 +5,24 @@ parent: product_family:ourbox
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-03'
+  updated: '2026-03-04'
   component: gpu
   interface: pcie-aic
   vramMinimumGB: 16
 ---
 
 # SUR-0000: GPU PCIe Add-in Cards with ≥16 GB VRAM — Survey Index
+
+**Inclusion in this index means only that a part meets the survey filter. It does not mean the part is appliance-friendly, consumer-case-compatible, ATX-PSU-friendly, acoustically acceptable, or procurement-ready.**
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
+## Integration-readiness legend
+
+- **Drop-in candidate** — ordinary self-cooled consumer-style part with no unusual harness or platform prerequisites beyond normal PC integration.
+- **Standard consumer integration** — normal PC-class integration, but exact board model, dimensions, connector family, and PSU/cable routing still require validation.
+- **Custom integration required** — nonstandard airflow, harnessing, adapters, or case-fit work is expected before consumer-case use.
+- **Non-drop-in platform** — module, carrier, server-only part, or platform fragment that should not be treated like a normal GPU purchase.
 
 ## Core classification buckets
 
@@ -40,7 +51,7 @@ fields:
 - **Interface:** PCIe add-in cards (AIC)
 - **Memory floor:** ≥16 GB VRAM
 - **Deployment intent:** Always-on, home-friendly acoustics; Forge trim candidate set
-- **Support lens:** Driver/firmware constraints, PSU/cabling, mechanical clearance
+- **Support lens:** Driver/firmware constraints, PSU/cabling, mechanical clearance, cooling/accessory burden, fan-power and cable-extension burden, consumer-case airflow risk, harness/adapter risk, and post-accessory mechanical clearance
 
 ## Surveys
 
@@ -66,3 +77,16 @@ fields:
 
 ### M.2 AI accelerators
 13. [[survey:ourbox-sur-0013-m2-ai-accelerator-modules-16gbplus]] ([SUR-0013-m2-ai-accelerator-modules-16gbplus.md](SUR-0013-m2-ai-accelerator-modules-16gbplus.md))
+
+## Survey maintenance wording rules
+
+- Expand buyer-impact language directly. Do not leave shorthand unexpanded.
+- Prefer explicit phrasing such as:
+  - **Passive as sold; bare card is not self-cooling in a tower case.**
+  - **Requires custom airflow or aftermarket blower/shroud; do not buy for a consumer tower unless you have a validated cooling plan.**
+  - **Exact board and harness must be identified before procurement.**
+  - **Final compatibility cannot be determined without the exact board-partner model.**
+  - **Not procurement-ready until exact board, harness, and accessory stack are identified.**
+- Avoid soft language (for example “home-friendly,” “appliance-plausible,” or “sweet spot”) unless immediately followed by concrete validation requirements.
+- Treat the project Tesla P100 integration experience as procurement evidence: electrical plausibility does not guarantee mechanical fit, shroud fit does not guarantee case fit, compact shrouds can fail fan interface expectations, related connector families can still fail latch/body geometry, blower fans can fail motherboard-header/current/lead-length constraints, and aftermarket kits can require sealing/adaptation/extra wiring before they work.
+

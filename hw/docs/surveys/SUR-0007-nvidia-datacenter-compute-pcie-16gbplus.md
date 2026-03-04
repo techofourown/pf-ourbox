@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-02'
-  updated: '2026-02-02'
+  updated: '2026-03-04'
   component: gpu
   class: datacenter-compute
   vendor: nvidia
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0007: NVIDIA Datacenter / Compute PCIe GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Datacenter / compute PCIe accelerators.
+* **Consumer-case readiness:** Custom integration required.
+* **Cooling burden:** Many entries are **passive as sold** and assume **high-static-pressure, front-to-back server airflow**. A bare passive card is **not self-cooling in a consumer tower**. Consumer use commonly requires a validated blower, shroud, duct, or equivalent airflow plan.
+* **Power/cabling burden:** Board-side power is **not safely assumed to be normal consumer GPU power**. Connector family may be CPU 8-pin / ATX 2×4 style, classic PCIe, or server/OEM harness. GPU power method and fan power method must be validated separately. High-draw blower fans can exceed what a motherboard header should be assumed to supply safely, and fan leads may require an adapter or extension.
+* **Mechanical burden:** Bare board dimensions are not enough. Aftermarket cooling can increase effective length, height, and slot count, and can turn a “barely fits” card into a “does not fit” assembly. Side-panel closure and clearance must be checked **with accessories installed**.
+* **Software/firmware burden:** Datacenter driver stack, firmware expectations, CUDA-generation support, and long-term support posture are part of the deployment burden.
+* **Used-market / accessory burden:** High. Used-market cards often arrive without the accessory stack needed for consumer use, and aftermarket “compatible” shrouds/adapters may still require sealing, adaptation, or extra wiring to work correctly.
+* **Integration issues:** Do **not** let “PCIe card” read as “drop-in consumer GPU.” For Tesla **M40 / P40 / P100 / V100-family passive cards**, a validated airflow solution is mandatory. For **Tesla P100 PCIe**, preserve the fact that the board-side auxiliary input is **CPU 8-pin / ATX 2×4 style**, that a normal PCIe 6+2 cable must **not** be reversed or repurposed, and that consumer EPS plug body/latch geometry can still fail at the card end. Preserve the **030-0571-000-style CPU-8 to dual PCIe-8 adapter family** as a known consumer-PSU integration path. Treat the **shroud, fan model, fan power method, fan lead reach, and GPU power adapter** as part of the validated assembly definition.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 **Goal:** Survey NVIDIA datacenter/compute-oriented GPUs that could be relevant for local inference acceleration, with attention to **form factor** (PCIe vs SXM), power delivery, thermals, and support constraints.
 
@@ -116,6 +130,10 @@ This section intentionally includes historical/used-market accelerators (Tesla l
 
 #### References (starter set; expand as needed)
 
+- NVIDIA Tesla P100 PCIe product brief (board-side CPU 8-pin / ATX 2×4 framing and documented adapter path): https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-product-literature/NV-tesla-p100-pcie-PB-08248-001-v01.pdf
+- Corsair PSU cable compatibility chart (modular cable family compatibility must be validated, not inferred from fit): https://www.corsair.com/us/en/s/psu-cable-compatibility
+- Corsair warning that PSU modular cables are not universal: https://www.corsair.com/us/en/explorer/diy-builder/power-supply-units/are-psu-cables-universal/
+- Project integration evidence: 030-0571-000-style CPU-8 to dual PCIe-8 adapters are a known P100 consumer-PSU path, but EPS body/latch geometry can still fail at the card end; validate exact adapter and cable geometry in the assembled build.
 - HPE QuickSpecs “NVIDIA Accelerators for HPE” (contains L4/L40/L40S/A2 summaries and various accelerator listings)
 - HPE datasheet: NVIDIA L20 48GB PCIe GPU Accelerator for HPE
 - NVIDIA product briefs/datasheets for: A2, A10, A16, A30, A40, A100 (PCIe), L4, L40, Tesla T4, Tesla V100, Tesla P100, Tesla P40, Tesla P6, Tesla M60, Tesla K80, etc.

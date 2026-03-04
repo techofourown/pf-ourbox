@@ -5,7 +5,7 @@ parent: survey:ourbox-sur-0000-gpu-pcie-aic-16gbplus-index
 fields:
   status: Draft
   created: '2026-02-03'
-  updated: '2026-02-03'
+  updated: '2026-03-04'
   component: gpu
   class: professional-mobile
   vendor: nvidia
@@ -14,6 +14,20 @@ fields:
 ---
 
 # SUR-0011: NVIDIA Professional / Workstation MXM GPUs with ≥16 GB VRAM
+
+## Warning and Integration Issues
+
+* **Deployment class:** Professional / embedded MXM GPU modules.
+* **Consumer-case readiness:** Non-drop-in platform.
+* **Cooling burden:** These modules are not self-cooling as sold. Carrier-specific thermal design remains mandatory.
+* **Power/cabling burden:** Auxiliary-powered carrier requirements remain real, even for professional embedded modules. Carrier power ceiling can disqualify an otherwise attractive module.
+* **Mechanical burden:** MXM type, carrier compatibility, bracket/display arrangement, and enclosure integration must all be identified explicitly.
+* **Software/firmware burden:** Firmware provenance, driver posture, and host-platform compatibility are platform risks, not trivia.
+* **Used-market / accessory burden:** High. Industrial/embedded parts often arrive without a validated carrier, cooler, or platform documentation.
+* **Integration issues:** **An MXM module behind a PCIe carrier is a platform build, not a normal GPU purchase.** Add-to-cart module listings do **not** prove end-to-end viability. Require the exact module SKU, exact carrier board, exact cooling plan, exact power plan, and known firmware source.
+
+> See also: [Server-grade and module-based GPU integration hazards in consumer systems](SUR-0090-server-grade-and-module-based-gpu-integration-hazards.md).
+
 
 ## Purpose
 
