@@ -2,7 +2,7 @@
 typeId: adr
 recordId: ourbox-adr-0000-template
 parent: product_family:ourbox
-fields:
+fields: {}
 ---
 # ADR-XXXX: [Title in Active Voice]
 

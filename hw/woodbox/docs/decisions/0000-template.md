@@ -2,7 +2,7 @@
 typeId: adr
 recordId: woodbox-adr-0000-template
 parent: model:woodbox
-fields:
+fields: {}
 ---
 # ADR-XXXX: [Title in Active Voice]
 
