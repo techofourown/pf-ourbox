@@ -2,7 +2,7 @@
 typeId: rfc
 recordId: cinderbox-rfc-0000-template
 parent: model:cinderbox
-fields:
+fields: {}
 ---
 # RFC-XXXX: [Title]
 **Created:** YYYY-MM-DD  

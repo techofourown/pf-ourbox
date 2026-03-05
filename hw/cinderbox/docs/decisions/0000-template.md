@@ -2,7 +2,7 @@
 typeId: adr
 recordId: cinderbox-adr-0000-template
 parent: model:cinderbox
-fields:
+fields: {}
 ---
 # ADR-XXXX: [Title in Active Voice]
 

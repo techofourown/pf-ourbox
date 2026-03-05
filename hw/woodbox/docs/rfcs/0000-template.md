@@ -2,7 +2,7 @@
 typeId: rfc
 recordId: woodbox-rfc-0000-template
 parent: model:woodbox
-fields:
+fields: {}
 ---
 # RFC-XXXX: [Title]
 **Created:** YYYY-MM-DD  

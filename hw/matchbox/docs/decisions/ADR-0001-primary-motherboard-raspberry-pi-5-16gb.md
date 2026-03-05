@@ -2,7 +2,7 @@
 typeId: adr
 recordId: matchbox-adr-0001-primary-motherboard-raspberry-pi-5-16gb
 parent: model:matchbox
-fields:
+fields: {}
 ---
 # ADR-0001: Use Raspberry Pi 5 (16 GB) as the Primary Motherboard for OurBox Matchbox
 

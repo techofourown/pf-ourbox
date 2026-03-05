@@ -2,7 +2,7 @@
 typeId: adr
 recordId: matchbox-adr-0003-dual-nvme-hat-seeed-pcie2
 parent: model:matchbox
-fields:
+fields: {}
 ---
 # ADR-0003: Select Seeed PCIe 2.0 Dual M.2 NVMe HAT for Raspberry Pi 5 Storage
 

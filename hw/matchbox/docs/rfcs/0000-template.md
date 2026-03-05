@@ -2,7 +2,7 @@
 typeId: rfc
 recordId: matchbox-rfc-0000-template
 parent: model:matchbox
-fields:
+fields: {}
 ---
 # RFC-XXXX: [Title]
 **Created:** YYYY-MM-DD  

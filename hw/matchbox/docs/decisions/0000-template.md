@@ -2,7 +2,7 @@
 typeId: adr
 recordId: matchbox-adr-0000-template
 parent: model:matchbox
-fields:
+fields: {}
 ---
 # ADR-XXXX: [Title in Active Voice]
 
