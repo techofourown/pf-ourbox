@@ -56,3 +56,12 @@ jobs:
 
       - name: Validate dataset with GraphMD
         run: npm test
+
+  pr-batch-big-picture:
+    name: PR batch comparison tool tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run PR batch comparison tool tests
+        run: python3 tools/test_pr_batch_big_picture.py
