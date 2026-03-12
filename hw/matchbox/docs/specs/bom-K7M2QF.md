@@ -28,5 +28,4 @@ If you want the Compute Module 5 carrier-board path, use **Cinderbox**, not Matc
 - Cinderbox BOM: [Cinderbox Base Configuration — QSMCXW](https://github.com/techofourown/pf-ourbox/blob/main/hw/cinderbox/docs/specs/bom-QSMCXW.md)
 - Cinderbox is the dedicated CM5-based OurBox model with its own enclosure, carrier board,
   thermal profile, and dual-NVMe storage topology.
-- Matchbox remains the Raspberry Pi 5 board path; the CM5 carrier-board path should not be treated
-  as a fallback Matchbox configuration.
+
