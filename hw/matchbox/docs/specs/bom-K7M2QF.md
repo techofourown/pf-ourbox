@@ -21,8 +21,11 @@ fields:
 
 > Notes: Exact vendor SKUs and power brick capacity to be finalized during procurement; ensure clearance and thermals are validated with the enclosure and passive cooling choice.
 
-## Optional / Fallback Build — CM5 + Carrier
+## Looking for the CM5 path?
 
-| Item                          | Qty | Manufacturer | Model / MPN   | Purchase Link                               | Notes |
-|-------------------------------|-----|--------------|---------------|---------------------------------------------|-------|
-| CM5 carrier board (fallback)  | 1   | Waveshare    | CM5-IO-BASE-A | https://www.waveshare.com/cm5-io-base-a.htm | Base board only (not the CM5-IO-BASE-BOX-A kit). |
+If you want the Compute Module 5 carrier-board path, use **Cinderbox**, not Matchbox.
+
+- Cinderbox BOM: [Cinderbox Base Configuration — QSMCXW](https://github.com/techofourown/pf-ourbox/blob/main/hw/cinderbox/docs/specs/bom-QSMCXW.md)
+- Cinderbox is the dedicated CM5-based OurBox model with its own enclosure, carrier board,
+  thermal profile, and dual-NVMe storage topology.
+
